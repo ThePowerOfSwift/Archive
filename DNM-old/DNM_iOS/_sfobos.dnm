@@ -1,0 +1,43 @@
+Title: _SFOBOS
+
+P: VN vn Violin
+P: VC vc Violoncello
+
+#
+| 4 8 VN vn
+	1 p 60 d fff [ ( a -
+	2 p 62.25
+	3 p 65.5 d o ] [ 
+	1 p 67.75 ) a >
+
+| 4 8 VC vc
+	2 p 50 d o [ ( a > -
+	3 p 47.75
+	1 p 45.5
+	2 p 43.25 d p ] [ ) a > .
+
+#
+| 3 8 VN vn
+	1 p 80 ( a > .
+	2 p 62.25 d pp ] [ a > -
+	3 p 90 a -
+	1 p 67.75 ) a .
+
+| 3 8 VC vc
+	2 p 50 ( a -
+	3 p 60 a - >
+	1 p 45.5 d o ] [ a . >
+	2 p 70 ) a .
+
+#
+| 2 8 VN vn
+	1 p 80 ( a - >
+	2 p 70.25 a .
+	3 p 90 d o ] [ a .
+	1 p 82.25 d fff ) a .
+
+| 2 8 VC vc
+	2 p 58.5 ( a .
+	3 p 60 a . 
+	1 p 63.25 a .
+	2 p 70 d ppp ] ) a -

@@ -1,0 +1,2045 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07025BC81C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BC71C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift */; };
+		07025BC91C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BC71C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift */; };
+		07025BCB1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BCA1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift */; };
+		07025BCC1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BCA1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift */; };
+		07025BCE1C5596890016DFF2 /* LeafCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BCD1C5596890016DFF2 /* LeafCommandTokenizer.swift */; };
+		07025BCF1C5596890016DFF2 /* LeafCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BCD1C5596890016DFF2 /* LeafCommandTokenizer.swift */; };
+		07025BD11C559AEB0016DFF2 /* DurationNodeLeafTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07025BD01C559AEB0016DFF2 /* DurationNodeLeafTokenizerTests.swift */; };
+		071470A71C02B04D00D847D3 /* InstrumentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071470A61C02B04D00D847D3 /* InstrumentTypeTests.swift */; };
+		071470A91C02B70B00D847D3 /* MeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071470A81C02B70B00D847D3 /* MeasureTests.swift */; };
+		071470AB1C02C4DA00D847D3 /* ComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071470AA1C02C4DA00D847D3 /* ComponentTests.swift */; };
+		071955BC1C2251FA0041E840 /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071955BB1C2251FA0041E840 /* Performer.swift */; };
+		071955BE1C2253770041E840 /* PerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071955BD1C2253770041E840 /* PerformerTests.swift */; };
+		071A62511C40221400D31127 /* StringInstrumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62501C40221400D31127 /* StringInstrumentModel.swift */; };
+		071A62521C40221400D31127 /* StringInstrumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62501C40221400D31127 /* StringInstrumentModel.swift */; };
+		071A62541C40225700D31127 /* StringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62531C40225700D31127 /* StringModel.swift */; };
+		071A62551C40225700D31127 /* StringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62531C40225700D31127 /* StringModel.swift */; };
+		071A62571C40234600D31127 /* StringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62561C40234600D31127 /* StringNode.swift */; };
+		071A62581C40234600D31127 /* StringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62561C40234600D31127 /* StringNode.swift */; };
+		071A625A1C4027B500D31127 /* ArithmeticTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A62591C4027B500D31127 /* ArithmeticTypeTests.swift */; };
+		071E9E271C00EC84008D1263 /* DNMModel_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 071E9E261C00EC84008D1263 /* DNMModel_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071E9E2E1C00EC84008D1263 /* DNMModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071E9E241C00EC84008D1263 /* DNMModel.framework */; };
+		071E9E331C00EC84008D1263 /* DNMModel_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E9E321C00EC84008D1263 /* DNMModel_iOSTests.swift */; };
+		071E9E431C00EC96008D1263 /* DNMModel_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 071E9E421C00EC96008D1263 /* DNMModel_OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071E9E4A1C00EC96008D1263 /* DNMModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071E9E401C00EC96008D1263 /* DNMModel.framework */; };
+		071E9E4F1C00EC96008D1263 /* DNMModel_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E9E4E1C00EC96008D1263 /* DNMModel_OSXTests.swift */; };
+		071E9E611C00EE34008D1263 /* _DNMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4C1BF96BCD00BFC6FA /* _DNMParser.swift */; };
+		071E9E621C00EE34008D1263 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4D1BF96BCD00BFC6FA /* Token.swift */; };
+		071E9E631C00EE34008D1263 /* TokenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4E1BF96BCD00BFC6FA /* TokenContainer.swift */; };
+		071E9E641C00EE34008D1263 /* DNMTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4F1BF96BCD00BFC6FA /* DNMTokenizer.swift */; };
+		071E9E651C00EE34008D1263 /* TopLevelCommands.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F38C751BFE3E5F0093493F /* TopLevelCommands.json */; };
+		071E9E661C00EE35008D1263 /* _DNMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4C1BF96BCD00BFC6FA /* _DNMParser.swift */; };
+		071E9E671C00EE35008D1263 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4D1BF96BCD00BFC6FA /* Token.swift */; };
+		071E9E681C00EE35008D1263 /* TokenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4E1BF96BCD00BFC6FA /* TokenContainer.swift */; };
+		071E9E691C00EE35008D1263 /* DNMTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E4F1BF96BCD00BFC6FA /* DNMTokenizer.swift */; };
+		071E9E6A1C00EE35008D1263 /* TopLevelCommands.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F38C751BFE3E5F0093493F /* TopLevelCommands.json */; };
+		071E9E6B1C00EE39008D1263 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E1B1BF9688300BFC6FA /* SwiftyJSON.swift */; };
+		071E9E6C1C00EE39008D1263 /* ArithmeticType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D931BF967DC00BFC6FA /* ArithmeticType.swift */; };
+		071E9E6D1C00EE39008D1263 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D941BF967DC00BFC6FA /* ArrayExtensions.swift */; };
+		071E9E6E1C00EE39008D1263 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D951BF967DC00BFC6FA /* Direction.swift */; };
+		071E9E6F1C00EE39008D1263 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D961BF967DC00BFC6FA /* GCDHelper.swift */; };
+		071E9E701C00EE39008D1263 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D971BF967DC00BFC6FA /* Node.swift */; };
+		071E9E711C00EE39008D1263 /* NodePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D981BF967DC00BFC6FA /* NodePosition.swift */; };
+		071E9E721C00EE39008D1263 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D991BF967DC00BFC6FA /* OrderedDictionary.swift */; };
+		071E9E731C00EE39008D1263 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D9A1BF967DC00BFC6FA /* Random.swift */; };
+		071E9E741C00EE39008D1263 /* SimpleRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D9B1BF967DC00BFC6FA /* SimpleRoot.swift */; };
+		071E9E751C00EE39008D1263 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D9C1BF967DC00BFC6FA /* Stack.swift */; };
+		071E9E761C00EE39008D1263 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773437F1BFBFDBD00F571A2 /* StringExtensions.swift */; };
+		071E9E771C00EE3A008D1263 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074E1B1BF9688300BFC6FA /* SwiftyJSON.swift */; };
+		071E9E781C00EE3A008D1263 /* ArithmeticType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D931BF967DC00BFC6FA /* ArithmeticType.swift */; };
+		071E9E791C00EE3A008D1263 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D941BF967DC00BFC6FA /* ArrayExtensions.swift */; };
+		071E9E7A1C00EE3A008D1263 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D951BF967DC00BFC6FA /* Direction.swift */; };
+		071E9E7B1C00EE3A008D1263 /* GCDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D961BF967DC00BFC6FA /* GCDHelper.swift */; };
+		071E9E7C1C00EE3A008D1263 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D971BF967DC00BFC6FA /* Node.swift */; };
+		071E9E7D1C00EE3A008D1263 /* NodePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D981BF967DC00BFC6FA /* NodePosition.swift */; };
+		071E9E7E1C00EE3A008D1263 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D991BF967DC00BFC6FA /* OrderedDictionary.swift */; };
+		071E9E7F1C00EE3A008D1263 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D9A1BF967DC00BFC6FA /* Random.swift */; };
+		071E9E801C00EE3A008D1263 /* SimpleRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D9B1BF967DC00BFC6FA /* SimpleRoot.swift */; };
+		071E9E811C00EE3A008D1263 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074D9C1BF967DC00BFC6FA /* Stack.swift */; };
+		071E9E821C00EE3A008D1263 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773437F1BFBFDBD00F571A2 /* StringExtensions.swift */; };
+		071E9E831C00EE3D008D1263 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB71BF9685500BFC6FA /* ScoreModel.swift */; };
+		071E9E841C00EE3D008D1263 /* DurationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB91BF9685500BFC6FA /* DurationNode.swift */; };
+		071E9E861C00EE3D008D1263 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB61BF9685500BFC6FA /* Component.swift */; };
+		071E9E871C00EE3D008D1263 /* SpannerArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD21BF9685500BFC6FA /* SpannerArguments.swift */; };
+		071E9E881C00EE3E008D1263 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB71BF9685500BFC6FA /* ScoreModel.swift */; };
+		071E9E891C00EE3E008D1263 /* DurationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB91BF9685500BFC6FA /* DurationNode.swift */; };
+		071E9E8B1C00EE3E008D1263 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB61BF9685500BFC6FA /* Component.swift */; };
+		071E9E8C1C00EE3E008D1263 /* SpannerArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD21BF9685500BFC6FA /* SpannerArguments.swift */; };
+		071E9E8D1C00EE42008D1263 /* InstrumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBD1BF9685500BFC6FA /* InstrumentType.swift */; };
+		071E9E8E1C00EE43008D1263 /* InstrumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBD1BF9685500BFC6FA /* InstrumentType.swift */; };
+		071E9E8F1C00EE47008D1263 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBC1BF9685500BFC6FA /* Frequency.swift */; };
+		071E9E901C00EE47008D1263 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBF1BF9685500BFC6FA /* MIDI.swift */; };
+		071E9E911C00EE47008D1263 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC01BF9685500BFC6FA /* Pitch.swift */; };
+		071E9E921C00EE47008D1263 /* PitchCoarse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC11BF9685500BFC6FA /* PitchCoarse.swift */; };
+		071E9E931C00EE47008D1263 /* PitchDyad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC21BF9685500BFC6FA /* PitchDyad.swift */; };
+		071E9E941C00EE47008D1263 /* PitchDyadSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC31BF9685500BFC6FA /* PitchDyadSpeller.swift */; };
+		071E9E951C00EE47008D1263 /* PitchFine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC41BF9685500BFC6FA /* PitchFine.swift */; };
+		071E9E961C00EE47008D1263 /* PitchInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC51BF9685500BFC6FA /* PitchInterval.swift */; };
+		071E9E971C00EE47008D1263 /* PitchLetterName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC61BF9685500BFC6FA /* PitchLetterName.swift */; };
+		071E9E981C00EE47008D1263 /* PitchMonadSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC71BF9685500BFC6FA /* PitchMonadSpeller.swift */; };
+		071E9E991C00EE47008D1263 /* PitchPolyphony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC81BF9685500BFC6FA /* PitchPolyphony.swift */; };
+		071E9E9A1C00EE47008D1263 /* PitchPolyphonySpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC91BF9685500BFC6FA /* PitchPolyphonySpeller.swift */; };
+		071E9E9B1C00EE47008D1263 /* PitchSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCA1BF9685500BFC6FA /* PitchSpeller.swift */; };
+		071E9E9C1C00EE47008D1263 /* PitchSpelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCB1BF9685500BFC6FA /* PitchSpelling.swift */; };
+		071E9E9D1C00EE47008D1263 /* PitchSpellingDyad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCC1BF9685500BFC6FA /* PitchSpellingDyad.swift */; };
+		071E9E9E1C00EE47008D1263 /* PitchSpellingsByPitchClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 07074DCD1BF9685500BFC6FA /* PitchSpellingsByPitchClass.json */; };
+		071E9E9F1C00EE47008D1263 /* PitchVerticality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCE1BF9685500BFC6FA /* PitchVerticality.swift */; };
+		071E9EA01C00EE47008D1263 /* PitchVerticalitySpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCF1BF9685500BFC6FA /* PitchVerticalitySpeller.swift */; };
+		071E9EA21C00EE48008D1263 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBC1BF9685500BFC6FA /* Frequency.swift */; };
+		071E9EA31C00EE48008D1263 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBF1BF9685500BFC6FA /* MIDI.swift */; };
+		071E9EA41C00EE48008D1263 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC01BF9685500BFC6FA /* Pitch.swift */; };
+		071E9EA51C00EE48008D1263 /* PitchCoarse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC11BF9685500BFC6FA /* PitchCoarse.swift */; };
+		071E9EA61C00EE48008D1263 /* PitchDyad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC21BF9685500BFC6FA /* PitchDyad.swift */; };
+		071E9EA71C00EE48008D1263 /* PitchDyadSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC31BF9685500BFC6FA /* PitchDyadSpeller.swift */; };
+		071E9EA81C00EE48008D1263 /* PitchFine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC41BF9685500BFC6FA /* PitchFine.swift */; };
+		071E9EA91C00EE48008D1263 /* PitchInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC51BF9685500BFC6FA /* PitchInterval.swift */; };
+		071E9EAA1C00EE48008D1263 /* PitchLetterName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC61BF9685500BFC6FA /* PitchLetterName.swift */; };
+		071E9EAB1C00EE48008D1263 /* PitchMonadSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC71BF9685500BFC6FA /* PitchMonadSpeller.swift */; };
+		071E9EAC1C00EE48008D1263 /* PitchPolyphony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC81BF9685500BFC6FA /* PitchPolyphony.swift */; };
+		071E9EAD1C00EE48008D1263 /* PitchPolyphonySpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DC91BF9685500BFC6FA /* PitchPolyphonySpeller.swift */; };
+		071E9EAE1C00EE48008D1263 /* PitchSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCA1BF9685500BFC6FA /* PitchSpeller.swift */; };
+		071E9EAF1C00EE48008D1263 /* PitchSpelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCB1BF9685500BFC6FA /* PitchSpelling.swift */; };
+		071E9EB01C00EE48008D1263 /* PitchSpellingDyad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCC1BF9685500BFC6FA /* PitchSpellingDyad.swift */; };
+		071E9EB11C00EE48008D1263 /* PitchSpellingsByPitchClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 07074DCD1BF9685500BFC6FA /* PitchSpellingsByPitchClass.json */; };
+		071E9EB21C00EE48008D1263 /* PitchVerticality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCE1BF9685500BFC6FA /* PitchVerticality.swift */; };
+		071E9EB31C00EE48008D1263 /* PitchVerticalitySpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DCF1BF9685500BFC6FA /* PitchVerticalitySpeller.swift */; };
+		071E9EB51C00EE4D008D1263 /* RehearsalMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD11BF9685500BFC6FA /* RehearsalMarking.swift */; };
+		071E9EB61C00EE4D008D1263 /* Beats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB51BF9685500BFC6FA /* Beats.swift */; };
+		071E9EB71C00EE4D008D1263 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB81BF9685500BFC6FA /* Duration.swift */; };
+		071E9EB91C00EE4D008D1263 /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBE1BF9685500BFC6FA /* MeasureModel.swift */; };
+		071E9EBA1C00EE4D008D1263 /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD31BF9685500BFC6FA /* Subdivision.swift */; };
+		071E9EBB1C00EE4D008D1263 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD41BF9685500BFC6FA /* Tempo.swift */; };
+		071E9EBC1C00EE4D008D1263 /* TempoFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD51BF9685500BFC6FA /* TempoFunction.swift */; };
+		071E9EBD1C00EE4D008D1263 /* TempoMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD61BF9685500BFC6FA /* TempoMarking.swift */; };
+		071E9EBE1C00EE4D008D1263 /* RehearsalMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD11BF9685500BFC6FA /* RehearsalMarking.swift */; };
+		071E9EBF1C00EE4D008D1263 /* Beats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB51BF9685500BFC6FA /* Beats.swift */; };
+		071E9EC01C00EE4D008D1263 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DB81BF9685500BFC6FA /* Duration.swift */; };
+		071E9EC21C00EE4D008D1263 /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DBE1BF9685500BFC6FA /* MeasureModel.swift */; };
+		071E9EC31C00EE4D008D1263 /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD31BF9685500BFC6FA /* Subdivision.swift */; };
+		071E9EC41C00EE4D008D1263 /* Tempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD41BF9685500BFC6FA /* Tempo.swift */; };
+		071E9EC51C00EE4D008D1263 /* TempoFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD51BF9685500BFC6FA /* TempoFunction.swift */; };
+		071E9EC61C00EE4D008D1263 /* TempoMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07074DD61BF9685500BFC6FA /* TempoMarking.swift */; };
+		071FF1D21C029AEB0009CD19 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071FF1D11C029AEB0009CD19 /* TokenTests.swift */; };
+		071FF1D41C029BC40009CD19 /* TokenContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071FF1D31C029BC40009CD19 /* TokenContainerTests.swift */; };
+		071FF1D61C029DF50009CD19 /* DNMTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071FF1D51C029DF50009CD19 /* DNMTokenizerTests.swift */; };
+		072618961C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618951C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift */; };
+		072618971C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618951C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift */; };
+		072618991C52D2D100C39822 /* MeasureCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618981C52D2D100C39822 /* MeasureCommandTokenizer.swift */; };
+		0726189A1C52D2D100C39822 /* MeasureCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618981C52D2D100C39822 /* MeasureCommandTokenizer.swift */; };
+		0726189C1C52D3D400C39822 /* MetricalDurationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726189B1C52D3D400C39822 /* MetricalDurationTokenizer.swift */; };
+		0726189D1C52D3D400C39822 /* MetricalDurationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726189B1C52D3D400C39822 /* MetricalDurationTokenizer.swift */; };
+		0726189F1C52D45100C39822 /* DurationTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726189E1C52D45100C39822 /* DurationTokenizerTests.swift */; };
+		072618A11C52D69300C39822 /* MeasureCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618A01C52D69300C39822 /* MeasureCommandTokenizerTests.swift */; };
+		072618A71C52DB9600C39822 /* RelativeDurationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618A61C52DB9600C39822 /* RelativeDurationTokenizer.swift */; };
+		072618A81C52DB9600C39822 /* RelativeDurationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618A61C52DB9600C39822 /* RelativeDurationTokenizer.swift */; };
+		072618AA1C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618A91C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift */; };
+		072618AB1C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618A91C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift */; };
+		072618AD1C52DE7200C39822 /* RelativeDurationTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618AC1C52DE7200C39822 /* RelativeDurationTokenizerTests.swift */; };
+		072618AF1C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618AE1C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift */; };
+		072618B01C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618AE1C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift */; };
+		072618B21C52F14800C39822 /* SpannerStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618B11C52F14800C39822 /* SpannerStopCommandTokenizer.swift */; };
+		072618B31C52F14800C39822 /* SpannerStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618B11C52F14800C39822 /* SpannerStopCommandTokenizer.swift */; };
+		072618B51C52F30C00C39822 /* DynamicMarkingCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072618B41C52F30C00C39822 /* DynamicMarkingCommandTokenizerTests.swift */; };
+		072621741C03BB25001A665A /* OrderedDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072621731C03BB25001A665A /* OrderedDictionaryTests.swift */; };
+		072621781C03CBE8001A665A /* ScoreModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072621771C03CBE8001A665A /* ScoreModelTests.swift */; };
+		0726217C1C03DCF6001A665A /* FrequencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0726217B1C03DCF6001A665A /* FrequencyTests.swift */; };
+		0729241A1C4ED65000C0C47F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072924191C4ED65000C0C47F /* Parser.swift */; };
+		0729241B1C4ED65000C0C47F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072924191C4ED65000C0C47F /* Parser.swift */; };
+		072925381C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925371C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift */; };
+		072925391C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925371C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift */; };
+		0729253B1C51921A00F37C0C /* ArticulationMarkingCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729253A1C51921A00F37C0C /* ArticulationMarkingCommandTokenizerTests.swift */; };
+		0729253D1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729253C1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift */; };
+		0729253E1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729253C1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift */; };
+		072925401C519EF600F37C0C /* InstrumentTypeTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729253F1C519EF600F37C0C /* InstrumentTypeTokenizer.swift */; };
+		072925411C519EF600F37C0C /* InstrumentTypeTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729253F1C519EF600F37C0C /* InstrumentTypeTokenizer.swift */; };
+		072925431C519F2400F37C0C /* InstrumentTypeTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925421C519F2400F37C0C /* InstrumentTypeTokenizerTests.swift */; };
+		072925451C51A27500F37C0C /* IdentifierTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925441C51A27500F37C0C /* IdentifierTokenizer.swift */; };
+		072925461C51A27500F37C0C /* IdentifierTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925441C51A27500F37C0C /* IdentifierTokenizer.swift */; };
+		072925481C51A37600F37C0C /* InstrumentIDTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925471C51A37600F37C0C /* InstrumentIDTokenizer.swift */; };
+		072925491C51A37600F37C0C /* InstrumentIDTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925471C51A37600F37C0C /* InstrumentIDTokenizer.swift */; };
+		0729254B1C51A3BF00F37C0C /* PerformerIDTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729254A1C51A3BF00F37C0C /* PerformerIDTokenizer.swift */; };
+		0729254C1C51A3BF00F37C0C /* PerformerIDTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729254A1C51A3BF00F37C0C /* PerformerIDTokenizer.swift */; };
+		0729254E1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729254D1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift */; };
+		0729254F1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729254D1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift */; };
+		072925531C51A67C00F37C0C /* InstrumentDeclarationTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925521C51A67C00F37C0C /* InstrumentDeclarationTokenizerTests.swift */; };
+		072925551C51A82A00F37C0C /* PerformerDeclarationCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925541C51A82A00F37C0C /* PerformerDeclarationCommandTokenizerTests.swift */; };
+		072925571C51B88300F37C0C /* LineTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925561C51B88300F37C0C /* LineTokenizer.swift */; };
+		072925581C51B88300F37C0C /* LineTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925561C51B88300F37C0C /* LineTokenizer.swift */; };
+		0729255A1C51B8A200F37C0C /* LineTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072925591C51B8A200F37C0C /* LineTokenizerTests.swift */; };
+		0729255C1C51C3BD00F37C0C /* EnumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729255B1C51C3BD00F37C0C /* EnumExtensions.swift */; };
+		0729255D1C51C3BD00F37C0C /* EnumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729255B1C51C3BD00F37C0C /* EnumExtensions.swift */; };
+		0729255F1C51C3FB00F37C0C /* EnumExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729255E1C51C3FB00F37C0C /* EnumExtensionsTests.swift */; };
+		073674791C454F92008FE840 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073674781C454F92008FE840 /* KeyPath.swift */; };
+		0736747A1C454F92008FE840 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073674781C454F92008FE840 /* KeyPath.swift */; };
+		0736747C1C455875008FE840 /* DurationNodeLeafOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736747B1C455875008FE840 /* DurationNodeLeafOrganizerTests.swift */; };
+		0736747E1C455E9D008FE840 /* ComponentRepresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736747D1C455E9D008FE840 /* ComponentRepresentationType.swift */; };
+		0736747F1C455E9D008FE840 /* ComponentRepresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736747D1C455E9D008FE840 /* ComponentRepresentationType.swift */; };
+		073C53691C4445430074846C /* ComponentOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C53681C4445430074846C /* ComponentOrganizer.swift */; };
+		073C536A1C4445430074846C /* ComponentOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C53681C4445430074846C /* ComponentOrganizer.swift */; };
+		073C536C1C4471690074846C /* DurationNodeLeafOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C536B1C4471690074846C /* DurationNodeLeafOrganizer.swift */; };
+		073C536D1C4471690074846C /* DurationNodeLeafOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C536B1C4471690074846C /* DurationNodeLeafOrganizer.swift */; };
+		073DE9F01C41A4830072745A /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DE9EF1C41A4830072745A /* NSDateExtensions.swift */; };
+		073DE9F11C41A4830072745A /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DE9EF1C41A4830072745A /* NSDateExtensions.swift */; };
+		073DE9F31C41AECB0072745A /* PitchClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DE9F21C41AECB0072745A /* PitchClass.swift */; };
+		073DE9F41C41AECB0072745A /* PitchClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DE9F21C41AECB0072745A /* PitchClass.swift */; };
+		07428C841C017A7C00A1E76B /* BeatsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C721C017A7C00A1E76B /* BeatsTest.swift */; };
+		07428C851C017A7C00A1E76B /* DurationNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C731C017A7C00A1E76B /* DurationNodeTests.swift */; };
+		07428C861C017A7C00A1E76B /* DurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C741C017A7C00A1E76B /* DurationTests.swift */; };
+		07428C871C017A7C00A1E76B /* PitchLetterNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C751C017A7C00A1E76B /* PitchLetterNameTests.swift */; };
+		07428C881C017A7C00A1E76B /* MIDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C761C017A7C00A1E76B /* MIDITests.swift */; };
+		07428C891C017A7C00A1E76B /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C771C017A7C00A1E76B /* NodeTests.swift */; };
+		07428C8A1C017A7C00A1E76B /* PitchDyadSpellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C781C017A7C00A1E76B /* PitchDyadSpellerTests.swift */; };
+		07428C8B1C017A7C00A1E76B /* PitchDyadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C791C017A7C00A1E76B /* PitchDyadTests.swift */; };
+		07428C8C1C017A7C00A1E76B /* PitchIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C7A1C017A7C00A1E76B /* PitchIntervalTests.swift */; };
+		07428C8D1C017A7C00A1E76B /* PitchPolyphonySpellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C7B1C017A7C00A1E76B /* PitchPolyphonySpellerTests.swift */; };
+		07428C8E1C017A7C00A1E76B /* PitchPolyphonyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C7C1C017A7C00A1E76B /* PitchPolyphonyTests.swift */; };
+		07428C8F1C017A7C00A1E76B /* PitchSpellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C7D1C017A7C00A1E76B /* PitchSpellerTests.swift */; };
+		07428C901C017A7C00A1E76B /* PitchSpellingDyadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C7E1C017A7C00A1E76B /* PitchSpellingDyadTests.swift */; };
+		07428C911C017A7C00A1E76B /* PitchSpellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C7F1C017A7C00A1E76B /* PitchSpellingTests.swift */; };
+		07428C921C017A7C00A1E76B /* PitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C801C017A7C00A1E76B /* PitchTests.swift */; };
+		07428C931C017A7C00A1E76B /* PitchVerticalitySpellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C811C017A7C00A1E76B /* PitchVerticalitySpellerTests.swift */; };
+		07428C941C017A7C00A1E76B /* PitchVerticalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C821C017A7C00A1E76B /* PitchVerticalityTests.swift */; };
+		07428C951C017A7C00A1E76B /* SubdivisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07428C831C017A7C00A1E76B /* SubdivisionTests.swift */; };
+		074373D81C513B1B004070ED /* CommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373D71C513B1B004070ED /* CommandTokenizer.swift */; };
+		074373D91C513B1B004070ED /* CommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373D71C513B1B004070ED /* CommandTokenizer.swift */; };
+		074373DB1C513BE6004070ED /* TopLevelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373DA1C513BE6004070ED /* TopLevelCommand.swift */; };
+		074373DC1C513BE6004070ED /* TopLevelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373DA1C513BE6004070ED /* TopLevelCommand.swift */; };
+		074373DE1C513C05004070ED /* ArgumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373DD1C513C05004070ED /* ArgumentType.swift */; };
+		074373DF1C513C05004070ED /* ArgumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373DD1C513C05004070ED /* ArgumentType.swift */; };
+		074373E11C513D28004070ED /* ArgumentTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E01C513D28004070ED /* ArgumentTokenizer.swift */; };
+		074373E21C513D28004070ED /* ArgumentTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E01C513D28004070ED /* ArgumentTokenizer.swift */; };
+		074373E41C513DE1004070ED /* ArgumentTokenizerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E31C513DE1004070ED /* ArgumentTokenizerString.swift */; };
+		074373E51C513DE1004070ED /* ArgumentTokenizerString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E31C513DE1004070ED /* ArgumentTokenizerString.swift */; };
+		074373E71C515277004070ED /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E61C515277004070ED /* Tokenizer.swift */; };
+		074373E81C515277004070ED /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E61C515277004070ED /* Tokenizer.swift */; };
+		074373EA1C5152A0004070ED /* TokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373E91C5152A0004070ED /* TokenizerTests.swift */; };
+		074373EC1C515E7D004070ED /* StringTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373EB1C515E7D004070ED /* StringTokenizer.swift */; };
+		074373ED1C515E7D004070ED /* StringTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373EB1C515E7D004070ED /* StringTokenizer.swift */; };
+		074373EF1C515F12004070ED /* IntTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373EE1C515F12004070ED /* IntTokenizer.swift */; };
+		074373F01C515F12004070ED /* IntTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373EE1C515F12004070ED /* IntTokenizer.swift */; };
+		074373F21C5160F6004070ED /* DynamicMarkingTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373F11C5160F6004070ED /* DynamicMarkingTokenizer.swift */; };
+		074373F31C5160F6004070ED /* DynamicMarkingTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373F11C5160F6004070ED /* DynamicMarkingTokenizer.swift */; };
+		074373F51C5162C1004070ED /* ArticulationMarkingTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373F41C5162C0004070ED /* ArticulationMarkingTokenizer.swift */; };
+		074373F61C5162C1004070ED /* ArticulationMarkingTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373F41C5162C0004070ED /* ArticulationMarkingTokenizer.swift */; };
+		074373F81C5164F6004070ED /* PitchTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373F71C5164F6004070ED /* PitchTokenizer.swift */; };
+		074373F91C5164F6004070ED /* PitchTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373F71C5164F6004070ED /* PitchTokenizer.swift */; };
+		074373FB1C516548004070ED /* FloatTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373FA1C516548004070ED /* FloatTokenizer.swift */; };
+		074373FC1C516548004070ED /* FloatTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373FA1C516548004070ED /* FloatTokenizer.swift */; };
+		074373FE1C5166EF004070ED /* PitchStringTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373FD1C5166EF004070ED /* PitchStringTokenizer.swift */; };
+		074373FF1C5166EF004070ED /* PitchStringTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074373FD1C5166EF004070ED /* PitchStringTokenizer.swift */; };
+		0759E4101C53478B0054B33F /* SlurStartCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759E40F1C53478B0054B33F /* SlurStartCommandTokenizer.swift */; };
+		0759E4111C53478B0054B33F /* SlurStartCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759E40F1C53478B0054B33F /* SlurStartCommandTokenizer.swift */; };
+		0759E4131C5348400054B33F /* SlurStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759E4121C5348400054B33F /* SlurStopCommandTokenizer.swift */; };
+		0759E4141C5348400054B33F /* SlurStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759E4121C5348400054B33F /* SlurStopCommandTokenizer.swift */; };
+		0759E4161C5348B60054B33F /* ExtensionStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759E4151C5348B60054B33F /* ExtensionStopCommandTokenizer.swift */; };
+		0759E4171C5348B60054B33F /* ExtensionStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759E4151C5348B60054B33F /* ExtensionStopCommandTokenizer.swift */; };
+		075BBCA21C2F8E9A00D2859C /* ComponentRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCA11C2F8E9A00D2859C /* ComponentRest.swift */; };
+		075BBCA31C2F8E9A00D2859C /* ComponentRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCA11C2F8E9A00D2859C /* ComponentRest.swift */; };
+		075BBCA51C2F8EC600D2859C /* ComponentPitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCA41C2F8EC600D2859C /* ComponentPitch.swift */; };
+		075BBCA61C2F8EC600D2859C /* ComponentPitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCA41C2F8EC600D2859C /* ComponentPitch.swift */; };
+		075BBCA81C2F8EE700D2859C /* ComponentDynamicMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCA71C2F8EE700D2859C /* ComponentDynamicMarking.swift */; };
+		075BBCA91C2F8EE700D2859C /* ComponentDynamicMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCA71C2F8EE700D2859C /* ComponentDynamicMarking.swift */; };
+		075BBCAB1C2F90EB00D2859C /* ComponentDynamicMarkingSpanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCAA1C2F90EA00D2859C /* ComponentDynamicMarkingSpanner.swift */; };
+		075BBCAC1C2F90EB00D2859C /* ComponentDynamicMarkingSpanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCAA1C2F90EA00D2859C /* ComponentDynamicMarkingSpanner.swift */; };
+		075BBCAE1C2F91F300D2859C /* ComponentSlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCAD1C2F91F300D2859C /* ComponentSlur.swift */; };
+		075BBCAF1C2F91F300D2859C /* ComponentSlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCAD1C2F91F300D2859C /* ComponentSlur.swift */; };
+		075BBCB11C2F927C00D2859C /* ComponentArticulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCB01C2F927C00D2859C /* ComponentArticulation.swift */; };
+		075BBCB21C2F927C00D2859C /* ComponentArticulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCB01C2F927C00D2859C /* ComponentArticulation.swift */; };
+		075BBCB41C2FC4A900D2859C /* ComponentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCB31C2FC4A900D2859C /* ComponentExtension.swift */; };
+		075BBCB51C2FC4A900D2859C /* ComponentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCB31C2FC4A900D2859C /* ComponentExtension.swift */; };
+		075BBCB71C2FC53500D2859C /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCB61C2FC53500D2859C /* ComponentType.swift */; };
+		075BBCB81C2FC53500D2859C /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BBCB61C2FC53500D2859C /* ComponentType.swift */; };
+		0767314F1C415B3500FD9CA7 /* StringModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767314E1C415B3500FD9CA7 /* StringModelsTests.swift */; };
+		076731511C415DAA00FD9CA7 /* StringNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076731501C415DAA00FD9CA7 /* StringNodeTests.swift */; };
+		076975C81C4C989A002D1CA0 /* DurationNodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076975C71C4C989A002D1CA0 /* DurationNodeParser.swift */; };
+		076975C91C4C989A002D1CA0 /* DurationNodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076975C71C4C989A002D1CA0 /* DurationNodeParser.swift */; };
+		076975CB1C4C98B5002D1CA0 /* DurationNodeParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076975CA1C4C98B5002D1CA0 /* DurationNodeParserTests.swift */; };
+		076975CD1C4CB548002D1CA0 /* ArticulationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076975CC1C4CB548002D1CA0 /* ArticulationType.swift */; };
+		076975CE1C4CB548002D1CA0 /* ArticulationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076975CC1C4CB548002D1CA0 /* ArticulationType.swift */; };
+		076FE3931C447847006F9BE5 /* DictionaryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FE3921C447847006F9BE5 /* DictionaryExtensionsTests.swift */; };
+		076FE3981C4492AC006F9BE5 /* ComponentOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FE3971C4492AC006F9BE5 /* ComponentOrganizerTests.swift */; };
+		077292551C45766200C6F4D5 /* InstrumentIdentifierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077292541C45766200C6F4D5 /* InstrumentIdentifierPath.swift */; };
+		077292561C45766200C6F4D5 /* InstrumentIdentifierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077292541C45766200C6F4D5 /* InstrumentIdentifierPath.swift */; };
+		0795F2CC1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795F2CB1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift */; };
+		0795F2CD1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795F2CB1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift */; };
+		0796242C1C5540850061533D /* SlurStartCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796242B1C5540850061533D /* SlurStartCommandTokenizerTests.swift */; };
+		0796242E1C5541260061533D /* SlurStopCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796242D1C5541260061533D /* SlurStopCommandTokenizerTests.swift */; };
+		079624301C5541930061533D /* ExtensionStopCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796242F1C5541930061533D /* ExtensionStopCommandTokenizerTests.swift */; };
+		079624321C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624311C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift */; };
+		079624331C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624311C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift */; };
+		079624381C5543BA0061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624371C5543B90061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift */; };
+		079624391C5543BA0061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624371C5543B90061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift */; };
+		0796243B1C55441F0061533D /* DurationNodeStackModeMeasureCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796243A1C55441F0061533D /* DurationNodeStackModeMeasureCommandTokenizerTests.swift */; };
+		0796243D1C55453B0061533D /* DurationNodeStackModeIncrementCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796243C1C55453B0061533D /* DurationNodeStackModeIncrementCommandTokenizerTests.swift */; };
+		0796243F1C5548E60061533D /* DurationNodeRootTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796243E1C5548E60061533D /* DurationNodeRootTokenizer.swift */; };
+		079624401C5548E60061533D /* DurationNodeRootTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796243E1C5548E60061533D /* DurationNodeRootTokenizer.swift */; };
+		079624421C5548FB0061533D /* DurationNodeRootTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624411C5548FB0061533D /* DurationNodeRootTokenizerTests.swift */; };
+		079624471C55581A0061533D /* NodeCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624461C55581A0061533D /* NodeCommandTokenizer.swift */; };
+		079624481C55581A0061533D /* NodeCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624461C55581A0061533D /* NodeCommandTokenizer.swift */; };
+		0796244A1C55583E0061533D /* EdgeCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624491C55583E0061533D /* EdgeCommandTokenizer.swift */; };
+		0796244B1C55583E0061533D /* EdgeCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624491C55583E0061533D /* EdgeCommandTokenizer.swift */; };
+		0796244D1C5558CE0061533D /* NodeCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796244C1C5558CE0061533D /* NodeCommandTokenizerTests.swift */; };
+		0796244F1C55593B0061533D /* EdgeCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0796244E1C55593B0061533D /* EdgeCommandTokenizerTests.swift */; };
+		079624511C556D550061533D /* DurationNodeStackModeCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624501C556D550061533D /* DurationNodeStackModeCommandTokenizer.swift */; };
+		079624521C556D560061533D /* DurationNodeStackModeCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624501C556D550061533D /* DurationNodeStackModeCommandTokenizer.swift */; };
+		079624541C557C950061533D /* DNMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624531C557C950061533D /* DNMParser.swift */; };
+		079624551C557C950061533D /* DNMParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624531C557C950061533D /* DNMParser.swift */; };
+		079624571C557EC10061533D /* RestCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624561C557EC10061533D /* RestCommandTokenizer.swift */; };
+		079624581C557EC10061533D /* RestCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624561C557EC10061533D /* RestCommandTokenizer.swift */; };
+		0796245A1C5586200061533D /* DNMParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079624591C5586200061533D /* DNMParserTests.swift */; };
+		079BC1231C35DB65001672D6 /* ComponentFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1221C35DB65001672D6 /* ComponentFiltering.swift */; };
+		079BC1241C35DB65001672D6 /* ComponentFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1221C35DB65001672D6 /* ComponentFiltering.swift */; };
+		079BC1261C35DB81001672D6 /* ComponentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1251C35DB81001672D6 /* ComponentFilter.swift */; };
+		079BC1271C35DB81001672D6 /* ComponentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1251C35DB81001672D6 /* ComponentFilter.swift */; };
+		079BC1291C35DB9A001672D6 /* ComponentFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1281C35DB9A001672D6 /* ComponentFilters.swift */; };
+		079BC12A1C35DB9A001672D6 /* ComponentFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1281C35DB9A001672D6 /* ComponentFilters.swift */; };
+		079BC12C1C35DBDF001672D6 /* ComponentTypeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC12B1C35DBDF001672D6 /* ComponentTypeState.swift */; };
+		079BC12D1C35DBDF001672D6 /* ComponentTypeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC12B1C35DBDF001672D6 /* ComponentTypeState.swift */; };
+		079BC12F1C35DBF6001672D6 /* ComponentTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC12E1C35DBF6001672D6 /* ComponentTypeModel.swift */; };
+		079BC1301C35DBF6001672D6 /* ComponentTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC12E1C35DBF6001672D6 /* ComponentTypeModel.swift */; };
+		079BC1311C35DCCE001672D6 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFAB2C1C1A3459005BED36 /* DictionaryExtensions.swift */; };
+		079BC1331C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1321C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift */; };
+		079BC1341C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC1321C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift */; };
+		07A0BDB11C274CE200B9A704 /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071955BB1C2251FA0041E840 /* Performer.swift */; };
+		07A0BDB21C274CE200B9A704 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9BA941C23FA900062A48B /* Instrument.swift */; };
+		07A0BDBE1C29F76D00B9A704 /* InstrumentTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0BDBD1C29F76D00B9A704 /* InstrumentTypeModel.swift */; };
+		07A0BDBF1C29F78400B9A704 /* InstrumentTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A0BDBD1C29F76D00B9A704 /* InstrumentTypeModel.swift */; };
+		07A89FEA1C58592A00224775 /* LineCommentCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A89FE91C58592A00224775 /* LineCommentCommandTokenizer.swift */; };
+		07A89FEB1C58592A00224775 /* LineCommentCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A89FE91C58592A00224775 /* LineCommentCommandTokenizer.swift */; };
+		07A89FED1C5859FB00224775 /* LineCommentCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A89FEC1C5859FB00224775 /* LineCommentCommandTokenizerTests.swift */; };
+		07A89FEF1C585C7C00224775 /* BlockCommentCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A89FEE1C585C7C00224775 /* BlockCommentCommandTokenizer.swift */; };
+		07A89FF01C585C7C00224775 /* BlockCommentCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A89FEE1C585C7C00224775 /* BlockCommentCommandTokenizer.swift */; };
+		07A8BFB41C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8BFB31C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift */; };
+		07A8BFB51C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8BFB31C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift */; };
+		07A8BFB71C4E02EE00090953 /* DurationNodeIntervalInferringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8BFB61C4E02EE00090953 /* DurationNodeIntervalInferringTests.swift */; };
+		07A8D8E21C4C0FB2008C5FEC /* DurationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8D8E11C4C0FB2008C5FEC /* DurationParser.swift */; };
+		07A8D8E31C4C0FB2008C5FEC /* DurationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8D8E11C4C0FB2008C5FEC /* DurationParser.swift */; };
+		07A8D8E51C4C0FC5008C5FEC /* DurationParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8D8E41C4C0FC5008C5FEC /* DurationParserTests.swift */; };
+		07AEE25C1C5183190017E129 /* PitchCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE25B1C5183190017E129 /* PitchCommandTokenizer.swift */; };
+		07AEE25D1C5183190017E129 /* PitchCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE25B1C5183190017E129 /* PitchCommandTokenizer.swift */; };
+		07AEE25F1C51842C0017E129 /* PitchCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEE25E1C51842C0017E129 /* PitchCommandTokenizerTests.swift */; };
+		07AF0D2A1C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF0D291C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift */; };
+		07AF0D2B1C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF0D291C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift */; };
+		07AF0D2D1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF0D2C1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift */; };
+		07AF0D2E1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF0D2C1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift */; };
+		07B1EFD01C08CBF60090237A /* IntervalRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFCF1C08CBF60090237A /* IntervalRelationship.swift */; };
+		07B1EFD31C08CC600090237A /* DurationInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFD21C08CC600090237A /* DurationInterval.swift */; };
+		07B1EFD81C08D3C90090237A /* DurationIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFD71C08D3C90090237A /* DurationIntervalTests.swift */; };
+		07B1EFDA1C08DD7F0090237A /* DurationSpanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFD91C08DD7F0090237A /* DurationSpanning.swift */; };
+		07B1EFDB1C08DDE00090237A /* DurationInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFD21C08CC600090237A /* DurationInterval.swift */; };
+		07B1EFDC1C08DDE50090237A /* IntervalRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFCF1C08CBF60090237A /* IntervalRelationship.swift */; };
+		07B1EFDD1C08DDF40090237A /* DurationSpanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1EFD91C08DD7F0090237A /* DurationSpanning.swift */; };
+		07B3A12E1C0411AA00595939 /* TempoMarkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3A12D1C0411AA00595939 /* TempoMarkingTests.swift */; };
+		07B3A1301C0413F300595939 /* RehearsalMarkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B3A12F1C0413F300595939 /* RehearsalMarkingTests.swift */; };
+		07B7DB211C32099900CF54DF /* DynamicMarkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB201C32099900CF54DF /* DynamicMarkingModel.swift */; };
+		07B7DB221C32099900CF54DF /* DynamicMarkingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB201C32099900CF54DF /* DynamicMarkingModel.swift */; };
+		07B7DB241C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB231C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift */; };
+		07B7DB251C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB231C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift */; };
+		07B7DB271C3209CF00CF54DF /* DynamicMarkingElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB261C3209CF00CF54DF /* DynamicMarkingElementModel.swift */; };
+		07B7DB281C3209CF00CF54DF /* DynamicMarkingElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB261C3209CF00CF54DF /* DynamicMarkingElementModel.swift */; };
+		07B7DB2A1C320A0900CF54DF /* DynamicMarkingSpannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB291C320A0900CF54DF /* DynamicMarkingSpannerModel.swift */; };
+		07B7DB2B1C320A0900CF54DF /* DynamicMarkingSpannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB291C320A0900CF54DF /* DynamicMarkingSpannerModel.swift */; };
+		07B7DB2D1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB2C1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift */; };
+		07B7DB2E1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB2C1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift */; };
+		07B7DB301C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB2F1C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift */; };
+		07B7DB311C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB2F1C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift */; };
+		07B7DB361C320BB100CF54DF /* DynamicMarkingNumericalRepresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB351C320BB100CF54DF /* DynamicMarkingNumericalRepresenterTests.swift */; };
+		07B7DB3B1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB3A1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift */; };
+		07B7DB3C1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB3A1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift */; };
+		07B7DB411C3230BD00CF54DF /* DynamicMarkingStratumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB401C3230BD00CF54DF /* DynamicMarkingStratumModel.swift */; };
+		07B7DB421C3230BD00CF54DF /* DynamicMarkingStratumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7DB401C3230BD00CF54DF /* DynamicMarkingStratumModel.swift */; };
+		07B820611C4C186C00DEC995 /* DurationIntervalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B820601C4C186C00DEC995 /* DurationIntervalParser.swift */; };
+		07B820621C4C186C00DEC995 /* DurationIntervalParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B820601C4C186C00DEC995 /* DurationIntervalParser.swift */; };
+		07B820641C4C188300DEC995 /* DurationIntervalParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B820631C4C188300DEC995 /* DurationIntervalParserTests.swift */; };
+		07C736611C4DA8C0005F287D /* DurationNodeIntervalEnforcingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C736601C4DA8C0005F287D /* DurationNodeIntervalEnforcingTests.swift */; };
+		07C736631C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C736621C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift */; };
+		07C736641C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C736621C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift */; };
+		07CD0A3D1C5C2BBC009FAB77 /* ComponentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A3C1C5C2BBC009FAB77 /* ComponentLabel.swift */; };
+		07CD0A3E1C5C2BBC009FAB77 /* ComponentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A3C1C5C2BBC009FAB77 /* ComponentLabel.swift */; };
+		07CD0A401C5C2E7B009FAB77 /* LabelCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A3F1C5C2E7B009FAB77 /* LabelCommandTokenizer.swift */; };
+		07CD0A411C5C2E7B009FAB77 /* LabelCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A3F1C5C2E7B009FAB77 /* LabelCommandTokenizer.swift */; };
+		07CD0A431C5C3150009FAB77 /* LabelCommandTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A421C5C3150009FAB77 /* LabelCommandTokenizerTests.swift */; };
+		07CD0A4D1C5C41E8009FAB77 /* LabelStratumModelArranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A4C1C5C41E8009FAB77 /* LabelStratumModelArranger.swift */; };
+		07CD0A4E1C5C41E8009FAB77 /* LabelStratumModelArranger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A4C1C5C41E8009FAB77 /* LabelStratumModelArranger.swift */; };
+		07CD0A501C5C4275009FAB77 /* LabelStratumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A4F1C5C4275009FAB77 /* LabelStratumModel.swift */; };
+		07CD0A511C5C4275009FAB77 /* LabelStratumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD0A4F1C5C4275009FAB77 /* LabelStratumModel.swift */; };
+		07CF46741C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF46731C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift */; };
+		07CF46751C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF46731C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift */; };
+		07D58F6B1C4F493B00DB224B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D58F6A1C4F493B00DB224B /* StringExtensionsTests.swift */; };
+		07D58F6D1C5021E600DB224B /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D58F6C1C5021E600DB224B /* LabelModel.swift */; };
+		07D58F6E1C5021E600DB224B /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D58F6C1C5021E600DB224B /* LabelModel.swift */; };
+		07D58F701C50626B00DB224B /* PitchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D58F6F1C50626B00DB224B /* PitchParser.swift */; };
+		07D58F711C50626B00DB224B /* PitchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D58F6F1C50626B00DB224B /* PitchParser.swift */; };
+		07D58F731C5062C800DB224B /* PitchParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D58F721C5062C800DB224B /* PitchParserTests.swift */; };
+		07D611F41C459FD200C1AC7A /* ComponentFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D611F31C459FD200C1AC7A /* ComponentFilterTests.swift */; };
+		07D611F61C45A01E00C1AC7A /* ComponentFiltersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D611F51C45A01E00C1AC7A /* ComponentFiltersTests.swift */; };
+		07D611F81C45A17B00C1AC7A /* DurationNodeLeafModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D611F71C45A17B00C1AC7A /* DurationNodeLeafModel.swift */; };
+		07D611F91C45A17B00C1AC7A /* DurationNodeLeafModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D611F71C45A17B00C1AC7A /* DurationNodeLeafModel.swift */; };
+		07D611FB1C45A35900C1AC7A /* DurationNodeLeafModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D611FA1C45A35900C1AC7A /* DurationNodeLeafModelTests.swift */; };
+		07E091E41C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E091E31C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift */; };
+		07E091E51C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E091E31C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift */; };
+		07E091E71C35EFD600B19B59 /* ScoreModelReplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E091E61C35EFD600B19B59 /* ScoreModelReplicator.swift */; };
+		07E091E81C35EFD600B19B59 /* ScoreModelReplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E091E61C35EFD600B19B59 /* ScoreModelReplicator.swift */; };
+		07E3EBC41C4C44AA00D59B93 /* PerformerDeclarationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3EBC31C4C44AA00D59B93 /* PerformerDeclarationParser.swift */; };
+		07E3EBC51C4C44AA00D59B93 /* PerformerDeclarationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3EBC31C4C44AA00D59B93 /* PerformerDeclarationParser.swift */; };
+		07E3EBC71C4C44BA00D59B93 /* PerformerDeclarationParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3EBC61C4C44BA00D59B93 /* PerformerDeclarationParserTests.swift */; };
+		07E3EBC91C4C717000D59B93 /* PerformerDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3EBC81C4C717000D59B93 /* PerformerDeclaration.swift */; };
+		07E3EBCA1C4C717000D59B93 /* PerformerDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3EBC81C4C717000D59B93 /* PerformerDeclaration.swift */; };
+		07E3EBCC1C4C720300D59B93 /* PerformerDeclarationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3EBCB1C4C720300D59B93 /* PerformerDeclarationTests.swift */; };
+		07E55A7B1C55F1D500E78289 /* ComponentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E55A7A1C55F1D500E78289 /* ComponentParser.swift */; };
+		07E55A7C1C55F1D500E78289 /* ComponentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E55A7A1C55F1D500E78289 /* ComponentParser.swift */; };
+		07E9BA951C23FA900062A48B /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9BA941C23FA900062A48B /* Instrument.swift */; };
+		07ED35011C4325E900CB70A9 /* ComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED35001C4325E900CB70A9 /* ComponentNode.swift */; };
+		07ED35021C4325E900CB70A9 /* ComponentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED35001C4325E900CB70A9 /* ComponentNode.swift */; };
+		07ED35041C43263000CB70A9 /* ComponentEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED35031C43263000CB70A9 /* ComponentEdge.swift */; };
+		07ED35051C43263000CB70A9 /* ComponentEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED35031C43263000CB70A9 /* ComponentEdge.swift */; };
+		07EFAB2D1C1A3459005BED36 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFAB2C1C1A3459005BED36 /* DictionaryExtensions.swift */; };
+		07F544F41C45617C00E5E0AB /* ComponentRepresentationTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F544F31C45617C00E5E0AB /* ComponentRepresentationTypeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071E9E2F1C00EC84008D1263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07074CE81BF966B100BFC6FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071E9E231C00EC84008D1263;
+			remoteInfo = DNMModel_iOS;
+		};
+		071E9E4B1C00EC96008D1263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07074CE81BF966B100BFC6FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071E9E3F1C00EC96008D1263;
+			remoteInfo = DNMModel_OSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07025BC71C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeLeafTokenizer.swift; sourceTree = "<group>"; };
+		07025BCA1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeInternalTokenizer.swift; sourceTree = "<group>"; };
+		07025BCD1C5596890016DFF2 /* LeafCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeafCommandTokenizer.swift; sourceTree = "<group>"; };
+		07025BD01C559AEB0016DFF2 /* DurationNodeLeafTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeLeafTokenizerTests.swift; sourceTree = "<group>"; };
+		07074D931BF967DC00BFC6FA /* ArithmeticType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticType.swift; sourceTree = "<group>"; };
+		07074D941BF967DC00BFC6FA /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		07074D951BF967DC00BFC6FA /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		07074D961BF967DC00BFC6FA /* GCDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDHelper.swift; sourceTree = "<group>"; };
+		07074D971BF967DC00BFC6FA /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		07074D981BF967DC00BFC6FA /* NodePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodePosition.swift; sourceTree = "<group>"; };
+		07074D991BF967DC00BFC6FA /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
+		07074D9A1BF967DC00BFC6FA /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		07074D9B1BF967DC00BFC6FA /* SimpleRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleRoot.swift; sourceTree = "<group>"; };
+		07074D9C1BF967DC00BFC6FA /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		07074DB51BF9685500BFC6FA /* Beats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beats.swift; sourceTree = "<group>"; };
+		07074DB61BF9685500BFC6FA /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		07074DB71BF9685500BFC6FA /* ScoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
+		07074DB81BF9685500BFC6FA /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		07074DB91BF9685500BFC6FA /* DurationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNode.swift; sourceTree = "<group>"; };
+		07074DBC1BF9685500BFC6FA /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		07074DBD1BF9685500BFC6FA /* InstrumentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentType.swift; sourceTree = "<group>"; };
+		07074DBE1BF9685500BFC6FA /* MeasureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
+		07074DBF1BF9685500BFC6FA /* MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
+		07074DC01BF9685500BFC6FA /* Pitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+		07074DC11BF9685500BFC6FA /* PitchCoarse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchCoarse.swift; sourceTree = "<group>"; };
+		07074DC21BF9685500BFC6FA /* PitchDyad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchDyad.swift; sourceTree = "<group>"; };
+		07074DC31BF9685500BFC6FA /* PitchDyadSpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchDyadSpeller.swift; sourceTree = "<group>"; };
+		07074DC41BF9685500BFC6FA /* PitchFine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchFine.swift; sourceTree = "<group>"; };
+		07074DC51BF9685500BFC6FA /* PitchInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchInterval.swift; sourceTree = "<group>"; };
+		07074DC61BF9685500BFC6FA /* PitchLetterName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchLetterName.swift; sourceTree = "<group>"; };
+		07074DC71BF9685500BFC6FA /* PitchMonadSpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchMonadSpeller.swift; sourceTree = "<group>"; };
+		07074DC81BF9685500BFC6FA /* PitchPolyphony.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchPolyphony.swift; sourceTree = "<group>"; };
+		07074DC91BF9685500BFC6FA /* PitchPolyphonySpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchPolyphonySpeller.swift; sourceTree = "<group>"; };
+		07074DCA1BF9685500BFC6FA /* PitchSpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpeller.swift; sourceTree = "<group>"; };
+		07074DCB1BF9685500BFC6FA /* PitchSpelling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpelling.swift; sourceTree = "<group>"; };
+		07074DCC1BF9685500BFC6FA /* PitchSpellingDyad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpellingDyad.swift; sourceTree = "<group>"; };
+		07074DCD1BF9685500BFC6FA /* PitchSpellingsByPitchClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PitchSpellingsByPitchClass.json; sourceTree = "<group>"; };
+		07074DCE1BF9685500BFC6FA /* PitchVerticality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchVerticality.swift; sourceTree = "<group>"; };
+		07074DCF1BF9685500BFC6FA /* PitchVerticalitySpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchVerticalitySpeller.swift; sourceTree = "<group>"; };
+		07074DD11BF9685500BFC6FA /* RehearsalMarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RehearsalMarking.swift; sourceTree = "<group>"; };
+		07074DD21BF9685500BFC6FA /* SpannerArguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpannerArguments.swift; sourceTree = "<group>"; };
+		07074DD31BF9685500BFC6FA /* Subdivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subdivision.swift; sourceTree = "<group>"; };
+		07074DD41BF9685500BFC6FA /* Tempo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tempo.swift; sourceTree = "<group>"; };
+		07074DD51BF9685500BFC6FA /* TempoFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoFunction.swift; sourceTree = "<group>"; };
+		07074DD61BF9685500BFC6FA /* TempoMarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoMarking.swift; sourceTree = "<group>"; };
+		07074E1B1BF9688300BFC6FA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		07074E4C1BF96BCD00BFC6FA /* _DNMParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _DNMParser.swift; sourceTree = "<group>"; };
+		07074E4D1BF96BCD00BFC6FA /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		07074E4E1BF96BCD00BFC6FA /* TokenContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenContainer.swift; sourceTree = "<group>"; };
+		07074E4F1BF96BCD00BFC6FA /* DNMTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMTokenizer.swift; sourceTree = "<group>"; };
+		071470A61C02B04D00D847D3 /* InstrumentTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentTypeTests.swift; sourceTree = "<group>"; };
+		071470A81C02B70B00D847D3 /* MeasureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureTests.swift; sourceTree = "<group>"; };
+		071470AA1C02C4DA00D847D3 /* ComponentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTests.swift; sourceTree = "<group>"; };
+		071955BB1C2251FA0041E840 /* Performer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performer.swift; sourceTree = "<group>"; };
+		071955BD1C2253770041E840 /* PerformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerTests.swift; sourceTree = "<group>"; };
+		071A62501C40221400D31127 /* StringInstrumentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringInstrumentModel.swift; sourceTree = "<group>"; };
+		071A62531C40225700D31127 /* StringModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringModel.swift; sourceTree = "<group>"; };
+		071A62561C40234600D31127 /* StringNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringNode.swift; sourceTree = "<group>"; };
+		071A62591C4027B500D31127 /* ArithmeticTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticTypeTests.swift; sourceTree = "<group>"; };
+		071E9E241C00EC84008D1263 /* DNMModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNMModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		071E9E261C00EC84008D1263 /* DNMModel_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNMModel_iOS.h; sourceTree = "<group>"; };
+		071E9E281C00EC84008D1263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071E9E2D1C00EC84008D1263 /* DNMModel_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNMModel_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		071E9E321C00EC84008D1263 /* DNMModel_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMModel_iOSTests.swift; sourceTree = "<group>"; };
+		071E9E341C00EC84008D1263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071E9E401C00EC96008D1263 /* DNMModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DNMModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		071E9E421C00EC96008D1263 /* DNMModel_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNMModel_OSX.h; sourceTree = "<group>"; };
+		071E9E441C00EC96008D1263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071E9E491C00EC96008D1263 /* DNMModel_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNMModel_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		071E9E4E1C00EC96008D1263 /* DNMModel_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMModel_OSXTests.swift; sourceTree = "<group>"; };
+		071E9E501C00EC96008D1263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071FF1D11C029AEB0009CD19 /* TokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenTests.swift; sourceTree = "<group>"; };
+		071FF1D31C029BC40009CD19 /* TokenContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenContainerTests.swift; sourceTree = "<group>"; };
+		071FF1D51C029DF50009CD19 /* DNMTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMTokenizerTests.swift; sourceTree = "<group>"; };
+		072618951C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingCommandTokenizer.swift; sourceTree = "<group>"; };
+		072618981C52D2D100C39822 /* MeasureCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureCommandTokenizer.swift; sourceTree = "<group>"; };
+		0726189B1C52D3D400C39822 /* MetricalDurationTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricalDurationTokenizer.swift; sourceTree = "<group>"; };
+		0726189E1C52D45100C39822 /* DurationTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTokenizerTests.swift; sourceTree = "<group>"; };
+		072618A01C52D69300C39822 /* MeasureCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		072618A61C52DB9600C39822 /* RelativeDurationTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeDurationTokenizer.swift; sourceTree = "<group>"; };
+		072618A91C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalRelativeDurationTokenizer.swift; sourceTree = "<group>"; };
+		072618AC1C52DE7200C39822 /* RelativeDurationTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeDurationTokenizerTests.swift; sourceTree = "<group>"; };
+		072618AE1C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpannerStartCommandTokenizer.swift; sourceTree = "<group>"; };
+		072618B11C52F14800C39822 /* SpannerStopCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpannerStopCommandTokenizer.swift; sourceTree = "<group>"; };
+		072618B41C52F30C00C39822 /* DynamicMarkingCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		072621731C03BB25001A665A /* OrderedDictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionaryTests.swift; sourceTree = "<group>"; };
+		072621771C03CBE8001A665A /* ScoreModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreModelTests.swift; sourceTree = "<group>"; };
+		0726217B1C03DCF6001A665A /* FrequencyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyTests.swift; sourceTree = "<group>"; };
+		072924191C4ED65000C0C47F /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		072925371C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationMarkingCommandTokenizer.swift; sourceTree = "<group>"; };
+		0729253A1C51921A00F37C0C /* ArticulationMarkingCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationMarkingCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		0729253C1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerDeclarationCommandTokenizer.swift; sourceTree = "<group>"; };
+		0729253F1C519EF600F37C0C /* InstrumentTypeTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentTypeTokenizer.swift; sourceTree = "<group>"; };
+		072925421C519F2400F37C0C /* InstrumentTypeTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentTypeTokenizerTests.swift; sourceTree = "<group>"; };
+		072925441C51A27500F37C0C /* IdentifierTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTokenizer.swift; sourceTree = "<group>"; };
+		072925471C51A37600F37C0C /* InstrumentIDTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentIDTokenizer.swift; sourceTree = "<group>"; };
+		0729254A1C51A3BF00F37C0C /* PerformerIDTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerIDTokenizer.swift; sourceTree = "<group>"; };
+		0729254D1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentDeclarationTokenizer.swift; sourceTree = "<group>"; };
+		072925521C51A67C00F37C0C /* InstrumentDeclarationTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentDeclarationTokenizerTests.swift; sourceTree = "<group>"; };
+		072925541C51A82A00F37C0C /* PerformerDeclarationCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerDeclarationCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		072925561C51B88300F37C0C /* LineTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTokenizer.swift; sourceTree = "<group>"; };
+		072925591C51B8A200F37C0C /* LineTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTokenizerTests.swift; sourceTree = "<group>"; };
+		0729255B1C51C3BD00F37C0C /* EnumExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumExtensions.swift; sourceTree = "<group>"; };
+		0729255E1C51C3FB00F37C0C /* EnumExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumExtensionsTests.swift; sourceTree = "<group>"; };
+		073674781C454F92008FE840 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		0736747B1C455875008FE840 /* DurationNodeLeafOrganizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeLeafOrganizerTests.swift; sourceTree = "<group>"; };
+		0736747D1C455E9D008FE840 /* ComponentRepresentationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentRepresentationType.swift; sourceTree = "<group>"; };
+		073C53681C4445430074846C /* ComponentOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentOrganizer.swift; sourceTree = "<group>"; };
+		073C536B1C4471690074846C /* DurationNodeLeafOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeLeafOrganizer.swift; sourceTree = "<group>"; };
+		073DE9EF1C41A4830072745A /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
+		073DE9F21C41AECB0072745A /* PitchClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchClass.swift; sourceTree = "<group>"; };
+		07428C721C017A7C00A1E76B /* BeatsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatsTest.swift; sourceTree = "<group>"; };
+		07428C731C017A7C00A1E76B /* DurationNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeTests.swift; sourceTree = "<group>"; };
+		07428C741C017A7C00A1E76B /* DurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationTests.swift; sourceTree = "<group>"; };
+		07428C751C017A7C00A1E76B /* PitchLetterNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchLetterNameTests.swift; sourceTree = "<group>"; };
+		07428C761C017A7C00A1E76B /* MIDITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDITests.swift; sourceTree = "<group>"; };
+		07428C771C017A7C00A1E76B /* NodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
+		07428C781C017A7C00A1E76B /* PitchDyadSpellerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchDyadSpellerTests.swift; sourceTree = "<group>"; };
+		07428C791C017A7C00A1E76B /* PitchDyadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchDyadTests.swift; sourceTree = "<group>"; };
+		07428C7A1C017A7C00A1E76B /* PitchIntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchIntervalTests.swift; sourceTree = "<group>"; };
+		07428C7B1C017A7C00A1E76B /* PitchPolyphonySpellerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchPolyphonySpellerTests.swift; sourceTree = "<group>"; };
+		07428C7C1C017A7C00A1E76B /* PitchPolyphonyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchPolyphonyTests.swift; sourceTree = "<group>"; };
+		07428C7D1C017A7C00A1E76B /* PitchSpellerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpellerTests.swift; sourceTree = "<group>"; };
+		07428C7E1C017A7C00A1E76B /* PitchSpellingDyadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpellingDyadTests.swift; sourceTree = "<group>"; };
+		07428C7F1C017A7C00A1E76B /* PitchSpellingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpellingTests.swift; sourceTree = "<group>"; };
+		07428C801C017A7C00A1E76B /* PitchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchTests.swift; sourceTree = "<group>"; };
+		07428C811C017A7C00A1E76B /* PitchVerticalitySpellerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchVerticalitySpellerTests.swift; sourceTree = "<group>"; };
+		07428C821C017A7C00A1E76B /* PitchVerticalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchVerticalityTests.swift; sourceTree = "<group>"; };
+		07428C831C017A7C00A1E76B /* SubdivisionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubdivisionTests.swift; sourceTree = "<group>"; };
+		074373D71C513B1B004070ED /* CommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTokenizer.swift; sourceTree = "<group>"; };
+		074373DA1C513BE6004070ED /* TopLevelCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelCommand.swift; sourceTree = "<group>"; };
+		074373DD1C513C05004070ED /* ArgumentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentType.swift; sourceTree = "<group>"; };
+		074373E01C513D28004070ED /* ArgumentTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentTokenizer.swift; sourceTree = "<group>"; };
+		074373E31C513DE1004070ED /* ArgumentTokenizerString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentTokenizerString.swift; sourceTree = "<group>"; };
+		074373E61C515277004070ED /* Tokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		074373E91C5152A0004070ED /* TokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizerTests.swift; sourceTree = "<group>"; };
+		074373EB1C515E7D004070ED /* StringTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTokenizer.swift; sourceTree = "<group>"; };
+		074373EE1C515F12004070ED /* IntTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTokenizer.swift; sourceTree = "<group>"; };
+		074373F11C5160F6004070ED /* DynamicMarkingTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingTokenizer.swift; sourceTree = "<group>"; };
+		074373F41C5162C0004070ED /* ArticulationMarkingTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationMarkingTokenizer.swift; sourceTree = "<group>"; };
+		074373F71C5164F6004070ED /* PitchTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchTokenizer.swift; sourceTree = "<group>"; };
+		074373FA1C516548004070ED /* FloatTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTokenizer.swift; sourceTree = "<group>"; };
+		074373FD1C5166EF004070ED /* PitchStringTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchStringTokenizer.swift; sourceTree = "<group>"; };
+		0759E40F1C53478B0054B33F /* SlurStartCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlurStartCommandTokenizer.swift; sourceTree = "<group>"; };
+		0759E4121C5348400054B33F /* SlurStopCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlurStopCommandTokenizer.swift; sourceTree = "<group>"; };
+		0759E4151C5348B60054B33F /* ExtensionStopCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionStopCommandTokenizer.swift; sourceTree = "<group>"; };
+		075BBCA11C2F8E9A00D2859C /* ComponentRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentRest.swift; sourceTree = "<group>"; };
+		075BBCA41C2F8EC600D2859C /* ComponentPitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentPitch.swift; sourceTree = "<group>"; };
+		075BBCA71C2F8EE700D2859C /* ComponentDynamicMarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentDynamicMarking.swift; sourceTree = "<group>"; };
+		075BBCAA1C2F90EA00D2859C /* ComponentDynamicMarkingSpanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentDynamicMarkingSpanner.swift; sourceTree = "<group>"; };
+		075BBCAD1C2F91F300D2859C /* ComponentSlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentSlur.swift; sourceTree = "<group>"; };
+		075BBCB01C2F927C00D2859C /* ComponentArticulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentArticulation.swift; sourceTree = "<group>"; };
+		075BBCB31C2FC4A900D2859C /* ComponentExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentExtension.swift; sourceTree = "<group>"; };
+		075BBCB61C2FC53500D2859C /* ComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentType.swift; sourceTree = "<group>"; };
+		0761A0691C1E076900FCD2BD /* DNMModel Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "DNMModel Playground.playground"; sourceTree = "<group>"; };
+		0767314E1C415B3500FD9CA7 /* StringModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringModelsTests.swift; sourceTree = "<group>"; };
+		076731501C415DAA00FD9CA7 /* StringNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringNodeTests.swift; sourceTree = "<group>"; };
+		076975C71C4C989A002D1CA0 /* DurationNodeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeParser.swift; sourceTree = "<group>"; };
+		076975CA1C4C98B5002D1CA0 /* DurationNodeParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeParserTests.swift; sourceTree = "<group>"; };
+		076975CC1C4CB548002D1CA0 /* ArticulationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationType.swift; sourceTree = "<group>"; };
+		076FE3921C447847006F9BE5 /* DictionaryExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionsTests.swift; sourceTree = "<group>"; };
+		076FE3971C4492AC006F9BE5 /* ComponentOrganizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentOrganizerTests.swift; sourceTree = "<group>"; };
+		077292541C45766200C6F4D5 /* InstrumentIdentifierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentIdentifierPath.swift; sourceTree = "<group>"; };
+		0773437F1BFBFDBD00F571A2 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		0795F2CB1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreModelComponentTypeOrganizer.swift; sourceTree = "<group>"; };
+		0796242B1C5540850061533D /* SlurStartCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlurStartCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		0796242D1C5541260061533D /* SlurStopCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlurStopCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		0796242F1C5541930061533D /* ExtensionStopCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionStopCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		079624311C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeStackModeMeasureCommandTokenizer.swift; sourceTree = "<group>"; };
+		079624371C5543B90061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeStackModeIncrementCommandTokenizer.swift; sourceTree = "<group>"; };
+		0796243A1C55441F0061533D /* DurationNodeStackModeMeasureCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeStackModeMeasureCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		0796243C1C55453B0061533D /* DurationNodeStackModeIncrementCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeStackModeIncrementCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		0796243E1C5548E60061533D /* DurationNodeRootTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeRootTokenizer.swift; sourceTree = "<group>"; };
+		079624411C5548FB0061533D /* DurationNodeRootTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeRootTokenizerTests.swift; sourceTree = "<group>"; };
+		079624461C55581A0061533D /* NodeCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeCommandTokenizer.swift; sourceTree = "<group>"; };
+		079624491C55583E0061533D /* EdgeCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeCommandTokenizer.swift; sourceTree = "<group>"; };
+		0796244C1C5558CE0061533D /* NodeCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		0796244E1C55593B0061533D /* EdgeCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		079624501C556D550061533D /* DurationNodeStackModeCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeStackModeCommandTokenizer.swift; sourceTree = "<group>"; };
+		079624531C557C950061533D /* DNMParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMParser.swift; sourceTree = "<group>"; };
+		079624561C557EC10061533D /* RestCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestCommandTokenizer.swift; sourceTree = "<group>"; };
+		079624591C5586200061533D /* DNMParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMParserTests.swift; sourceTree = "<group>"; };
+		079BC1221C35DB65001672D6 /* ComponentFiltering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentFiltering.swift; sourceTree = "<group>"; };
+		079BC1251C35DB81001672D6 /* ComponentFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentFilter.swift; sourceTree = "<group>"; };
+		079BC1281C35DB9A001672D6 /* ComponentFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentFilters.swift; sourceTree = "<group>"; };
+		079BC12B1C35DBDF001672D6 /* ComponentTypeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTypeState.swift; sourceTree = "<group>"; };
+		079BC12E1C35DBF6001672D6 /* ComponentTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTypeModel.swift; sourceTree = "<group>"; };
+		079BC1321C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingStratumModelArranger.swift; sourceTree = "<group>"; };
+		07A0BDBD1C29F76D00B9A704 /* InstrumentTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentTypeModel.swift; sourceTree = "<group>"; };
+		07A89FE91C58592A00224775 /* LineCommentCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCommentCommandTokenizer.swift; sourceTree = "<group>"; };
+		07A89FEC1C5859FB00224775 /* LineCommentCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCommentCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		07A89FEE1C585C7C00224775 /* BlockCommentCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockCommentCommandTokenizer.swift; sourceTree = "<group>"; };
+		07A8BFB31C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeIntervalEnforcingSequence.swift; sourceTree = "<group>"; };
+		07A8BFB61C4E02EE00090953 /* DurationNodeIntervalInferringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeIntervalInferringTests.swift; sourceTree = "<group>"; };
+		07A8D8E11C4C0FB2008C5FEC /* DurationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationParser.swift; sourceTree = "<group>"; };
+		07A8D8E41C4C0FC5008C5FEC /* DurationParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationParserTests.swift; sourceTree = "<group>"; };
+		07AEE25B1C5183190017E129 /* PitchCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchCommandTokenizer.swift; sourceTree = "<group>"; };
+		07AEE25E1C51842C0017E129 /* PitchCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		07AF0D291C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeIntervalEnforcing.swift; sourceTree = "<group>"; };
+		07AF0D2C1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeIntervalInferring.swift; sourceTree = "<group>"; };
+		07B1EFCF1C08CBF60090237A /* IntervalRelationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalRelationship.swift; sourceTree = "<group>"; };
+		07B1EFD21C08CC600090237A /* DurationInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationInterval.swift; sourceTree = "<group>"; };
+		07B1EFD71C08D3C90090237A /* DurationIntervalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationIntervalTests.swift; sourceTree = "<group>"; };
+		07B1EFD91C08DD7F0090237A /* DurationSpanning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationSpanning.swift; sourceTree = "<group>"; };
+		07B3A12D1C0411AA00595939 /* TempoMarkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempoMarkingTests.swift; sourceTree = "<group>"; };
+		07B3A12F1C0413F300595939 /* RehearsalMarkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RehearsalMarkingTests.swift; sourceTree = "<group>"; };
+		07B7DB201C32099900CF54DF /* DynamicMarkingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingModel.swift; sourceTree = "<group>"; };
+		07B7DB231C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingNumericalRepresentation.swift; sourceTree = "<group>"; };
+		07B7DB261C3209CF00CF54DF /* DynamicMarkingElementModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingElementModel.swift; sourceTree = "<group>"; };
+		07B7DB291C320A0900CF54DF /* DynamicMarkingSpannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingSpannerModel.swift; sourceTree = "<group>"; };
+		07B7DB2C1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingSpannerDirection.swift; sourceTree = "<group>"; };
+		07B7DB2F1C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingNumericalRepresenter.swift; sourceTree = "<group>"; };
+		07B7DB351C320BB100CF54DF /* DynamicMarkingNumericalRepresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingNumericalRepresenterTests.swift; sourceTree = "<group>"; };
+		07B7DB3A1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingCharacterType.swift; sourceTree = "<group>"; };
+		07B7DB401C3230BD00CF54DF /* DynamicMarkingStratumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingStratumModel.swift; sourceTree = "<group>"; };
+		07B820601C4C186C00DEC995 /* DurationIntervalParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationIntervalParser.swift; sourceTree = "<group>"; };
+		07B820631C4C188300DEC995 /* DurationIntervalParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationIntervalParserTests.swift; sourceTree = "<group>"; };
+		07C736601C4DA8C0005F287D /* DurationNodeIntervalEnforcingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeIntervalEnforcingTests.swift; sourceTree = "<group>"; };
+		07C736621C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeIntervalEnforcingDurationMatcher.swift; sourceTree = "<group>"; };
+		07CD0A3C1C5C2BBC009FAB77 /* ComponentLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentLabel.swift; sourceTree = "<group>"; };
+		07CD0A3F1C5C2E7B009FAB77 /* LabelCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCommandTokenizer.swift; sourceTree = "<group>"; };
+		07CD0A421C5C3150009FAB77 /* LabelCommandTokenizerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCommandTokenizerTests.swift; sourceTree = "<group>"; };
+		07CD0A4C1C5C41E8009FAB77 /* LabelStratumModelArranger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStratumModelArranger.swift; sourceTree = "<group>"; };
+		07CD0A4F1C5C4275009FAB77 /* LabelStratumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStratumModel.swift; sourceTree = "<group>"; };
+		07CF46731C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeStopCommandTokenizer.swift; sourceTree = "<group>"; };
+		07D58F6A1C4F493B00DB224B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		07D58F6C1C5021E600DB224B /* LabelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelModel.swift; sourceTree = "<group>"; };
+		07D58F6F1C50626B00DB224B /* PitchParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchParser.swift; sourceTree = "<group>"; };
+		07D58F721C5062C800DB224B /* PitchParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchParserTests.swift; sourceTree = "<group>"; };
+		07D611F31C459FD200C1AC7A /* ComponentFilterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentFilterTests.swift; sourceTree = "<group>"; };
+		07D611F51C45A01E00C1AC7A /* ComponentFiltersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentFiltersTests.swift; sourceTree = "<group>"; };
+		07D611F71C45A17B00C1AC7A /* DurationNodeLeafModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeLeafModel.swift; sourceTree = "<group>"; };
+		07D611FA1C45A35900C1AC7A /* DurationNodeLeafModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationNodeLeafModelTests.swift; sourceTree = "<group>"; };
+		07E091E31C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarkingStratumModelReplicator.swift; sourceTree = "<group>"; };
+		07E091E61C35EFD600B19B59 /* ScoreModelReplicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreModelReplicator.swift; sourceTree = "<group>"; };
+		07E3EBC31C4C44AA00D59B93 /* PerformerDeclarationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerDeclarationParser.swift; sourceTree = "<group>"; };
+		07E3EBC61C4C44BA00D59B93 /* PerformerDeclarationParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerDeclarationParserTests.swift; sourceTree = "<group>"; };
+		07E3EBC81C4C717000D59B93 /* PerformerDeclaration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerDeclaration.swift; sourceTree = "<group>"; };
+		07E3EBCB1C4C720300D59B93 /* PerformerDeclarationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerDeclarationTests.swift; sourceTree = "<group>"; };
+		07E55A7A1C55F1D500E78289 /* ComponentParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentParser.swift; sourceTree = "<group>"; };
+		07E9BA941C23FA900062A48B /* Instrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
+		07ED35001C4325E900CB70A9 /* ComponentNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentNode.swift; sourceTree = "<group>"; };
+		07ED35031C43263000CB70A9 /* ComponentEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentEdge.swift; sourceTree = "<group>"; };
+		07EFAB2C1C1A3459005BED36 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		07F38C751BFE3E5F0093493F /* TopLevelCommands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopLevelCommands.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		07F544F31C45617C00E5E0AB /* ComponentRepresentationTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentRepresentationTypeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071E9E201C00EC84008D1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E2A1C00EC84008D1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E2E1C00EC84008D1263 /* DNMModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E3C1C00EC96008D1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E461C00EC96008D1263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E4A1C00EC96008D1263 /* DNMModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07074CE71BF966B100BFC6FA = {
+			isa = PBXGroup;
+			children = (
+				0761A0691C1E076900FCD2BD /* DNMModel Playground.playground */,
+				07074D901BF9679F00BFC6FA /* Common Code */,
+				071E9E251C00EC84008D1263 /* DNMModel_iOS */,
+				071E9E311C00EC84008D1263 /* DNMModel_iOSTests */,
+				071E9E411C00EC96008D1263 /* DNMModel_OSX */,
+				071E9E4D1C00EC96008D1263 /* DNMModel_OSXTests */,
+				07074CF21BF966B100BFC6FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07074CF21BF966B100BFC6FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071E9E241C00EC84008D1263 /* DNMModel.framework */,
+				071E9E2D1C00EC84008D1263 /* DNMModel_iOSTests.xctest */,
+				071E9E401C00EC96008D1263 /* DNMModel.framework */,
+				071E9E491C00EC96008D1263 /* DNMModel_OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07074D901BF9679F00BFC6FA /* Common Code */ = {
+			isa = PBXGroup;
+			children = (
+				07074E4B1BF96B6B00BFC6FA /* ShorthandParser */,
+				07074DB11BF967E200BFC6FA /* Utility */,
+				07074E201BF96A1700BFC6FA /* ScoreModel */,
+				07074E211BF96A3A00BFC6FA /* InstrumentType */,
+				07074DB41BF9683200BFC6FA /* Pitch */,
+				07074DB21BF9682900BFC6FA /* Duration */,
+			);
+			name = "Common Code";
+			sourceTree = "<group>";
+		};
+		07074DB11BF967E200BFC6FA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				07074E1E1BF969BC00BFC6FA /* JSON */,
+				07074D931BF967DC00BFC6FA /* ArithmeticType.swift */,
+				07074D941BF967DC00BFC6FA /* ArrayExtensions.swift */,
+				07EFAB2C1C1A3459005BED36 /* DictionaryExtensions.swift */,
+				07074D951BF967DC00BFC6FA /* Direction.swift */,
+				07074D961BF967DC00BFC6FA /* GCDHelper.swift */,
+				07074D971BF967DC00BFC6FA /* Node.swift */,
+				07074D981BF967DC00BFC6FA /* NodePosition.swift */,
+				07074D991BF967DC00BFC6FA /* OrderedDictionary.swift */,
+				07074D9A1BF967DC00BFC6FA /* Random.swift */,
+				07074D9B1BF967DC00BFC6FA /* SimpleRoot.swift */,
+				07074D9C1BF967DC00BFC6FA /* Stack.swift */,
+				0773437F1BFBFDBD00F571A2 /* StringExtensions.swift */,
+				07B1EFCF1C08CBF60090237A /* IntervalRelationship.swift */,
+				073DE9EF1C41A4830072745A /* NSDateExtensions.swift */,
+				073674781C454F92008FE840 /* KeyPath.swift */,
+				0729255B1C51C3BD00F37C0C /* EnumExtensions.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		07074DB21BF9682900BFC6FA /* Duration */ = {
+			isa = PBXGroup;
+			children = (
+				07074DD11BF9685500BFC6FA /* RehearsalMarking.swift */,
+				07074DB51BF9685500BFC6FA /* Beats.swift */,
+				07074DB81BF9685500BFC6FA /* Duration.swift */,
+				07B1EFD21C08CC600090237A /* DurationInterval.swift */,
+				07B1EFD91C08DD7F0090237A /* DurationSpanning.swift */,
+				07074DBE1BF9685500BFC6FA /* MeasureModel.swift */,
+				07074DD31BF9685500BFC6FA /* Subdivision.swift */,
+				07074DD41BF9685500BFC6FA /* Tempo.swift */,
+				07074DD51BF9685500BFC6FA /* TempoFunction.swift */,
+				07074DD61BF9685500BFC6FA /* TempoMarking.swift */,
+			);
+			name = Duration;
+			sourceTree = "<group>";
+		};
+		07074DB41BF9683200BFC6FA /* Pitch */ = {
+			isa = PBXGroup;
+			children = (
+				07074DBC1BF9685500BFC6FA /* Frequency.swift */,
+				07074DBF1BF9685500BFC6FA /* MIDI.swift */,
+				07074DC01BF9685500BFC6FA /* Pitch.swift */,
+				07074DC11BF9685500BFC6FA /* PitchCoarse.swift */,
+				07074DC41BF9685500BFC6FA /* PitchFine.swift */,
+				07074DC21BF9685500BFC6FA /* PitchDyad.swift */,
+				07074DC31BF9685500BFC6FA /* PitchDyadSpeller.swift */,
+				07074DC51BF9685500BFC6FA /* PitchInterval.swift */,
+				07074DC61BF9685500BFC6FA /* PitchLetterName.swift */,
+				07074DC71BF9685500BFC6FA /* PitchMonadSpeller.swift */,
+				07074DC81BF9685500BFC6FA /* PitchPolyphony.swift */,
+				07074DC91BF9685500BFC6FA /* PitchPolyphonySpeller.swift */,
+				07074DCA1BF9685500BFC6FA /* PitchSpeller.swift */,
+				07074DCB1BF9685500BFC6FA /* PitchSpelling.swift */,
+				07074DCC1BF9685500BFC6FA /* PitchSpellingDyad.swift */,
+				07074DCD1BF9685500BFC6FA /* PitchSpellingsByPitchClass.json */,
+				07074DCE1BF9685500BFC6FA /* PitchVerticality.swift */,
+				07074DCF1BF9685500BFC6FA /* PitchVerticalitySpeller.swift */,
+				073DE9F21C41AECB0072745A /* PitchClass.swift */,
+			);
+			name = Pitch;
+			sourceTree = "<group>";
+		};
+		07074E1E1BF969BC00BFC6FA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				07074E1B1BF9688300BFC6FA /* SwiftyJSON.swift */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		07074E201BF96A1700BFC6FA /* ScoreModel */ = {
+			isa = PBXGroup;
+			children = (
+				071A624F1C4021F800D31127 /* StringInstrumentModel */,
+				07B7DB1F1C32098400CF54DF /* DynamicMarking */,
+				075BBCA01C2F8E8800D2859C /* Component */,
+				07074DB71BF9685500BFC6FA /* ScoreModel.swift */,
+				07D58F6C1C5021E600DB224B /* LabelModel.swift */,
+				07CD0A4F1C5C4275009FAB77 /* LabelStratumModel.swift */,
+				07CD0A4C1C5C41E8009FAB77 /* LabelStratumModelArranger.swift */,
+				07E091E61C35EFD600B19B59 /* ScoreModelReplicator.swift */,
+				0795F2CB1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift */,
+				07074DB91BF9685500BFC6FA /* DurationNode.swift */,
+				07AF0D291C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift */,
+				07AF0D2C1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift */,
+				07C736621C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift */,
+				07A8BFB31C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift */,
+				073C536B1C4471690074846C /* DurationNodeLeafOrganizer.swift */,
+				07D611F71C45A17B00C1AC7A /* DurationNodeLeafModel.swift */,
+				07074DD21BF9685500BFC6FA /* SpannerArguments.swift */,
+				071955BB1C2251FA0041E840 /* Performer.swift */,
+				07E9BA941C23FA900062A48B /* Instrument.swift */,
+				077292541C45766200C6F4D5 /* InstrumentIdentifierPath.swift */,
+			);
+			name = ScoreModel;
+			sourceTree = "<group>";
+		};
+		07074E211BF96A3A00BFC6FA /* InstrumentType */ = {
+			isa = PBXGroup;
+			children = (
+				07074DBD1BF9685500BFC6FA /* InstrumentType.swift */,
+				07A0BDBD1C29F76D00B9A704 /* InstrumentTypeModel.swift */,
+			);
+			name = InstrumentType;
+			sourceTree = "<group>";
+		};
+		07074E4B1BF96B6B00BFC6FA /* ShorthandParser */ = {
+			isa = PBXGroup;
+			children = (
+				07074E4C1BF96BCD00BFC6FA /* _DNMParser.swift */,
+				079624531C557C950061533D /* DNMParser.swift */,
+				07074E4D1BF96BCD00BFC6FA /* Token.swift */,
+				07074E4E1BF96BCD00BFC6FA /* TokenContainer.swift */,
+				07074E4F1BF96BCD00BFC6FA /* DNMTokenizer.swift */,
+				074373D71C513B1B004070ED /* CommandTokenizer.swift */,
+				07025BCD1C5596890016DFF2 /* LeafCommandTokenizer.swift */,
+				07CD0A3F1C5C2E7B009FAB77 /* LabelCommandTokenizer.swift */,
+				074373E61C515277004070ED /* Tokenizer.swift */,
+				072925561C51B88300F37C0C /* LineTokenizer.swift */,
+				072618AE1C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift */,
+				072618B11C52F14800C39822 /* SpannerStopCommandTokenizer.swift */,
+				074373EB1C515E7D004070ED /* StringTokenizer.swift */,
+				07A89FE91C58592A00224775 /* LineCommentCommandTokenizer.swift */,
+				07A89FEE1C585C7C00224775 /* BlockCommentCommandTokenizer.swift */,
+				074373EE1C515F12004070ED /* IntTokenizer.swift */,
+				074373FA1C516548004070ED /* FloatTokenizer.swift */,
+				072618981C52D2D100C39822 /* MeasureCommandTokenizer.swift */,
+				079624561C557EC10061533D /* RestCommandTokenizer.swift */,
+				079624461C55581A0061533D /* NodeCommandTokenizer.swift */,
+				079624491C55583E0061533D /* EdgeCommandTokenizer.swift */,
+				07CF46731C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift */,
+				079624501C556D550061533D /* DurationNodeStackModeCommandTokenizer.swift */,
+				079624311C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift */,
+				079624371C5543B90061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift */,
+				0726189B1C52D3D400C39822 /* MetricalDurationTokenizer.swift */,
+				074373F11C5160F6004070ED /* DynamicMarkingTokenizer.swift */,
+				072618951C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift */,
+				074373F41C5162C0004070ED /* ArticulationMarkingTokenizer.swift */,
+				072925371C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift */,
+				074373F71C5164F6004070ED /* PitchTokenizer.swift */,
+				0796243E1C5548E60061533D /* DurationNodeRootTokenizer.swift */,
+				07025BC71C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift */,
+				07E55A7A1C55F1D500E78289 /* ComponentParser.swift */,
+				07025BCA1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift */,
+				0759E40F1C53478B0054B33F /* SlurStartCommandTokenizer.swift */,
+				0759E4121C5348400054B33F /* SlurStopCommandTokenizer.swift */,
+				0759E4151C5348B60054B33F /* ExtensionStopCommandTokenizer.swift */,
+				07AEE25B1C5183190017E129 /* PitchCommandTokenizer.swift */,
+				0729253C1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift */,
+				072925441C51A27500F37C0C /* IdentifierTokenizer.swift */,
+				0729254D1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift */,
+				072925471C51A37600F37C0C /* InstrumentIDTokenizer.swift */,
+				0729253F1C519EF600F37C0C /* InstrumentTypeTokenizer.swift */,
+				0729254A1C51A3BF00F37C0C /* PerformerIDTokenizer.swift */,
+				074373FD1C5166EF004070ED /* PitchStringTokenizer.swift */,
+				072618A61C52DB9600C39822 /* RelativeDurationTokenizer.swift */,
+				072618A91C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift */,
+				074373E01C513D28004070ED /* ArgumentTokenizer.swift */,
+				074373E31C513DE1004070ED /* ArgumentTokenizerString.swift */,
+				074373DD1C513C05004070ED /* ArgumentType.swift */,
+				074373DA1C513BE6004070ED /* TopLevelCommand.swift */,
+				07F38C751BFE3E5F0093493F /* TopLevelCommands.json */,
+				07A8D8E11C4C0FB2008C5FEC /* DurationParser.swift */,
+				07D58F6F1C50626B00DB224B /* PitchParser.swift */,
+				07B820601C4C186C00DEC995 /* DurationIntervalParser.swift */,
+				076975C71C4C989A002D1CA0 /* DurationNodeParser.swift */,
+				07E3EBC31C4C44AA00D59B93 /* PerformerDeclarationParser.swift */,
+				07E3EBC81C4C717000D59B93 /* PerformerDeclaration.swift */,
+				072924191C4ED65000C0C47F /* Parser.swift */,
+			);
+			name = ShorthandParser;
+			sourceTree = "<group>";
+		};
+		071A624F1C4021F800D31127 /* StringInstrumentModel */ = {
+			isa = PBXGroup;
+			children = (
+				071A62501C40221400D31127 /* StringInstrumentModel.swift */,
+				071A62531C40225700D31127 /* StringModel.swift */,
+				071A62561C40234600D31127 /* StringNode.swift */,
+			);
+			name = StringInstrumentModel;
+			sourceTree = "<group>";
+		};
+		071E9E251C00EC84008D1263 /* DNMModel_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				071E9E261C00EC84008D1263 /* DNMModel_iOS.h */,
+				071E9E281C00EC84008D1263 /* Info.plist */,
+			);
+			path = DNMModel_iOS;
+			sourceTree = "<group>";
+		};
+		071E9E311C00EC84008D1263 /* DNMModel_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				0767314D1C415B2300FD9CA7 /* StringModel */,
+				071FF1DB1C02A8840009CD19 /* ScoreModel */,
+				071FF1DA1C02A87D0009CD19 /* InstrumentType */,
+				071FF1D91C02A8780009CD19 /* Duration */,
+				071FF1D71C02A8710009CD19 /* Pitch */,
+				071FF1D01C029AC40009CD19 /* ShorthandParser */,
+				071FF1CF1C029ABB0009CD19 /* Utility */,
+				07428C731C017A7C00A1E76B /* DurationNodeTests.swift */,
+				07D611FA1C45A35900C1AC7A /* DurationNodeLeafModelTests.swift */,
+				0736747B1C455875008FE840 /* DurationNodeLeafOrganizerTests.swift */,
+				071E9E321C00EC84008D1263 /* DNMModel_iOSTests.swift */,
+				071E9E341C00EC84008D1263 /* Info.plist */,
+			);
+			path = DNMModel_iOSTests;
+			sourceTree = "<group>";
+		};
+		071E9E411C00EC96008D1263 /* DNMModel_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				071E9E421C00EC96008D1263 /* DNMModel_OSX.h */,
+				071E9E441C00EC96008D1263 /* Info.plist */,
+			);
+			path = DNMModel_OSX;
+			sourceTree = "<group>";
+		};
+		071E9E4D1C00EC96008D1263 /* DNMModel_OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				071E9E4E1C00EC96008D1263 /* DNMModel_OSXTests.swift */,
+				071E9E501C00EC96008D1263 /* Info.plist */,
+			);
+			path = DNMModel_OSXTests;
+			sourceTree = "<group>";
+		};
+		071FF1CF1C029ABB0009CD19 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				07428C771C017A7C00A1E76B /* NodeTests.swift */,
+				072621731C03BB25001A665A /* OrderedDictionaryTests.swift */,
+				071A62591C4027B500D31127 /* ArithmeticTypeTests.swift */,
+				076FE3921C447847006F9BE5 /* DictionaryExtensionsTests.swift */,
+				07C736601C4DA8C0005F287D /* DurationNodeIntervalEnforcingTests.swift */,
+				07A8BFB61C4E02EE00090953 /* DurationNodeIntervalInferringTests.swift */,
+				07D58F6A1C4F493B00DB224B /* StringExtensionsTests.swift */,
+				0729255E1C51C3FB00F37C0C /* EnumExtensionsTests.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		071FF1D01C029AC40009CD19 /* ShorthandParser */ = {
+			isa = PBXGroup;
+			children = (
+				071FF1D11C029AEB0009CD19 /* TokenTests.swift */,
+				071FF1D31C029BC40009CD19 /* TokenContainerTests.swift */,
+				071FF1D51C029DF50009CD19 /* DNMTokenizerTests.swift */,
+				07A8D8E41C4C0FC5008C5FEC /* DurationParserTests.swift */,
+				07B820631C4C188300DEC995 /* DurationIntervalParserTests.swift */,
+				076975CA1C4C98B5002D1CA0 /* DurationNodeParserTests.swift */,
+				07E3EBC61C4C44BA00D59B93 /* PerformerDeclarationParserTests.swift */,
+				07E3EBCB1C4C720300D59B93 /* PerformerDeclarationTests.swift */,
+				072925541C51A82A00F37C0C /* PerformerDeclarationCommandTokenizerTests.swift */,
+				072925421C519F2400F37C0C /* InstrumentTypeTokenizerTests.swift */,
+				072925521C51A67C00F37C0C /* InstrumentDeclarationTokenizerTests.swift */,
+				07D58F721C5062C800DB224B /* PitchParserTests.swift */,
+				074373E91C5152A0004070ED /* TokenizerTests.swift */,
+				07AEE25E1C51842C0017E129 /* PitchCommandTokenizerTests.swift */,
+				07CD0A421C5C3150009FAB77 /* LabelCommandTokenizerTests.swift */,
+				072925591C51B8A200F37C0C /* LineTokenizerTests.swift */,
+				07A89FEC1C5859FB00224775 /* LineCommentCommandTokenizerTests.swift */,
+				0729253A1C51921A00F37C0C /* ArticulationMarkingCommandTokenizerTests.swift */,
+				0726189E1C52D45100C39822 /* DurationTokenizerTests.swift */,
+				072618A01C52D69300C39822 /* MeasureCommandTokenizerTests.swift */,
+				072618AC1C52DE7200C39822 /* RelativeDurationTokenizerTests.swift */,
+				072618B41C52F30C00C39822 /* DynamicMarkingCommandTokenizerTests.swift */,
+				0796242B1C5540850061533D /* SlurStartCommandTokenizerTests.swift */,
+				0796242D1C5541260061533D /* SlurStopCommandTokenizerTests.swift */,
+				0796242F1C5541930061533D /* ExtensionStopCommandTokenizerTests.swift */,
+				0796243A1C55441F0061533D /* DurationNodeStackModeMeasureCommandTokenizerTests.swift */,
+				0796243C1C55453B0061533D /* DurationNodeStackModeIncrementCommandTokenizerTests.swift */,
+				079624411C5548FB0061533D /* DurationNodeRootTokenizerTests.swift */,
+				0796244C1C5558CE0061533D /* NodeCommandTokenizerTests.swift */,
+				0796244E1C55593B0061533D /* EdgeCommandTokenizerTests.swift */,
+				07025BD01C559AEB0016DFF2 /* DurationNodeLeafTokenizerTests.swift */,
+				079624591C5586200061533D /* DNMParserTests.swift */,
+			);
+			name = ShorthandParser;
+			sourceTree = "<group>";
+		};
+		071FF1D71C02A8710009CD19 /* Pitch */ = {
+			isa = PBXGroup;
+			children = (
+				07428C751C017A7C00A1E76B /* PitchLetterNameTests.swift */,
+				07428C761C017A7C00A1E76B /* MIDITests.swift */,
+				07428C781C017A7C00A1E76B /* PitchDyadSpellerTests.swift */,
+				07428C791C017A7C00A1E76B /* PitchDyadTests.swift */,
+				07428C7A1C017A7C00A1E76B /* PitchIntervalTests.swift */,
+				07428C7B1C017A7C00A1E76B /* PitchPolyphonySpellerTests.swift */,
+				07428C7C1C017A7C00A1E76B /* PitchPolyphonyTests.swift */,
+				07428C7D1C017A7C00A1E76B /* PitchSpellerTests.swift */,
+				07428C7E1C017A7C00A1E76B /* PitchSpellingDyadTests.swift */,
+				07428C7F1C017A7C00A1E76B /* PitchSpellingTests.swift */,
+				07428C801C017A7C00A1E76B /* PitchTests.swift */,
+				07428C811C017A7C00A1E76B /* PitchVerticalitySpellerTests.swift */,
+				07428C821C017A7C00A1E76B /* PitchVerticalityTests.swift */,
+				0726217B1C03DCF6001A665A /* FrequencyTests.swift */,
+			);
+			name = Pitch;
+			sourceTree = "<group>";
+		};
+		071FF1D91C02A8780009CD19 /* Duration */ = {
+			isa = PBXGroup;
+			children = (
+				07428C721C017A7C00A1E76B /* BeatsTest.swift */,
+				07428C831C017A7C00A1E76B /* SubdivisionTests.swift */,
+				07428C741C017A7C00A1E76B /* DurationTests.swift */,
+				071470A81C02B70B00D847D3 /* MeasureTests.swift */,
+				07B1EFD71C08D3C90090237A /* DurationIntervalTests.swift */,
+				07B3A12D1C0411AA00595939 /* TempoMarkingTests.swift */,
+				07B3A12F1C0413F300595939 /* RehearsalMarkingTests.swift */,
+			);
+			name = Duration;
+			sourceTree = "<group>";
+		};
+		071FF1DA1C02A87D0009CD19 /* InstrumentType */ = {
+			isa = PBXGroup;
+			children = (
+				071470A61C02B04D00D847D3 /* InstrumentTypeTests.swift */,
+			);
+			name = InstrumentType;
+			sourceTree = "<group>";
+		};
+		071FF1DB1C02A8840009CD19 /* ScoreModel */ = {
+			isa = PBXGroup;
+			children = (
+				07B7DB321C320B6C00CF54DF /* DynamicMarking */,
+				071470AA1C02C4DA00D847D3 /* ComponentTests.swift */,
+				07D611F31C459FD200C1AC7A /* ComponentFilterTests.swift */,
+				07D611F51C45A01E00C1AC7A /* ComponentFiltersTests.swift */,
+				076FE3971C4492AC006F9BE5 /* ComponentOrganizerTests.swift */,
+				072621771C03CBE8001A665A /* ScoreModelTests.swift */,
+				071955BD1C2253770041E840 /* PerformerTests.swift */,
+			);
+			name = ScoreModel;
+			sourceTree = "<group>";
+		};
+		075BBCA01C2F8E8800D2859C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0736747D1C455E9D008FE840 /* ComponentRepresentationType.swift */,
+				07074DB61BF9685500BFC6FA /* Component.swift */,
+				07ED35031C43263000CB70A9 /* ComponentEdge.swift */,
+				07ED35001C4325E900CB70A9 /* ComponentNode.swift */,
+				075BBCA11C2F8E9A00D2859C /* ComponentRest.swift */,
+				075BBCA41C2F8EC600D2859C /* ComponentPitch.swift */,
+				075BBCA71C2F8EE700D2859C /* ComponentDynamicMarking.swift */,
+				075BBCAA1C2F90EA00D2859C /* ComponentDynamicMarkingSpanner.swift */,
+				075BBCAD1C2F91F300D2859C /* ComponentSlur.swift */,
+				075BBCB01C2F927C00D2859C /* ComponentArticulation.swift */,
+				075BBCB31C2FC4A900D2859C /* ComponentExtension.swift */,
+				075BBCB61C2FC53500D2859C /* ComponentType.swift */,
+				079BC1221C35DB65001672D6 /* ComponentFiltering.swift */,
+				079BC1251C35DB81001672D6 /* ComponentFilter.swift */,
+				079BC1281C35DB9A001672D6 /* ComponentFilters.swift */,
+				079BC12B1C35DBDF001672D6 /* ComponentTypeState.swift */,
+				079BC12E1C35DBF6001672D6 /* ComponentTypeModel.swift */,
+				073C53681C4445430074846C /* ComponentOrganizer.swift */,
+				076975CC1C4CB548002D1CA0 /* ArticulationType.swift */,
+				07CD0A3C1C5C2BBC009FAB77 /* ComponentLabel.swift */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+		0767314D1C415B2300FD9CA7 /* StringModel */ = {
+			isa = PBXGroup;
+			children = (
+				0767314E1C415B3500FD9CA7 /* StringModelsTests.swift */,
+				076731501C415DAA00FD9CA7 /* StringNodeTests.swift */,
+			);
+			name = StringModel;
+			sourceTree = "<group>";
+		};
+		07B7DB1F1C32098400CF54DF /* DynamicMarking */ = {
+			isa = PBXGroup;
+			children = (
+				07B7DB201C32099900CF54DF /* DynamicMarkingModel.swift */,
+				07B7DB401C3230BD00CF54DF /* DynamicMarkingStratumModel.swift */,
+				07B7DB261C3209CF00CF54DF /* DynamicMarkingElementModel.swift */,
+				07B7DB231C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift */,
+				07B7DB291C320A0900CF54DF /* DynamicMarkingSpannerModel.swift */,
+				07B7DB2C1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift */,
+				07B7DB2F1C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift */,
+				07B7DB3A1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift */,
+				079BC1321C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift */,
+				07E091E31C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift */,
+			);
+			name = DynamicMarking;
+			sourceTree = "<group>";
+		};
+		07B7DB321C320B6C00CF54DF /* DynamicMarking */ = {
+			isa = PBXGroup;
+			children = (
+				07B7DB351C320BB100CF54DF /* DynamicMarkingNumericalRepresenterTests.swift */,
+				07F544F31C45617C00E5E0AB /* ComponentRepresentationTypeTests.swift */,
+			);
+			name = DynamicMarking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		071E9E211C00EC84008D1263 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E271C00EC84008D1263 /* DNMModel_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E3D1C00EC96008D1263 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E431C00EC96008D1263 /* DNMModel_OSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		071E9E231C00EC84008D1263 /* DNMModel_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071E9E351C00EC84008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_iOS" */;
+			buildPhases = (
+				071E9E1F1C00EC84008D1263 /* Sources */,
+				071E9E201C00EC84008D1263 /* Frameworks */,
+				071E9E211C00EC84008D1263 /* Headers */,
+				071E9E221C00EC84008D1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNMModel_iOS;
+			productName = DNMModel_iOS;
+			productReference = 071E9E241C00EC84008D1263 /* DNMModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		071E9E2C1C00EC84008D1263 /* DNMModel_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071E9E381C00EC84008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_iOSTests" */;
+			buildPhases = (
+				071E9E291C00EC84008D1263 /* Sources */,
+				071E9E2A1C00EC84008D1263 /* Frameworks */,
+				071E9E2B1C00EC84008D1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071E9E301C00EC84008D1263 /* PBXTargetDependency */,
+			);
+			name = DNMModel_iOSTests;
+			productName = DNMModel_iOSTests;
+			productReference = 071E9E2D1C00EC84008D1263 /* DNMModel_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		071E9E3F1C00EC96008D1263 /* DNMModel_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071E9E511C00EC96008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_OSX" */;
+			buildPhases = (
+				071E9E3B1C00EC96008D1263 /* Sources */,
+				071E9E3C1C00EC96008D1263 /* Frameworks */,
+				071E9E3D1C00EC96008D1263 /* Headers */,
+				071E9E3E1C00EC96008D1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNMModel_OSX;
+			productName = DNMModel_OSX;
+			productReference = 071E9E401C00EC96008D1263 /* DNMModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		071E9E481C00EC96008D1263 /* DNMModel_OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071E9E541C00EC96008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_OSXTests" */;
+			buildPhases = (
+				071E9E451C00EC96008D1263 /* Sources */,
+				071E9E461C00EC96008D1263 /* Frameworks */,
+				071E9E471C00EC96008D1263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071E9E4C1C00EC96008D1263 /* PBXTargetDependency */,
+			);
+			name = DNMModel_OSXTests;
+			productName = DNMModel_OSXTests;
+			productReference = 071E9E491C00EC96008D1263 /* DNMModel_OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07074CE81BF966B100BFC6FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "James Bean";
+				TargetAttributes = {
+					071E9E231C00EC84008D1263 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F8LCL8SXLX;
+					};
+					071E9E2C1C00EC84008D1263 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					071E9E3F1C00EC96008D1263 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F8LCL8SXLX;
+					};
+					071E9E481C00EC96008D1263 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 07074CEB1BF966B100BFC6FA /* Build configuration list for PBXProject "DNMModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07074CE71BF966B100BFC6FA;
+			productRefGroup = 07074CF21BF966B100BFC6FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				071E9E231C00EC84008D1263 /* DNMModel_iOS */,
+				071E9E2C1C00EC84008D1263 /* DNMModel_iOSTests */,
+				071E9E3F1C00EC96008D1263 /* DNMModel_OSX */,
+				071E9E481C00EC96008D1263 /* DNMModel_OSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071E9E221C00EC84008D1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E651C00EE34008D1263 /* TopLevelCommands.json in Resources */,
+				071E9E9E1C00EE47008D1263 /* PitchSpellingsByPitchClass.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E2B1C00EC84008D1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E3E1C00EC96008D1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E6A1C00EE35008D1263 /* TopLevelCommands.json in Resources */,
+				071E9EB11C00EE48008D1263 /* PitchSpellingsByPitchClass.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E471C00EC96008D1263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071E9E1F1C00EC84008D1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077292551C45766200C6F4D5 /* InstrumentIdentifierPath.swift in Sources */,
+				07B7DB271C3209CF00CF54DF /* DynamicMarkingElementModel.swift in Sources */,
+				071E9E9C1C00EE47008D1263 /* PitchSpelling.swift in Sources */,
+				07E091E41C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift in Sources */,
+				071E9E611C00EE34008D1263 /* _DNMParser.swift in Sources */,
+				071E9E751C00EE39008D1263 /* Stack.swift in Sources */,
+				073DE9F31C41AECB0072745A /* PitchClass.swift in Sources */,
+				074373F81C5164F6004070ED /* PitchTokenizer.swift in Sources */,
+				071E9EA01C00EE47008D1263 /* PitchVerticalitySpeller.swift in Sources */,
+				071E9E701C00EE39008D1263 /* Node.swift in Sources */,
+				0726189C1C52D3D400C39822 /* MetricalDurationTokenizer.swift in Sources */,
+				071E9E731C00EE39008D1263 /* Random.swift in Sources */,
+				073DE9F01C41A4830072745A /* NSDateExtensions.swift in Sources */,
+				074373EC1C515E7D004070ED /* StringTokenizer.swift in Sources */,
+				07B7DB411C3230BD00CF54DF /* DynamicMarkingStratumModel.swift in Sources */,
+				074373DE1C513C05004070ED /* ArgumentType.swift in Sources */,
+				07A8BFB41C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift in Sources */,
+				071E9E741C00EE39008D1263 /* SimpleRoot.swift in Sources */,
+				075BBCA21C2F8E9A00D2859C /* ComponentRest.swift in Sources */,
+				071E9E641C00EE34008D1263 /* DNMTokenizer.swift in Sources */,
+				071E9EB61C00EE4D008D1263 /* Beats.swift in Sources */,
+				0796243F1C5548E60061533D /* DurationNodeRootTokenizer.swift in Sources */,
+				0729241A1C4ED65000C0C47F /* Parser.swift in Sources */,
+				071E9E6D1C00EE39008D1263 /* ArrayExtensions.swift in Sources */,
+				07025BCB1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift in Sources */,
+				07D58F701C50626B00DB224B /* PitchParser.swift in Sources */,
+				075BBCAE1C2F91F300D2859C /* ComponentSlur.swift in Sources */,
+				07B1EFD31C08CC600090237A /* DurationInterval.swift in Sources */,
+				071A62541C40225700D31127 /* StringModel.swift in Sources */,
+				071E9E921C00EE47008D1263 /* PitchCoarse.swift in Sources */,
+				072618AA1C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift in Sources */,
+				07CD0A501C5C4275009FAB77 /* LabelStratumModel.swift in Sources */,
+				071E9E9F1C00EE47008D1263 /* PitchVerticality.swift in Sources */,
+				071E9E6E1C00EE39008D1263 /* Direction.swift in Sources */,
+				071E9E9A1C00EE47008D1263 /* PitchPolyphonySpeller.swift in Sources */,
+				073C536C1C4471690074846C /* DurationNodeLeafOrganizer.swift in Sources */,
+				07EFAB2D1C1A3459005BED36 /* DictionaryExtensions.swift in Sources */,
+				072925401C519EF600F37C0C /* InstrumentTypeTokenizer.swift in Sources */,
+				071A62511C40221400D31127 /* StringInstrumentModel.swift in Sources */,
+				07B1EFD01C08CBF60090237A /* IntervalRelationship.swift in Sources */,
+				079BC1261C35DB81001672D6 /* ComponentFilter.swift in Sources */,
+				07B7DB301C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift in Sources */,
+				0729254E1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift in Sources */,
+				071E9EBC1C00EE4D008D1263 /* TempoFunction.swift in Sources */,
+				072618B21C52F14800C39822 /* SpannerStopCommandTokenizer.swift in Sources */,
+				072618AF1C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift in Sources */,
+				07B1EFDA1C08DD7F0090237A /* DurationSpanning.swift in Sources */,
+				071E9E9B1C00EE47008D1263 /* PitchSpeller.swift in Sources */,
+				071E9E961C00EE47008D1263 /* PitchInterval.swift in Sources */,
+				076975CD1C4CB548002D1CA0 /* ArticulationType.swift in Sources */,
+				079624471C55581A0061533D /* NodeCommandTokenizer.swift in Sources */,
+				079624511C556D550061533D /* DurationNodeStackModeCommandTokenizer.swift in Sources */,
+				07025BCE1C5596890016DFF2 /* LeafCommandTokenizer.swift in Sources */,
+				07A0BDBE1C29F76D00B9A704 /* InstrumentTypeModel.swift in Sources */,
+				072618A71C52DB9600C39822 /* RelativeDurationTokenizer.swift in Sources */,
+				079624541C557C950061533D /* DNMParser.swift in Sources */,
+				0759E4101C53478B0054B33F /* SlurStartCommandTokenizer.swift in Sources */,
+				07C736631C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift in Sources */,
+				074373EF1C515F12004070ED /* IntTokenizer.swift in Sources */,
+				07B820611C4C186C00DEC995 /* DurationIntervalParser.swift in Sources */,
+				075BBCA81C2F8EE700D2859C /* ComponentDynamicMarking.swift in Sources */,
+				079624571C557EC10061533D /* RestCommandTokenizer.swift in Sources */,
+				071E9E901C00EE47008D1263 /* MIDI.swift in Sources */,
+				0759E4161C5348B60054B33F /* ExtensionStopCommandTokenizer.swift in Sources */,
+				075BBCA51C2F8EC600D2859C /* ComponentPitch.swift in Sources */,
+				071955BC1C2251FA0041E840 /* Performer.swift in Sources */,
+				079624381C5543BA0061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift in Sources */,
+				071E9E911C00EE47008D1263 /* Pitch.swift in Sources */,
+				07ED35041C43263000CB70A9 /* ComponentEdge.swift in Sources */,
+				071E9E871C00EE3D008D1263 /* SpannerArguments.swift in Sources */,
+				071E9E761C00EE39008D1263 /* StringExtensions.swift in Sources */,
+				071E9E971C00EE47008D1263 /* PitchLetterName.swift in Sources */,
+				074373E71C515277004070ED /* Tokenizer.swift in Sources */,
+				0795F2CC1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift in Sources */,
+				072925481C51A37600F37C0C /* InstrumentIDTokenizer.swift in Sources */,
+				075BBCAB1C2F90EB00D2859C /* ComponentDynamicMarkingSpanner.swift in Sources */,
+				074373FE1C5166EF004070ED /* PitchStringTokenizer.swift in Sources */,
+				071E9E861C00EE3D008D1263 /* Component.swift in Sources */,
+				071E9E981C00EE47008D1263 /* PitchMonadSpeller.swift in Sources */,
+				079624321C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift in Sources */,
+				076975C81C4C989A002D1CA0 /* DurationNodeParser.swift in Sources */,
+				07A89FEF1C585C7C00224775 /* BlockCommentCommandTokenizer.swift in Sources */,
+				074373D81C513B1B004070ED /* CommandTokenizer.swift in Sources */,
+				07CD0A4D1C5C41E8009FAB77 /* LabelStratumModelArranger.swift in Sources */,
+				071A62571C40234600D31127 /* StringNode.swift in Sources */,
+				079BC12F1C35DBF6001672D6 /* ComponentTypeModel.swift in Sources */,
+				071E9E9D1C00EE47008D1263 /* PitchSpellingDyad.swift in Sources */,
+				071E9E941C00EE47008D1263 /* PitchDyadSpeller.swift in Sources */,
+				07CF46741C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift in Sources */,
+				074373F21C5160F6004070ED /* DynamicMarkingTokenizer.swift in Sources */,
+				079BC1331C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift in Sources */,
+				071E9E6F1C00EE39008D1263 /* GCDHelper.swift in Sources */,
+				073C53691C4445430074846C /* ComponentOrganizer.swift in Sources */,
+				071E9EB91C00EE4D008D1263 /* MeasureModel.swift in Sources */,
+				07E3EBC91C4C717000D59B93 /* PerformerDeclaration.swift in Sources */,
+				07B7DB2D1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift in Sources */,
+				071E9E8D1C00EE42008D1263 /* InstrumentType.swift in Sources */,
+				074373E41C513DE1004070ED /* ArgumentTokenizerString.swift in Sources */,
+				079BC1291C35DB9A001672D6 /* ComponentFilters.swift in Sources */,
+				075BBCB41C2FC4A900D2859C /* ComponentExtension.swift in Sources */,
+				07025BC81C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift in Sources */,
+				075BBCB71C2FC53500D2859C /* ComponentType.swift in Sources */,
+				07A8D8E21C4C0FB2008C5FEC /* DurationParser.swift in Sources */,
+				07E3EBC41C4C44AA00D59B93 /* PerformerDeclarationParser.swift in Sources */,
+				0729255C1C51C3BD00F37C0C /* EnumExtensions.swift in Sources */,
+				071E9E621C00EE34008D1263 /* Token.swift in Sources */,
+				071E9E841C00EE3D008D1263 /* DurationNode.swift in Sources */,
+				07ED35011C4325E900CB70A9 /* ComponentNode.swift in Sources */,
+				07E091E71C35EFD600B19B59 /* ScoreModelReplicator.swift in Sources */,
+				074373E11C513D28004070ED /* ArgumentTokenizer.swift in Sources */,
+				0736747E1C455E9D008FE840 /* ComponentRepresentationType.swift in Sources */,
+				071E9E991C00EE47008D1263 /* PitchPolyphony.swift in Sources */,
+				0729253D1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift in Sources */,
+				07AF0D2D1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift in Sources */,
+				07B7DB241C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift in Sources */,
+				071E9E6C1C00EE39008D1263 /* ArithmeticType.swift in Sources */,
+				072618991C52D2D100C39822 /* MeasureCommandTokenizer.swift in Sources */,
+				072925451C51A27500F37C0C /* IdentifierTokenizer.swift in Sources */,
+				074373F51C5162C1004070ED /* ArticulationMarkingTokenizer.swift in Sources */,
+				07B7DB2A1C320A0900CF54DF /* DynamicMarkingSpannerModel.swift in Sources */,
+				07AF0D2A1C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift in Sources */,
+				07A89FEA1C58592A00224775 /* LineCommentCommandTokenizer.swift in Sources */,
+				07B7DB3B1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift in Sources */,
+				074373DB1C513BE6004070ED /* TopLevelCommand.swift in Sources */,
+				071E9E711C00EE39008D1263 /* NodePosition.swift in Sources */,
+				07D58F6D1C5021E600DB224B /* LabelModel.swift in Sources */,
+				074373FB1C516548004070ED /* FloatTokenizer.swift in Sources */,
+				075BBCB11C2F927C00D2859C /* ComponentArticulation.swift in Sources */,
+				071E9EBA1C00EE4D008D1263 /* Subdivision.swift in Sources */,
+				07B7DB211C32099900CF54DF /* DynamicMarkingModel.swift in Sources */,
+				071E9EBB1C00EE4D008D1263 /* Tempo.swift in Sources */,
+				071E9E831C00EE3D008D1263 /* ScoreModel.swift in Sources */,
+				072925381C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift in Sources */,
+				072925571C51B88300F37C0C /* LineTokenizer.swift in Sources */,
+				073674791C454F92008FE840 /* KeyPath.swift in Sources */,
+				07D611F81C45A17B00C1AC7A /* DurationNodeLeafModel.swift in Sources */,
+				071E9EB51C00EE4D008D1263 /* RehearsalMarking.swift in Sources */,
+				071E9E721C00EE39008D1263 /* OrderedDictionary.swift in Sources */,
+				071E9E931C00EE47008D1263 /* PitchDyad.swift in Sources */,
+				071E9E8F1C00EE47008D1263 /* Frequency.swift in Sources */,
+				071E9E6B1C00EE39008D1263 /* SwiftyJSON.swift in Sources */,
+				07AEE25C1C5183190017E129 /* PitchCommandTokenizer.swift in Sources */,
+				072618961C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift in Sources */,
+				07CD0A3D1C5C2BBC009FAB77 /* ComponentLabel.swift in Sources */,
+				079BC12C1C35DBDF001672D6 /* ComponentTypeState.swift in Sources */,
+				079BC1231C35DB65001672D6 /* ComponentFiltering.swift in Sources */,
+				0796244A1C55583E0061533D /* EdgeCommandTokenizer.swift in Sources */,
+				071E9EBD1C00EE4D008D1263 /* TempoMarking.swift in Sources */,
+				071E9EB71C00EE4D008D1263 /* Duration.swift in Sources */,
+				071E9E951C00EE47008D1263 /* PitchFine.swift in Sources */,
+				07E9BA951C23FA900062A48B /* Instrument.swift in Sources */,
+				071E9E631C00EE34008D1263 /* TokenContainer.swift in Sources */,
+				07CD0A401C5C2E7B009FAB77 /* LabelCommandTokenizer.swift in Sources */,
+				07E55A7B1C55F1D500E78289 /* ComponentParser.swift in Sources */,
+				0729254B1C51A3BF00F37C0C /* PerformerIDTokenizer.swift in Sources */,
+				0759E4131C5348400054B33F /* SlurStopCommandTokenizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E291C00EC84008D1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CD0A431C5C3150009FAB77 /* LabelCommandTokenizerTests.swift in Sources */,
+				072618B51C52F30C00C39822 /* DynamicMarkingCommandTokenizerTests.swift in Sources */,
+				0796243B1C55441F0061533D /* DurationNodeStackModeMeasureCommandTokenizerTests.swift in Sources */,
+				071E9E331C00EC84008D1263 /* DNMModel_iOSTests.swift in Sources */,
+				07428C8C1C017A7C00A1E76B /* PitchIntervalTests.swift in Sources */,
+				07D611FB1C45A35900C1AC7A /* DurationNodeLeafModelTests.swift in Sources */,
+				0796244D1C5558CE0061533D /* NodeCommandTokenizerTests.swift in Sources */,
+				07428C911C017A7C00A1E76B /* PitchSpellingTests.swift in Sources */,
+				071FF1D41C029BC40009CD19 /* TokenContainerTests.swift in Sources */,
+				07A8BFB71C4E02EE00090953 /* DurationNodeIntervalInferringTests.swift in Sources */,
+				0729253B1C51921A00F37C0C /* ArticulationMarkingCommandTokenizerTests.swift in Sources */,
+				07E3EBC71C4C44BA00D59B93 /* PerformerDeclarationParserTests.swift in Sources */,
+				07A89FED1C5859FB00224775 /* LineCommentCommandTokenizerTests.swift in Sources */,
+				0726217C1C03DCF6001A665A /* FrequencyTests.swift in Sources */,
+				07428C941C017A7C00A1E76B /* PitchVerticalityTests.swift in Sources */,
+				071FF1D61C029DF50009CD19 /* DNMTokenizerTests.swift in Sources */,
+				07B3A12E1C0411AA00595939 /* TempoMarkingTests.swift in Sources */,
+				0796242E1C5541260061533D /* SlurStopCommandTokenizerTests.swift in Sources */,
+				07C736611C4DA8C0005F287D /* DurationNodeIntervalEnforcingTests.swift in Sources */,
+				0767314F1C415B3500FD9CA7 /* StringModelsTests.swift in Sources */,
+				07B7DB361C320BB100CF54DF /* DynamicMarkingNumericalRepresenterTests.swift in Sources */,
+				07428C901C017A7C00A1E76B /* PitchSpellingDyadTests.swift in Sources */,
+				0796244F1C55593B0061533D /* EdgeCommandTokenizerTests.swift in Sources */,
+				07B3A1301C0413F300595939 /* RehearsalMarkingTests.swift in Sources */,
+				071470AB1C02C4DA00D847D3 /* ComponentTests.swift in Sources */,
+				07F544F41C45617C00E5E0AB /* ComponentRepresentationTypeTests.swift in Sources */,
+				07428C8F1C017A7C00A1E76B /* PitchSpellerTests.swift in Sources */,
+				072925431C519F2400F37C0C /* InstrumentTypeTokenizerTests.swift in Sources */,
+				071955BE1C2253770041E840 /* PerformerTests.swift in Sources */,
+				07D58F6B1C4F493B00DB224B /* StringExtensionsTests.swift in Sources */,
+				0736747C1C455875008FE840 /* DurationNodeLeafOrganizerTests.swift in Sources */,
+				076FE3931C447847006F9BE5 /* DictionaryExtensionsTests.swift in Sources */,
+				0726189F1C52D45100C39822 /* DurationTokenizerTests.swift in Sources */,
+				07B820641C4C188300DEC995 /* DurationIntervalParserTests.swift in Sources */,
+				0796242C1C5540850061533D /* SlurStartCommandTokenizerTests.swift in Sources */,
+				072618A11C52D69300C39822 /* MeasureCommandTokenizerTests.swift in Sources */,
+				079624301C5541930061533D /* ExtensionStopCommandTokenizerTests.swift in Sources */,
+				07D611F61C45A01E00C1AC7A /* ComponentFiltersTests.swift in Sources */,
+				07428C871C017A7C00A1E76B /* PitchLetterNameTests.swift in Sources */,
+				07D611F41C459FD200C1AC7A /* ComponentFilterTests.swift in Sources */,
+				072925551C51A82A00F37C0C /* PerformerDeclarationCommandTokenizerTests.swift in Sources */,
+				071A625A1C4027B500D31127 /* ArithmeticTypeTests.swift in Sources */,
+				076731511C415DAA00FD9CA7 /* StringNodeTests.swift in Sources */,
+				07428C921C017A7C00A1E76B /* PitchTests.swift in Sources */,
+				072621741C03BB25001A665A /* OrderedDictionaryTests.swift in Sources */,
+				071470A71C02B04D00D847D3 /* InstrumentTypeTests.swift in Sources */,
+				07428C8A1C017A7C00A1E76B /* PitchDyadSpellerTests.swift in Sources */,
+				072925531C51A67C00F37C0C /* InstrumentDeclarationTokenizerTests.swift in Sources */,
+				0729255A1C51B8A200F37C0C /* LineTokenizerTests.swift in Sources */,
+				07AEE25F1C51842C0017E129 /* PitchCommandTokenizerTests.swift in Sources */,
+				0729255F1C51C3FB00F37C0C /* EnumExtensionsTests.swift in Sources */,
+				07D58F731C5062C800DB224B /* PitchParserTests.swift in Sources */,
+				076975CB1C4C98B5002D1CA0 /* DurationNodeParserTests.swift in Sources */,
+				07A8D8E51C4C0FC5008C5FEC /* DurationParserTests.swift in Sources */,
+				072621781C03CBE8001A665A /* ScoreModelTests.swift in Sources */,
+				07B1EFD81C08D3C90090237A /* DurationIntervalTests.swift in Sources */,
+				07428C851C017A7C00A1E76B /* DurationNodeTests.swift in Sources */,
+				07428C8B1C017A7C00A1E76B /* PitchDyadTests.swift in Sources */,
+				0796243D1C55453B0061533D /* DurationNodeStackModeIncrementCommandTokenizerTests.swift in Sources */,
+				071FF1D21C029AEB0009CD19 /* TokenTests.swift in Sources */,
+				076FE3981C4492AC006F9BE5 /* ComponentOrganizerTests.swift in Sources */,
+				07E3EBCC1C4C720300D59B93 /* PerformerDeclarationTests.swift in Sources */,
+				07428C841C017A7C00A1E76B /* BeatsTest.swift in Sources */,
+				07428C881C017A7C00A1E76B /* MIDITests.swift in Sources */,
+				074373EA1C5152A0004070ED /* TokenizerTests.swift in Sources */,
+				079624421C5548FB0061533D /* DurationNodeRootTokenizerTests.swift in Sources */,
+				072618AD1C52DE7200C39822 /* RelativeDurationTokenizerTests.swift in Sources */,
+				07428C951C017A7C00A1E76B /* SubdivisionTests.swift in Sources */,
+				071470A91C02B70B00D847D3 /* MeasureTests.swift in Sources */,
+				07428C931C017A7C00A1E76B /* PitchVerticalitySpellerTests.swift in Sources */,
+				0796245A1C5586200061533D /* DNMParserTests.swift in Sources */,
+				07025BD11C559AEB0016DFF2 /* DurationNodeLeafTokenizerTests.swift in Sources */,
+				07428C861C017A7C00A1E76B /* DurationTests.swift in Sources */,
+				07428C8E1C017A7C00A1E76B /* PitchPolyphonyTests.swift in Sources */,
+				07428C8D1C017A7C00A1E76B /* PitchPolyphonySpellerTests.swift in Sources */,
+				07428C891C017A7C00A1E76B /* NodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E3B1C00EC96008D1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077292561C45766200C6F4D5 /* InstrumentIdentifierPath.swift in Sources */,
+				071E9EAF1C00EE48008D1263 /* PitchSpelling.swift in Sources */,
+				071E9E661C00EE35008D1263 /* _DNMParser.swift in Sources */,
+				07E091E51C35EC6400B19B59 /* DynamicMarkingStratumModelReplicator.swift in Sources */,
+				071E9E811C00EE3A008D1263 /* Stack.swift in Sources */,
+				079BC12A1C35DB9A001672D6 /* ComponentFilters.swift in Sources */,
+				073DE9F41C41AECB0072745A /* PitchClass.swift in Sources */,
+				074373F91C5164F6004070ED /* PitchTokenizer.swift in Sources */,
+				071E9EB31C00EE48008D1263 /* PitchVerticalitySpeller.swift in Sources */,
+				079BC1301C35DBF6001672D6 /* ComponentTypeModel.swift in Sources */,
+				0726189D1C52D3D400C39822 /* MetricalDurationTokenizer.swift in Sources */,
+				07B7DB311C320AEB00CF54DF /* DynamicMarkingNumericalRepresenter.swift in Sources */,
+				073DE9F11C41A4830072745A /* NSDateExtensions.swift in Sources */,
+				074373ED1C515E7D004070ED /* StringTokenizer.swift in Sources */,
+				07B1EFDC1C08DDE50090237A /* IntervalRelationship.swift in Sources */,
+				074373DF1C513C05004070ED /* ArgumentType.swift in Sources */,
+				07A8BFB51C4DFD5800090953 /* DurationNodeIntervalEnforcingSequence.swift in Sources */,
+				071E9E7C1C00EE3A008D1263 /* Node.swift in Sources */,
+				075BBCA91C2F8EE700D2859C /* ComponentDynamicMarking.swift in Sources */,
+				07B7DB251C3209B800CF54DF /* DynamicMarkingNumericalRepresentation.swift in Sources */,
+				071E9E7F1C00EE3A008D1263 /* Random.swift in Sources */,
+				079624401C5548E60061533D /* DurationNodeRootTokenizer.swift in Sources */,
+				0729241B1C4ED65000C0C47F /* Parser.swift in Sources */,
+				079BC12D1C35DBDF001672D6 /* ComponentTypeState.swift in Sources */,
+				07025BCC1C558C000016DFF2 /* DurationNodeInternalTokenizer.swift in Sources */,
+				07D58F711C50626B00DB224B /* PitchParser.swift in Sources */,
+				079BC1241C35DB65001672D6 /* ComponentFiltering.swift in Sources */,
+				07B7DB221C32099900CF54DF /* DynamicMarkingModel.swift in Sources */,
+				071A62551C40225700D31127 /* StringModel.swift in Sources */,
+				071E9E801C00EE3A008D1263 /* SimpleRoot.swift in Sources */,
+				072618AB1C52DC1A00C39822 /* InternalRelativeDurationTokenizer.swift in Sources */,
+				07CD0A511C5C4275009FAB77 /* LabelStratumModel.swift in Sources */,
+				071E9E691C00EE35008D1263 /* DNMTokenizer.swift in Sources */,
+				071E9EBF1C00EE4D008D1263 /* Beats.swift in Sources */,
+				071E9E791C00EE3A008D1263 /* ArrayExtensions.swift in Sources */,
+				073C536D1C4471690074846C /* DurationNodeLeafOrganizer.swift in Sources */,
+				071E9EA51C00EE48008D1263 /* PitchCoarse.swift in Sources */,
+				072925411C519EF600F37C0C /* InstrumentTypeTokenizer.swift in Sources */,
+				071A62521C40221400D31127 /* StringInstrumentModel.swift in Sources */,
+				071E9EB21C00EE48008D1263 /* PitchVerticality.swift in Sources */,
+				071E9E7A1C00EE3A008D1263 /* Direction.swift in Sources */,
+				071E9EAD1C00EE48008D1263 /* PitchPolyphonySpeller.swift in Sources */,
+				0729254F1C51A4F500F37C0C /* InstrumentDeclarationTokenizer.swift in Sources */,
+				071E9EC51C00EE4D008D1263 /* TempoFunction.swift in Sources */,
+				072618B31C52F14800C39822 /* SpannerStopCommandTokenizer.swift in Sources */,
+				072618B01C52E1CD00C39822 /* SpannerStartCommandTokenizer.swift in Sources */,
+				071E9EAE1C00EE48008D1263 /* PitchSpeller.swift in Sources */,
+				07B1EFDD1C08DDF40090237A /* DurationSpanning.swift in Sources */,
+				075BBCA61C2F8EC600D2859C /* ComponentPitch.swift in Sources */,
+				076975CE1C4CB548002D1CA0 /* ArticulationType.swift in Sources */,
+				079624481C55581A0061533D /* NodeCommandTokenizer.swift in Sources */,
+				079624521C556D560061533D /* DurationNodeStackModeCommandTokenizer.swift in Sources */,
+				07025BCF1C5596890016DFF2 /* LeafCommandTokenizer.swift in Sources */,
+				071E9EA91C00EE48008D1263 /* PitchInterval.swift in Sources */,
+				072618A81C52DB9600C39822 /* RelativeDurationTokenizer.swift in Sources */,
+				079624551C557C950061533D /* DNMParser.swift in Sources */,
+				0759E4111C53478B0054B33F /* SlurStartCommandTokenizer.swift in Sources */,
+				07C736641C4DB706005F287D /* DurationNodeIntervalEnforcingDurationMatcher.swift in Sources */,
+				074373F01C515F12004070ED /* IntTokenizer.swift in Sources */,
+				07B820621C4C186C00DEC995 /* DurationIntervalParser.swift in Sources */,
+				071E9EA31C00EE48008D1263 /* MIDI.swift in Sources */,
+				079624581C557EC10061533D /* RestCommandTokenizer.swift in Sources */,
+				07A0BDB21C274CE200B9A704 /* Instrument.swift in Sources */,
+				0759E4171C5348B60054B33F /* ExtensionStopCommandTokenizer.swift in Sources */,
+				071E9EA41C00EE48008D1263 /* Pitch.swift in Sources */,
+				07B7DB2E1C320A4000CF54DF /* DynamicMarkingSpannerDirection.swift in Sources */,
+				079624391C5543BA0061533D /* DurationNodeStackModeIncrementCommandTokenizer.swift in Sources */,
+				075BBCAF1C2F91F300D2859C /* ComponentSlur.swift in Sources */,
+				07ED35051C43263000CB70A9 /* ComponentEdge.swift in Sources */,
+				071E9E8C1C00EE3E008D1263 /* SpannerArguments.swift in Sources */,
+				071E9E821C00EE3A008D1263 /* StringExtensions.swift in Sources */,
+				079BC1271C35DB81001672D6 /* ComponentFilter.swift in Sources */,
+				074373E81C515277004070ED /* Tokenizer.swift in Sources */,
+				07A0BDB11C274CE200B9A704 /* Performer.swift in Sources */,
+				072925491C51A37600F37C0C /* InstrumentIDTokenizer.swift in Sources */,
+				071E9EAA1C00EE48008D1263 /* PitchLetterName.swift in Sources */,
+				074373FF1C5166EF004070ED /* PitchStringTokenizer.swift in Sources */,
+				071E9E8B1C00EE3E008D1263 /* Component.swift in Sources */,
+				071E9EAB1C00EE48008D1263 /* PitchMonadSpeller.swift in Sources */,
+				079624331C5542050061533D /* DurationNodeStackModeMeasureCommandTokenizer.swift in Sources */,
+				076975C91C4C989A002D1CA0 /* DurationNodeParser.swift in Sources */,
+				07A89FF01C585C7C00224775 /* BlockCommentCommandTokenizer.swift in Sources */,
+				074373D91C513B1B004070ED /* CommandTokenizer.swift in Sources */,
+				07CD0A4E1C5C41E8009FAB77 /* LabelStratumModelArranger.swift in Sources */,
+				071A62581C40234600D31127 /* StringNode.swift in Sources */,
+				075BBCAC1C2F90EB00D2859C /* ComponentDynamicMarkingSpanner.swift in Sources */,
+				071E9EB01C00EE48008D1263 /* PitchSpellingDyad.swift in Sources */,
+				075BBCA31C2F8E9A00D2859C /* ComponentRest.swift in Sources */,
+				07CF46751C5A7DF00090F10D /* EdgeStopCommandTokenizer.swift in Sources */,
+				074373F31C5160F6004070ED /* DynamicMarkingTokenizer.swift in Sources */,
+				079BC1341C35DD87001672D6 /* DynamicMarkingStratumModelArranger.swift in Sources */,
+				075BBCB81C2FC53500D2859C /* ComponentType.swift in Sources */,
+				073C536A1C4445430074846C /* ComponentOrganizer.swift in Sources */,
+				071E9EA71C00EE48008D1263 /* PitchDyadSpeller.swift in Sources */,
+				07E3EBCA1C4C717000D59B93 /* PerformerDeclaration.swift in Sources */,
+				071E9E7B1C00EE3A008D1263 /* GCDHelper.swift in Sources */,
+				07A0BDBF1C29F78400B9A704 /* InstrumentTypeModel.swift in Sources */,
+				074373E51C513DE1004070ED /* ArgumentTokenizerString.swift in Sources */,
+				071E9EC21C00EE4D008D1263 /* MeasureModel.swift in Sources */,
+				071E9E8E1C00EE43008D1263 /* InstrumentType.swift in Sources */,
+				07025BC91C558BE10016DFF2 /* DurationNodeLeafTokenizer.swift in Sources */,
+				071E9E671C00EE35008D1263 /* Token.swift in Sources */,
+				07A8D8E31C4C0FB2008C5FEC /* DurationParser.swift in Sources */,
+				07E3EBC51C4C44AA00D59B93 /* PerformerDeclarationParser.swift in Sources */,
+				0729255D1C51C3BD00F37C0C /* EnumExtensions.swift in Sources */,
+				071E9E891C00EE3E008D1263 /* DurationNode.swift in Sources */,
+				071E9EAC1C00EE48008D1263 /* PitchPolyphony.swift in Sources */,
+				07ED35021C4325E900CB70A9 /* ComponentNode.swift in Sources */,
+				07E091E81C35EFD600B19B59 /* ScoreModelReplicator.swift in Sources */,
+				074373E21C513D28004070ED /* ArgumentTokenizer.swift in Sources */,
+				0736747F1C455E9D008FE840 /* ComponentRepresentationType.swift in Sources */,
+				07B7DB421C3230BD00CF54DF /* DynamicMarkingStratumModel.swift in Sources */,
+				0729253E1C5196FC00F37C0C /* PerformerDeclarationCommandTokenizer.swift in Sources */,
+				07AF0D2E1C4D9A670014B4D2 /* DurationNodeIntervalInferring.swift in Sources */,
+				071E9E781C00EE3A008D1263 /* ArithmeticType.swift in Sources */,
+				071E9E7D1C00EE3A008D1263 /* NodePosition.swift in Sources */,
+				0726189A1C52D2D100C39822 /* MeasureCommandTokenizer.swift in Sources */,
+				072925461C51A27500F37C0C /* IdentifierTokenizer.swift in Sources */,
+				074373F61C5162C1004070ED /* ArticulationMarkingTokenizer.swift in Sources */,
+				079BC1311C35DCCE001672D6 /* DictionaryExtensions.swift in Sources */,
+				07AF0D2B1C4D9A530014B4D2 /* DurationNodeIntervalEnforcing.swift in Sources */,
+				07A89FEB1C58592A00224775 /* LineCommentCommandTokenizer.swift in Sources */,
+				071E9EC31C00EE4D008D1263 /* Subdivision.swift in Sources */,
+				074373DC1C513BE6004070ED /* TopLevelCommand.swift in Sources */,
+				071E9EC41C00EE4D008D1263 /* Tempo.swift in Sources */,
+				07D58F6E1C5021E600DB224B /* LabelModel.swift in Sources */,
+				074373FC1C516548004070ED /* FloatTokenizer.swift in Sources */,
+				071E9E881C00EE3E008D1263 /* ScoreModel.swift in Sources */,
+				075BBCB51C2FC4A900D2859C /* ComponentExtension.swift in Sources */,
+				071E9EBE1C00EE4D008D1263 /* RehearsalMarking.swift in Sources */,
+				071E9E7E1C00EE3A008D1263 /* OrderedDictionary.swift in Sources */,
+				071E9EA61C00EE48008D1263 /* PitchDyad.swift in Sources */,
+				072925391C5191F800F37C0C /* ArticulationMarkingCommandTokenizer.swift in Sources */,
+				072925581C51B88300F37C0C /* LineTokenizer.swift in Sources */,
+				0736747A1C454F92008FE840 /* KeyPath.swift in Sources */,
+				07D611F91C45A17B00C1AC7A /* DurationNodeLeafModel.swift in Sources */,
+				075BBCB21C2F927C00D2859C /* ComponentArticulation.swift in Sources */,
+				071E9EA21C00EE48008D1263 /* Frequency.swift in Sources */,
+				071E9E771C00EE3A008D1263 /* SwiftyJSON.swift in Sources */,
+				07B7DB281C3209CF00CF54DF /* DynamicMarkingElementModel.swift in Sources */,
+				071E9EC61C00EE4D008D1263 /* TempoMarking.swift in Sources */,
+				07AEE25D1C5183190017E129 /* PitchCommandTokenizer.swift in Sources */,
+				072618971C52CC7A00C39822 /* DynamicMarkingCommandTokenizer.swift in Sources */,
+				07CD0A3E1C5C2BBC009FAB77 /* ComponentLabel.swift in Sources */,
+				071E9EC01C00EE4D008D1263 /* Duration.swift in Sources */,
+				071E9EA81C00EE48008D1263 /* PitchFine.swift in Sources */,
+				0796244B1C55583E0061533D /* EdgeCommandTokenizer.swift in Sources */,
+				07B7DB3C1C3223DF00CF54DF /* DynamicMarkingCharacterType.swift in Sources */,
+				07B1EFDB1C08DDE00090237A /* DurationInterval.swift in Sources */,
+				0795F2CD1C3337C700A48108 /* ScoreModelComponentTypeOrganizer.swift in Sources */,
+				07B7DB2B1C320A0900CF54DF /* DynamicMarkingSpannerModel.swift in Sources */,
+				071E9E681C00EE35008D1263 /* TokenContainer.swift in Sources */,
+				07CD0A411C5C2E7B009FAB77 /* LabelCommandTokenizer.swift in Sources */,
+				07E55A7C1C55F1D500E78289 /* ComponentParser.swift in Sources */,
+				0729254C1C51A3BF00F37C0C /* PerformerIDTokenizer.swift in Sources */,
+				0759E4141C5348400054B33F /* SlurStopCommandTokenizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071E9E451C00EC96008D1263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071E9E4F1C00EC96008D1263 /* DNMModel_OSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071E9E301C00EC84008D1263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071E9E231C00EC84008D1263 /* DNMModel_iOS */;
+			targetProxy = 071E9E2F1C00EC84008D1263 /* PBXContainerItemProxy */;
+		};
+		071E9E4C1C00EC96008D1263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071E9E3F1C00EC96008D1263 /* DNMModel_OSX */;
+			targetProxy = 071E9E4B1C00EC96008D1263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07074CF71BF966B100BFC6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: James Bean (F8LCL8SXLX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Bean (T92Z9NC6FX)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: James Bean (T92Z9NC6FX)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		07074CF81BF966B100BFC6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: James Bean (F8LCL8SXLX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Bean (F8LCL8SXLX)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: James Bean (T92Z9NC6FX)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		071E9E361C00EC84008D1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: James Bean (F8LCL8SXLX)";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DNMModel_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-iOS";
+				PRODUCT_NAME = DNMModel;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		071E9E371C00EC84008D1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: James Bean (F8LCL8SXLX)";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DNMModel_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-iOS";
+				PRODUCT_NAME = DNMModel;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		071E9E391C00EC84008D1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DNMModel_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		071E9E3A1C00EC84008D1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DNMModel_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		071E9E521C00EC96008D1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DNMModel_OSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-OSX";
+				PRODUCT_NAME = DNMModel;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		071E9E531C00EC96008D1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DNMModel_OSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-OSX";
+				PRODUCT_NAME = DNMModel;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		071E9E551C00EC96008D1263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DNMModel_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		071E9E561C00EC96008D1263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DNMModel_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bean.DNMModel-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07074CEB1BF966B100BFC6FA /* Build configuration list for PBXProject "DNMModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07074CF71BF966B100BFC6FA /* Debug */,
+				07074CF81BF966B100BFC6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071E9E351C00EC84008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071E9E361C00EC84008D1263 /* Debug */,
+				071E9E371C00EC84008D1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071E9E381C00EC84008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071E9E391C00EC84008D1263 /* Debug */,
+				071E9E3A1C00EC84008D1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071E9E511C00EC96008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071E9E521C00EC96008D1263 /* Debug */,
+				071E9E531C00EC96008D1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071E9E541C00EC96008D1263 /* Build configuration list for PBXNativeTarget "DNMModel_OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071E9E551C00EC96008D1263 /* Debug */,
+				071E9E561C00EC96008D1263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07074CE81BF966B100BFC6FA /* Project object */;
+}

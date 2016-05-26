@@ -1,0 +1,11 @@
+//
+//  StaffItem.swift
+//  DNM_iOS
+//
+//  Created by James Bean on 8/17/15.
+//  Copyright © 2015 James Bean. All rights reserved.
+//
+
+import Foundation
+
+public protocol StaffItem: Guido, BuildPattern { }
