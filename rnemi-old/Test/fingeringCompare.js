@@ -1,0 +1,1 @@
+﻿#include "FING_FL_C.js"#include "fingeringKeyList.js"function fingeringCompare(fingering1, fingering2) {		var fingDiff = 0	for (var key = 0; key < FL_C_keys.length; key ++) {		         var curKey = FL_C_keys[key];		if (fingering1.fingering[curKey] != fingering2.fingering[curKey]) {						fingDiff ++		};	};		return fingDiff}

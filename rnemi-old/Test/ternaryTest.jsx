@@ -1,0 +1,1 @@
+﻿var test = 5;var result = (test === 5) ? "go" : "stop";$.writeln(result);

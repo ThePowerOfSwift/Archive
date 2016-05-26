@@ -1,0 +1,1 @@
+﻿#include "../arrayMethods.js"var durList = [6,2,4,6,4];durList.reduceAllByGCD();$.writeln("durList: " + durList);

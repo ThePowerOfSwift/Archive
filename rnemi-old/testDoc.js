@@ -1,0 +1,1 @@
+﻿#target "illustrator"#include "t.js"#include "colors.js"#include "arrayMethods.js"#include "conversions.js"var testDoc = app.documents.add(	DocumentColorSpace.CMYK,	17*72,	13*72,	1,    DocumentArtboardLayout.GridByCol,    0,    10);

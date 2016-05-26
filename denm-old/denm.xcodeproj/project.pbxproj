@@ -1,0 +1,1969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070826931A5C6B8900E208C5 /* Slur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070826921A5C6B8900E208C5 /* Slur.swift */; };
+		0709B05019CCAD8300BF648A /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709B04F19CCAD8300BF648A /* Performer.swift */; };
+		0709B05219CCADD700BF648A /* PerformerBracket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709B05119CCADD700BF648A /* PerformerBracket.swift */; };
+		0709B05419CCAE7400BF648A /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709B05319CCAE7400BF648A /* System.swift */; };
+		0709B05619CCAE9700BF648A /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709B05519CCAE9700BF648A /* Page.swift */; };
+		0709B05819CCAEC700BF648A /* SystemBreakGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0709B05719CCAEC700BF648A /* SystemBreakGraphic.swift */; };
+		070C33E319EDC0FD0061046B /* Dyad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070C33E219EDC0FD0061046B /* Dyad.swift */; };
+		0728E44B19CC937D00C8FCE7 /* TBLigature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E44A19CC937D00C8FCE7 /* TBLigature.swift */; };
+		0728E44E19CC974900C8FCE7 /* TBLOrnament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E44D19CC974900C8FCE7 /* TBLOrnament.swift */; };
+		0728E45019CC977900C8FCE7 /* TBLLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E44F19CC977900C8FCE7 /* TBLLine.swift */; };
+		0728E45319CC97BB00C8FCE7 /* CreateTBLigature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E45119CC97BB00C8FCE7 /* CreateTBLigature.swift */; };
+		0728E45419CC97BB00C8FCE7 /* CreateTBLOrnament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E45219CC97BB00C8FCE7 /* CreateTBLOrnament.swift */; };
+		0728E45919CC98E900C8FCE7 /* TBLEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E45619CC98E900C8FCE7 /* TBLEnd.swift */; };
+		0728E45B19CC98E900C8FCE7 /* TBLStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E45819CC98E900C8FCE7 /* TBLStart.swift */; };
+		0728E45D19CC991800C8FCE7 /* TBLReintroduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E45C19CC991800C8FCE7 /* TBLReintroduce.swift */; };
+		0728E45F19CC998700C8FCE7 /* TBLComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E45E19CC998700C8FCE7 /* TBLComponent.swift */; };
+		0728E46619CC9A7B00C8FCE7 /* TBLOArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E46319CC9A7B00C8FCE7 /* TBLOArrow.swift */; };
+		0728E46719CC9A7B00C8FCE7 /* TBLOCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E46419CC9A7B00C8FCE7 /* TBLOCircle.swift */; };
+		0728E46819CC9A7B00C8FCE7 /* TBLOLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E46519CC9A7B00C8FCE7 /* TBLOLine.swift */; };
+		0728E46A19CC9E5F00C8FCE7 /* FDKSTFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E46919CC9E5F00C8FCE7 /* FDKSTFull.swift */; };
+		0728E46C19CCA14400C8FCE7 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728E46B19CCA14400C8FCE7 /* Staff.swift */; };
+		0730C3DC1A089CA400D8ACE4 /* MGCompoundStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730C3DB1A089CA400D8ACE4 /* MGCompoundStratum.swift */; };
+		0730C3DE1A089D4C00D8ACE4 /* TBCompoundStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730C3DD1A089D4C00D8ACE4 /* TBCompoundStratum.swift */; };
+		0730C3E01A08B29C00D8ACE4 /* BeamsLayerCompoundStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730C3DF1A08B29C00D8ACE4 /* BeamsLayerCompoundStratum.swift */; };
+		0736F3A519E0DA06005DC9B0 /* BGContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736F3A419E0DA06005DC9B0 /* BGContainer.swift */; };
+		0736F3A719E0DA3A005DC9B0 /* BGLeaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736F3A619E0DA3A005DC9B0 /* BGLeaf.swift */; };
+		073CE1D41A4372C0005EE2AC /* AugmentationDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CE1D31A4372C0005EE2AC /* AugmentationDot.swift */; };
+		073CE1D61A4372FF005EE2AC /* CreateArticulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CE1D51A4372FF005EE2AC /* CreateArticulation.swift */; };
+		073F18C819E7AD0D004857DE /* MetronomeSpanNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F18C719E7AD0D004857DE /* MetronomeSpanNode.swift */; };
+		0745B37919CCD517000081D7 /* DynamicMarking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B37819CCD517000081D7 /* DynamicMarking.swift */; };
+		0745B37C19CCD584000081D7 /* DMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B37B19CCD584000081D7 /* DMCharacter.swift */; };
+		0745B37E19CCD5DF000081D7 /* DMCharacter_f.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B37D19CCD5DF000081D7 /* DMCharacter_f.swift */; };
+		0745B38019CCD627000081D7 /* DMCharacter_p.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B37F19CCD627000081D7 /* DMCharacter_p.swift */; };
+		0745B38219CCD636000081D7 /* DMCharacter_m.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38119CCD636000081D7 /* DMCharacter_m.swift */; };
+		0745B38419CCD643000081D7 /* DMCharacter_exclamation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38319CCD643000081D7 /* DMCharacter_exclamation.swift */; };
+		0745B38619CCD652000081D7 /* DMCharacter_o.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38519CCD652000081D7 /* DMCharacter_o.swift */; };
+		0745B38819CCD666000081D7 /* CreateDMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38719CCD666000081D7 /* CreateDMCharacter.swift */; };
+		0745B38C19CCF0A9000081D7 /* DMCharacter_parenLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38B19CCF0A9000081D7 /* DMCharacter_parenLeft.swift */; };
+		0745B38E19CCF0C4000081D7 /* DMCharacter_parenRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38D19CCF0C4000081D7 /* DMCharacter_parenRight.swift */; };
+		0745B39019CCF54E000081D7 /* DMStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745B38F19CCF54E000081D7 /* DMStratum.swift */; };
+		07476C1B1A5782A900777E35 /* Beats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB952519CBFF7700E4F729 /* Beats.swift */; };
+		07476C1C1A5782A900777E35 /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB952719CBFF8B00E4F729 /* Subdivision.swift */; };
+		07476C1D1A5782A900777E35 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB952919CBFF9D00E4F729 /* Duration.swift */; };
+		07476C1E1A5782C100777E35 /* SpanComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD292C19D9DE2800E37FBC /* SpanComponent.swift */; };
+		07476C251A5782E500777E35 /* randomMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963119CC083E00E4F729 /* randomMidi.swift */; };
+		0747D4FF1A0744A00011D4DD /* BGVoiceSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747D4FE1A0744A00011D4DD /* BGVoiceSegment.swift */; };
+		074D30B51A415A0C008A8781 /* PitchSpeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D30B41A415A0C008A8781 /* PitchSpeller.swift */; };
+		0753C03119F60F64006B15B0 /* Stem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0753C03019F60F64006B15B0 /* Stem.swift */; };
+		07554E901A5F711000CE94DF /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E891A5F711000CE94DF /* Scanner.swift */; };
+		07554E911A5F711000CE94DF /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E8A1A5F711000CE94DF /* Tokenizer.swift */; };
+		07554E921A5F711000CE94DF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E8B1A5F711000CE94DF /* Parser.swift */; };
+		07554E931A5F711000CE94DF /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E8C1A5F711000CE94DF /* Interpreter.swift */; };
+		07554E941A5F711000CE94DF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E8D1A5F711000CE94DF /* Item.swift */; };
+		07554E951A5F711000CE94DF /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E8E1A5F711000CE94DF /* Token.swift */; };
+		07554E961A5F711000CE94DF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07554E8F1A5F711000CE94DF /* Action.swift */; };
+		0755848219CCA2F40003F364 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755848119CCA2F40003F364 /* Graph.swift */; };
+		075FE43A1A1ED175009EB8E0 /* SelectRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FE4391A1ED175009EB8E0 /* SelectRect.swift */; };
+		075FE43C1A1ED554009EB8E0 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FE43B1A1ED554009EB8E0 /* Highlight.swift */; };
+		0762DC0A1A5F74AB00679EAD /* denm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762DC091A5F74AB00679EAD /* denm.swift */; };
+		0766B26219D13BF600A6A166 /* StringSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766B26119D13BF600A6A166 /* StringSubscript.swift */; };
+		076A98451A4B5A8F0058AA6F /* MetronomeGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A98441A4B5A8F0058AA6F /* MetronomeGrid.swift */; };
+		076A98481A4B600E0058AA6F /* MetronomeGridLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A98471A4B600E0058AA6F /* MetronomeGridLine.swift */; };
+		076A984A1A4CAC540058AA6F /* MetronomeGridRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A98491A4CAC540058AA6F /* MetronomeGridRect.swift */; };
+		076CA45D1A420FCD00992B9B /* MGProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CA45C1A420FCD00992B9B /* MGProgressBar.swift */; };
+		07712EA51A61117900AE014F /* drier_run.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07712EA41A61117900AE014F /* drier_run.txt */; };
+		077534691A43BCCC009BADFB /* ArticulationStaccato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077534681A43BCCC009BADFB /* ArticulationStaccato.swift */; };
+		0775346B1A43BCF5009BADFB /* ArticulationAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775346A1A43BCF5009BADFB /* ArticulationAttack.swift */; };
+		0775346D1A43BD20009BADFB /* ArticulationTenuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775346C1A43BD20009BADFB /* ArticulationTenuto.swift */; };
+		0775346F1A43BD5E009BADFB /* ArticulationStaccatissimo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775346E1A43BD5E009BADFB /* ArticulationStaccatissimo.swift */; };
+		077534711A43C510009BADFB /* ArticulationAttackTenuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077534701A43C510009BADFB /* ArticulationAttackTenuto.swift */; };
+		077534731A43C537009BADFB /* ArticulationAttackStaccato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077534721A43C537009BADFB /* ArticulationAttackStaccato.swift */; };
+		077534751A43C568009BADFB /* ArticulationTenutoStaccato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077534741A43C568009BADFB /* ArticulationTenutoStaccato.swift */; };
+		077534771A43D6D0009BADFB /* Tremolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077534761A43D6D0009BADFB /* Tremolo.swift */; };
+		077985B719D0F80B00330FA4 /* DMIHairpinLinearCresc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077985B519D0F80B00330FA4 /* DMIHairpinLinearCresc.swift */; };
+		077985B819D0F80B00330FA4 /* DMIHairpinLinearDecresc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077985B619D0F80B00330FA4 /* DMIHairpinLinearDecresc.swift */; };
+		077F1F9E1A3F8BED00246C61 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077F1F9D1A3F8BED00246C61 /* Timer.swift */; };
+		0781D96C1A23FF190036FAE4 /* StemLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0781D96B1A23FF190036FAE4 /* StemLine.swift */; };
+		0781D96E1A2401890036FAE4 /* StemLineRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0781D96D1A2401890036FAE4 /* StemLineRest.swift */; };
+		0783D38E19CCA9E50070CE7D /* ClefsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D38D19CCA9E50070CE7D /* ClefsLayer.swift */; };
+		0783D39419CCAB0F0070CE7D /* StaffInfoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D39319CCAB0F0070CE7D /* StaffInfoLayer.swift */; };
+		0783D39619CCAB3B0070CE7D /* GraphInfoLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D39519CCAB3B0070CE7D /* GraphInfoLayer.swift */; };
+		0783D39819CCAB650070CE7D /* PathPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D39719CCAB650070CE7D /* PathPoints.swift */; };
+		0783D39A19CCAB940070CE7D /* StaffEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D39919CCAB940070CE7D /* StaffEvent.swift */; };
+		0783D39C19CCABC10070CE7D /* StaffLinesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D39B19CCABC10070CE7D /* StaffLinesLayer.swift */; };
+		0783D39E19CCABF00070CE7D /* GraphLinesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D39D19CCABF00070CE7D /* GraphLinesLayer.swift */; };
+		0783D3A119CCAD140070CE7D /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783D3A019CCAD140070CE7D /* Instrument.swift */; };
+		0785329D1A198D7E004D0F0F /* MetronomeSpanNode_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785329C1A198D7E004D0F0F /* MetronomeSpanNode_8.swift */; };
+		0785329F1A198DCF004D0F0F /* MetronomeSpanNode_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785329E1A198DCF004D0F0F /* MetronomeSpanNode_7.swift */; };
+		078532A11A198DEF004D0F0F /* MetronomeSpanNode_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078532A01A198DEF004D0F0F /* MetronomeSpanNode_6.swift */; };
+		078532A31A198E03004D0F0F /* MetronomeSpanNode_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078532A21A198E03004D0F0F /* MetronomeSpanNode_5.swift */; };
+		078532A51A198E3D004D0F0F /* MetronomeSpanNode_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078532A41A198E3D004D0F0F /* MetronomeSpanNode_4.swift */; };
+		078532A71A198E5C004D0F0F /* MetronomeSpanNode_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078532A61A198E5C004D0F0F /* MetronomeSpanNode_3.swift */; };
+		078532A91A198E94004D0F0F /* MetronomeSpanNode_compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078532A81A198E94004D0F0F /* MetronomeSpanNode_compound.swift */; };
+		078532AB1A198EC3004D0F0F /* CreateMetronomeSpanNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078532AA1A198EC3004D0F0F /* CreateMetronomeSpanNode.swift */; };
+		0788CE551A424BB300DF5665 /* TBLReintroduceTruncated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788CE541A424BB300DF5665 /* TBLReintroduceTruncated.swift */; };
+		078EDCD61A2432D6003AF81A /* CreateStem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EDCD51A2432D6003AF81A /* CreateStem.swift */; };
+		07A666EA19CD28EA0045C8F2 /* DMKerningTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666E919CD28EA0045C8F2 /* DMKerningTable.swift */; };
+		07A666ED19CD49460045C8F2 /* DMInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666EC19CD49460045C8F2 /* DMInterpolation.swift */; };
+		07A666EF19CD49A10045C8F2 /* CreateDMInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666EE19CD49A10045C8F2 /* CreateDMInterpolation.swift */; };
+		07A666F119CD59080045C8F2 /* DMIStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666F019CD59080045C8F2 /* DMIStatic.swift */; };
+		07A666F319CD59330045C8F2 /* DMISwell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666F219CD59330045C8F2 /* DMISwell.swift */; };
+		07A666F519CD59660045C8F2 /* DMIHairpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666F419CD59660045C8F2 /* DMIHairpin.swift */; };
+		07A666F819CD60DA0045C8F2 /* DurationalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666F719CD60DA0045C8F2 /* DurationalExtension.swift */; };
+		07A666FA19CD623D0045C8F2 /* DELayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666F919CD623D0045C8F2 /* DELayer.swift */; };
+		07A666FC19CD64BF0045C8F2 /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A666FB19CD64BF0045C8F2 /* Articulation.swift */; };
+		07AD292D19D9DE2800E37FBC /* SpanComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD292C19D9DE2800E37FBC /* SpanComponent.swift */; };
+		07AD292F19D9DE9600E37FBC /* InstrumentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD292E19D9DE9600E37FBC /* InstrumentInfo.swift */; };
+		07AE7B661A0B651E003EAADE /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE7B651A0B651E003EAADE /* Beam.swift */; };
+		07B9D01C19E843B800FD5FD9 /* StaffClef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D01B19E843B800FD5FD9 /* StaffClef.swift */; };
+		07B9D01F19E8518400FD5FD9 /* CreateStaffClef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D01E19E8518400FD5FD9 /* CreateStaffClef.swift */; };
+		07B9D02119E8560700FD5FD9 /* ClefEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D02019E8560700FD5FD9 /* ClefEmpty.swift */; };
+		07BE0EE61A59DDDD005D511C /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE0EE51A59DDDD005D511C /* CALayerExtensions.swift */; };
+		07BED75D1A6379EB00708EA0 /* GetSpanTreeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BED75C1A6379EB00708EA0 /* GetSpanTreeRange.swift */; };
+		07BED75F1A63B90000708EA0 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BED75E1A63B90000708EA0 /* ViewContainer.swift */; };
+		07BED7611A63B98100708EA0 /* ViewContainerFlowVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BED7601A63B98100708EA0 /* ViewContainerFlowVertical.swift */; };
+		07BED7631A63B9E500708EA0 /* ViewContainerFlowHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BED7621A63B9E500708EA0 /* ViewContainerFlowHorizontal.swift */; };
+		07BED7651A63BAB700708EA0 /* ViewContainerFlowOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BED7641A63BAB700708EA0 /* ViewContainerFlowOrder.swift */; };
+		07BED7671A63C4C600708EA0 /* ViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BED7661A63C4C600708EA0 /* ViewNode.swift */; };
+		07CCD68C1A1AB5C0006503C8 /* MetronomePrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCD68B1A1AB5C0006503C8 /* MetronomePrototype.swift */; };
+		07D026061A23B088009FA945 /* TimeSignatureSupplemental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D026051A23B088009FA945 /* TimeSignatureSupplemental.swift */; };
+		07D026091A23B456009FA945 /* StemRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D026081A23B456009FA945 /* StemRest.swift */; };
+		07D338DD1A11E7E800E88498 /* SpanComponentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D338DC1A11E7E800E88498 /* SpanComponentManager.swift */; };
+		07D7081519D5CE4400454503 /* GraphEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7081419D5CE4400454503 /* GraphEvent.swift */; };
+		07D73A9419D4BD37002FD489 /* TBStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D73A9319D4BD37002FD489 /* TBStratum.swift */; };
+		07D73A9619D4D71F002FD489 /* BeamsLayerStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D73A9519D4D71F002FD489 /* BeamsLayerStratum.swift */; };
+		07DFC41019D0FFA3001CBF78 /* DMISwellConvex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DFC40F19D0FFA3001CBF78 /* DMISwellConvex.swift */; };
+		07DFC41419D1004F001CBF78 /* DMISwellConcave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DFC41319D1004F001CBF78 /* DMISwellConcave.swift */; };
+		07DFC41619D12011001CBF78 /* DMIHairpinLinear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DFC41519D12011001CBF78 /* DMIHairpinLinear.swift */; };
+		07DFC41819D12059001CBF78 /* DMIHairpinExponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DFC41719D12059001CBF78 /* DMIHairpinExponential.swift */; };
+		07DFC41A19D1216D001CBF78 /* DMIHairpinExponentialCresc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DFC41919D1216D001CBF78 /* DMIHairpinExponentialCresc.swift */; };
+		07DFC41C19D121A5001CBF78 /* DMIHairpinExponentialDescresc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DFC41B19D121A5001CBF78 /* DMIHairpinExponentialDescresc.swift */; };
+		07E857901A1EA32800BFE9E4 /* Barline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8578F1A1EA32800BFE9E4 /* Barline.swift */; };
+		07E857921A1EA44800BFE9E4 /* BarlineSystemEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E857911A1EA44800BFE9E4 /* BarlineSystemEnd.swift */; };
+		07E857941A1EA46A00BFE9E4 /* BarlinePieceEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E857931A1EA46A00BFE9E4 /* BarlinePieceEnd.swift */; };
+		07E857961A1EB83000BFE9E4 /* CAShapeLayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E857951A1EB83000BFE9E4 /* CAShapeLayerExtensions.swift */; };
+		07E9721919E87937004171CA /* PitchSpelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9721819E87937004171CA /* PitchSpelling.swift */; };
+		07E9721B19E87CDD004171CA /* PitchSpellingsByIntervalPitchClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9721A19E87CDD004171CA /* PitchSpellingsByIntervalPitchClass.swift */; };
+		07E9721D19E8924B004171CA /* PitchClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9721C19E8924B004171CA /* PitchClass.swift */; };
+		07E9722119E89294004171CA /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9722019E89294004171CA /* Pitch.swift */; };
+		07E98E371A0C04CD00722E42 /* MetronomeSpanTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E98E361A0C04CD00722E42 /* MetronomeSpanTree.swift */; };
+		07EB950619CBFF5A00E4F729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB950519CBFF5A00E4F729 /* AppDelegate.swift */; };
+		07EB950819CBFF5A00E4F729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB950719CBFF5A00E4F729 /* ViewController.swift */; };
+		07EB950B19CBFF5A00E4F729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EB950919CBFF5A00E4F729 /* Main.storyboard */; };
+		07EB950D19CBFF5B00E4F729 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB950C19CBFF5B00E4F729 /* Images.xcassets */; };
+		07EB952619CBFF7700E4F729 /* Beats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB952519CBFF7700E4F729 /* Beats.swift */; };
+		07EB952819CBFF8B00E4F729 /* Subdivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB952719CBFF8B00E4F729 /* Subdivision.swift */; };
+		07EB952A19CBFF9D00E4F729 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB952919CBFF9D00E4F729 /* Duration.swift */; };
+		07EB953419CC006E00E4F729 /* Stratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB953319CC006E00E4F729 /* Stratum.swift */; };
+		07EB953619CC007400E4F729 /* StratumContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB953519CC007400E4F729 /* StratumContainer.swift */; };
+		07EB953819CC008000E4F729 /* StratumObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB953719CC008000E4F729 /* StratumObject.swift */; };
+		07EB953A19CC00B300E4F729 /* arrayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB953919CC00B300E4F729 /* arrayFunctions.swift */; };
+		07EB954419CC01A000E4F729 /* ExternalPads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB954319CC01A000E4F729 /* ExternalPads.swift */; };
+		07EB954619CC01C500E4F729 /* GraphicalPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB954519CC01C500E4F729 /* GraphicalPad.swift */; };
+		07EB954919CC01D500E4F729 /* PadHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB954719CC01D500E4F729 /* PadHorizontal.swift */; };
+		07EB954A19CC01D500E4F729 /* PadVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB954819CC01D500E4F729 /* PadVertical.swift */; };
+		07EB954F19CC025C00E4F729 /* SpanNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB954D19CC025C00E4F729 /* SpanNode.swift */; };
+		07EB955019CC025C00E4F729 /* SpanTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB954E19CC025C00E4F729 /* SpanTree.swift */; };
+		07EB955C19CC02C200E4F729 /* ClefAlto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB955619CC02C200E4F729 /* ClefAlto.swift */; };
+		07EB955D19CC02C200E4F729 /* ClefBass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB955719CC02C200E4F729 /* ClefBass.swift */; };
+		07EB955E19CC02C200E4F729 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB955819CC02C200E4F729 /* Clef.swift */; };
+		07EB955F19CC02C200E4F729 /* CreateClef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB955919CC02C200E4F729 /* CreateClef.swift */; };
+		07EB956019CC02C200E4F729 /* ClefTenor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB955A19CC02C200E4F729 /* ClefTenor.swift */; };
+		07EB956119CC02C200E4F729 /* ClefTreble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB955B19CC02C200E4F729 /* ClefTreble.swift */; };
+		07EB956619CC037800E4F729 /* TextLayerByHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB956319CC037800E4F729 /* TextLayerByHeight.swift */; };
+		07EB956719CC037800E4F729 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB956419CC037800E4F729 /* TimeSignature.swift */; };
+		07EB956819CC037800E4F729 /* TimeSignatureStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB956519CC037800E4F729 /* TimeSignatureStratum.swift */; };
+		07EB956A19CC03AE00E4F729 /* HeightForLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB956919CC03AE00E4F729 /* HeightForLayout.swift */; };
+		07EB956E19CC03F900E4F729 /* MeasureNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB956C19CC03F900E4F729 /* MeasureNumber.swift */; };
+		07EB956F19CC03F900E4F729 /* MeasureNumberStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB956D19CC03F900E4F729 /* MeasureNumberStratum.swift */; };
+		07EB957219CC042D00E4F729 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB957119CC042D00E4F729 /* Measure.swift */; };
+		07EB959719CC048A00E4F729 /* Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB957419CC048A00E4F729 /* Accidental.swift */; };
+		07EB95A019CC048A00E4F729 /* AccidentalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB957D19CC048A00E4F729 /* AccidentalComponent.swift */; };
+		07EB95A119CC048A00E4F729 /* AccidentalComponentArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB957E19CC048A00E4F729 /* AccidentalComponentArrow.swift */; };
+		07EB95A219CC048A00E4F729 /* AccidentalComponentColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB957F19CC048A00E4F729 /* AccidentalComponentColumn.swift */; };
+		07EB95A319CC048A00E4F729 /* AccidentalComponentCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958019CC048A00E4F729 /* AccidentalComponentCurve.swift */; };
+		07EB95A419CC048A00E4F729 /* AccidentalComponentThickLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958119CC048A00E4F729 /* AccidentalComponentThickLine.swift */; };
+		07EB95A519CC048A00E4F729 /* AccidentalComponentThinLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958219CC048A00E4F729 /* AccidentalComponentThinLine.swift */; };
+		07EB95A619CC048A00E4F729 /* AccidentalFlat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958319CC048A00E4F729 /* AccidentalFlat.swift */; };
+		07EB95A719CC048A00E4F729 /* AccidentalFlatDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958419CC048A00E4F729 /* AccidentalFlatDown.swift */; };
+		07EB95A819CC048A00E4F729 /* AccidentalFlatUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958519CC048A00E4F729 /* AccidentalFlatUp.swift */; };
+		07EB95A919CC048A00E4F729 /* AccidentalNatural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958619CC048A00E4F729 /* AccidentalNatural.swift */; };
+		07EB95AA19CC048A00E4F729 /* AccidentalNaturalDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958719CC048A00E4F729 /* AccidentalNaturalDown.swift */; };
+		07EB95AB19CC048A00E4F729 /* AccidentalNaturalUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958819CC048A00E4F729 /* AccidentalNaturalUp.swift */; };
+		07EB95AC19CC048A00E4F729 /* AccidentalQuarterFlat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958919CC048A00E4F729 /* AccidentalQuarterFlat.swift */; };
+		07EB95AD19CC048A00E4F729 /* AccidentalQuarterFlatDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958A19CC048A00E4F729 /* AccidentalQuarterFlatDown.swift */; };
+		07EB95AE19CC048A00E4F729 /* AccidentalQuarterFlatUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958B19CC048A00E4F729 /* AccidentalQuarterFlatUp.swift */; };
+		07EB95AF19CC048A00E4F729 /* AccidentalQuarterSharp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958C19CC048A00E4F729 /* AccidentalQuarterSharp.swift */; };
+		07EB95B019CC048A00E4F729 /* AccidentalQuarterSharpDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958D19CC048A00E4F729 /* AccidentalQuarterSharpDown.swift */; };
+		07EB95B119CC048A00E4F729 /* AccidentalQuarterSharpUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958E19CC048A00E4F729 /* AccidentalQuarterSharpUp.swift */; };
+		07EB95B219CC048A00E4F729 /* AccidentalSharp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB958F19CC048A00E4F729 /* AccidentalSharp.swift */; };
+		07EB95B319CC048A00E4F729 /* AccidentalSharpDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959019CC048A00E4F729 /* AccidentalSharpDown.swift */; };
+		07EB95B419CC048A00E4F729 /* AccidentalSharpUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959119CC048A00E4F729 /* AccidentalSharpUp.swift */; };
+		07EB95B519CC048A00E4F729 /* AccidentalZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959219CC048A00E4F729 /* AccidentalZone.swift */; };
+		07EB95B619CC048A00E4F729 /* AccidentalZoneArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959319CC048A00E4F729 /* AccidentalZoneArrow.swift */; };
+		07EB95B719CC048A00E4F729 /* AccidentalZoneBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959419CC048A00E4F729 /* AccidentalZoneBody.swift */; };
+		07EB95B819CC048A00E4F729 /* AccidentalZoneColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959519CC048A00E4F729 /* AccidentalZoneColumn.swift */; };
+		07EB95B919CC048A00E4F729 /* CreateAccidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB959619CC048A00E4F729 /* CreateAccidental.swift */; };
+		07EB95CE19CC053A00E4F729 /* MetronomeGraphic_2_16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95BE19CC053A00E4F729 /* MetronomeGraphic_2_16.swift */; };
+		07EB95CF19CC053A00E4F729 /* MetronomeGraphic_2_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95BF19CC053A00E4F729 /* MetronomeGraphic_2_32.swift */; };
+		07EB95D019CC053A00E4F729 /* MetronomeGraphic_2_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C019CC053A00E4F729 /* MetronomeGraphic_2_64.swift */; };
+		07EB95D119CC053A00E4F729 /* MetronomeGraphic_2_128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C119CC053A00E4F729 /* MetronomeGraphic_2_128.swift */; };
+		07EB95D219CC053A00E4F729 /* MetronomeGraphic_2_256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C219CC053A00E4F729 /* MetronomeGraphic_2_256.swift */; };
+		07EB95D319CC053A00E4F729 /* MetronomeGraphic_2_512.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C319CC053A00E4F729 /* MetronomeGraphic_2_512.swift */; };
+		07EB95D419CC053A00E4F729 /* MetronomeGraphic_2_1024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C419CC053A00E4F729 /* MetronomeGraphic_2_1024.swift */; };
+		07EB95D519CC053A00E4F729 /* MetronomeGraphic_3_16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C519CC053A00E4F729 /* MetronomeGraphic_3_16.swift */; };
+		07EB95D619CC053A00E4F729 /* MetronomeGraphic_3_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C619CC053A00E4F729 /* MetronomeGraphic_3_32.swift */; };
+		07EB95D719CC053A00E4F729 /* MetronomeGraphic_3_64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C719CC053A00E4F729 /* MetronomeGraphic_3_64.swift */; };
+		07EB95D819CC053A00E4F729 /* MetronomeGraphic_3_128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C819CC053A00E4F729 /* MetronomeGraphic_3_128.swift */; };
+		07EB95D919CC053A00E4F729 /* MetronomeGraphic_3_256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95C919CC053A00E4F729 /* MetronomeGraphic_3_256.swift */; };
+		07EB95DA19CC053A00E4F729 /* MetronomeGraphic_3_512.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95CA19CC053A00E4F729 /* MetronomeGraphic_3_512.swift */; };
+		07EB95DB19CC053A00E4F729 /* MetronomeGraphic_3_1024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95CB19CC053A00E4F729 /* MetronomeGraphic_3_1024.swift */; };
+		07EB95DC19CC053A00E4F729 /* MetronomeGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95CC19CC053A00E4F729 /* MetronomeGraphic.swift */; };
+		07EB95DD19CC053A00E4F729 /* MGStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95CD19CC053A00E4F729 /* MGStratum.swift */; };
+		07EB95DF19CC054B00E4F729 /* CreateMetronomeGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95DE19CC054B00E4F729 /* CreateMetronomeGraphic.swift */; };
+		07EB95E219CC05E300E4F729 /* addTestLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E119CC05E300E4F729 /* addTestLines.swift */; };
+		07EB95ED19CC061800E4F729 /* CreateTestLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E319CC061800E4F729 /* CreateTestLine.swift */; };
+		07EB95EE19CC061800E4F729 /* TestLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E419CC061800E4F729 /* TestLine.swift */; };
+		07EB95EF19CC061800E4F729 /* TestLineArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E519CC061800E4F729 /* TestLineArrow.swift */; };
+		07EB95F019CC061800E4F729 /* TestLineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E619CC061800E4F729 /* TestLineComponent.swift */; };
+		07EB95F119CC061800E4F729 /* TestLineEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E719CC061800E4F729 /* TestLineEdge.swift */; };
+		07EB95F219CC061800E4F729 /* TestLineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E819CC061800E4F729 /* TestLineHeight.swift */; };
+		07EB95F319CC061800E4F729 /* TestLineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95E919CC061800E4F729 /* TestLineLabel.swift */; };
+		07EB95F419CC061800E4F729 /* TestLineLabelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95EA19CC061800E4F729 /* TestLineLabelInfo.swift */; };
+		07EB95F519CC061800E4F729 /* TestLinePrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95EB19CC061800E4F729 /* TestLinePrimary.swift */; };
+		07EB95F619CC061800E4F729 /* TestLineWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95EC19CC061800E4F729 /* TestLineWidth.swift */; };
+		07EB961019CC068600E4F729 /* FDFluteAlto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95F819CC068600E4F729 /* FDFluteAlto.swift */; };
+		07EB961119CC068600E4F729 /* FDSaxophoneAlto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95F919CC068600E4F729 /* FDSaxophoneAlto.swift */; };
+		07EB961219CC068600E4F729 /* FDSaxophoneBaritone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95FA19CC068600E4F729 /* FDSaxophoneBaritone.swift */; };
+		07EB961319CC068600E4F729 /* FDClarinetBass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95FB19CC068600E4F729 /* FDClarinetBass.swift */; };
+		07EB961419CC068600E4F729 /* FDFluteBass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95FC19CC068600E4F729 /* FDFluteBass.swift */; };
+		07EB961519CC068600E4F729 /* FDClarinetBflat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95FD19CC068600E4F729 /* FDClarinetBflat.swift */; };
+		07EB961619CC068600E4F729 /* FDFluteC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95FE19CC068600E4F729 /* FDFluteC.swift */; };
+		07EB961719CC068600E4F729 /* FDClarinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB95FF19CC068600E4F729 /* FDClarinet.swift */; };
+		07EB961819CC068600E4F729 /* FDKClarinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960019CC068600E4F729 /* FDKClarinet.swift */; };
+		07EB961919CC068600E4F729 /* FDClarinetContrabass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960119CC068600E4F729 /* FDClarinetContrabass.swift */; };
+		07EB961A19CC068600E4F729 /* FingeringDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960219CC068600E4F729 /* FingeringDiagram.swift */; };
+		07EB961B19CC068600E4F729 /* FDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960319CC068600E4F729 /* FDKey.swift */; };
+		07EB961C19CC068600E4F729 /* FDKState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960419CC068600E4F729 /* FDKState.swift */; };
+		07EB961D19CC068600E4F729 /* FDKSActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960519CC068600E4F729 /* FDKSActive.swift */; };
+		07EB961E19CC068600E4F729 /* FDKSIdle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960619CC068600E4F729 /* FDKSIdle.swift */; };
+		07EB961F19CC068600E4F729 /* FDKSTrill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960719CC068600E4F729 /* FDKSTrill.swift */; };
+		07EB962019CC068600E4F729 /* FDKSTHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960819CC068600E4F729 /* FDKSTHalf.swift */; };
+		07EB962119CC068600E4F729 /* FDFlute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960919CC068600E4F729 /* FDFlute.swift */; };
+		07EB962219CC068600E4F729 /* FDKFlute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960A19CC068600E4F729 /* FDKFlute.swift */; };
+		07EB962319CC068600E4F729 /* FDFlutePiccolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960B19CC068600E4F729 /* FDFlutePiccolo.swift */; };
+		07EB962419CC068600E4F729 /* FDSaxophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960C19CC068600E4F729 /* FDSaxophone.swift */; };
+		07EB962519CC068600E4F729 /* FDKSaxophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960D19CC068600E4F729 /* FDKSaxophone.swift */; };
+		07EB962619CC068600E4F729 /* FDSaxophoneSoprano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960E19CC068600E4F729 /* FDSaxophoneSoprano.swift */; };
+		07EB962719CC068600E4F729 /* FDSaxophoneTenor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB960F19CC068600E4F729 /* FDSaxophoneTenor.swift */; };
+		07EB962D19CC079500E4F729 /* CreateFingeringDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB962C19CC079500E4F729 /* CreateFingeringDiagram.swift */; };
+		07EB963219CC083E00E4F729 /* randomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963019CC083E00E4F729 /* randomColor.swift */; };
+		07EB963319CC083E00E4F729 /* randomMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963119CC083E00E4F729 /* randomMidi.swift */; };
+		07EB963819CC085900E4F729 /* CreateNotehead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963419CC085900E4F729 /* CreateNotehead.swift */; };
+		07EB963919CC085900E4F729 /* HarmonicNotehead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963519CC085900E4F729 /* HarmonicNotehead.swift */; };
+		07EB963A19CC085900E4F729 /* Notehead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963619CC085900E4F729 /* Notehead.swift */; };
+		07EB963B19CC085900E4F729 /* OrdNotehead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963719CC085900E4F729 /* OrdNotehead.swift */; };
+		07EB963E19CC088800E4F729 /* StaffSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB963D19CC088800E4F729 /* StaffSpace.swift */; };
+		07EB964E19CC0A0300E4F729 /* BeamGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964119CC0A0300E4F729 /* BeamGroup.swift */; };
+		07EB965119CC0A0300E4F729 /* BGStratum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964419CC0A0300E4F729 /* BGStratum.swift */; };
+		07EB965219CC0A0300E4F729 /* BGVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964519CC0A0300E4F729 /* BGVoice.swift */; };
+		07EB965319CC0A0300E4F729 /* BeamJunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964619CC0A0300E4F729 /* BeamJunction.swift */; };
+		07EB965419CC0A0300E4F729 /* BeamJunctionExtendedLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964719CC0A0300E4F729 /* BeamJunctionExtendedLast.swift */; };
+		07EB965519CC0A0300E4F729 /* BeamJunctionExtendedSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964819CC0A0300E4F729 /* BeamJunctionExtendedSingle.swift */; };
+		07EB965619CC0A0300E4F729 /* BeamJunctionOrdFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964919CC0A0300E4F729 /* BeamJunctionOrdFirst.swift */; };
+		07EB965719CC0A0300E4F729 /* BeamJunctionOrdLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964A19CC0A0300E4F729 /* BeamJunctionOrdLast.swift */; };
+		07EB965819CC0A0300E4F729 /* BeamJunctionOrdMiddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964B19CC0A0300E4F729 /* BeamJunctionOrdMiddle.swift */; };
+		07EB965919CC0A0300E4F729 /* BeamJunctionOrdSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964C19CC0A0300E4F729 /* BeamJunctionOrdSingle.swift */; };
+		07EB965A19CC0A0300E4F729 /* BeamPathPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB964D19CC0A0300E4F729 /* BeamPathPoints.swift */; };
+		07EB965D19CC0A2100E4F729 /* CreateBeamJunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB965C19CC0A2100E4F729 /* CreateBeamJunction.swift */; };
+		07EB966019CC0A4300E4F729 /* BeamsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB965F19CC0A4300E4F729 /* BeamsLayer.swift */; };
+		07EB966319CC0A8200E4F729 /* StemPathPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB966119CC0A8200E4F729 /* StemPathPoints.swift */; };
+		07EB966419CC0A8200E4F729 /* StemsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB966219CC0A8200E4F729 /* StemsLayer.swift */; };
+		07EB966819CC0AA400E4F729 /* SubdivisionGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB966719CC0AA400E4F729 /* SubdivisionGraphic.swift */; };
+		07EB966E19CC0ACC00E4F729 /* ColorByDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB966D19CC0ACC00E4F729 /* ColorByDepth.swift */; };
+		07EB967219CC0B9600E4F729 /* getColorByDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB967119CC0B9600E4F729 /* getColorByDepth.swift */; };
+		07EB967419CC0F6900E4F729 /* TupletBracket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB967319CC0F6900E4F729 /* TupletBracket.swift */; };
+		07EB967619CC0FD800E4F729 /* TBLigaturesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB967519CC0FD800E4F729 /* TBLigaturesLayer.swift */; };
+		07EBA0CE19E2495800587FE9 /* MGGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBA0CD19E2495800587FE9 /* MGGroup.swift */; };
+		07EBA0D019E24C3200587FE9 /* MGLigature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EBA0CF19E24C3200587FE9 /* MGLigature.swift */; };
+		07ECF6D61A63526000C9BCA1 /* PerformerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ECF6D51A63526000C9BCA1 /* PerformerView.swift */; };
+		07ECF6D91A63575C00C9BCA1 /* GetMeasureRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ECF6D81A63575C00C9BCA1 /* GetMeasureRange.swift */; };
+		07ECF6DB1A63592C00C9BCA1 /* GetSystemRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ECF6DA1A63592C00C9BCA1 /* GetSystemRange.swift */; };
+		07F68CCF1A33AECF003C0155 /* MGSubgroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F68CCE1A33AECF003C0155 /* MGSubgroup.swift */; };
+		07FF8C971A1956BE007BA3A1 /* Syncopation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF8C961A1956BE007BA3A1 /* Syncopation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07EB951619CBFF5B00E4F729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07EB94F819CBFF5A00E4F729 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07EB94FF19CBFF5A00E4F729;
+			remoteInfo = denm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070826921A5C6B8900E208C5 /* Slur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slur.swift; sourceTree = "<group>"; };
+		0709B04F19CCAD8300BF648A /* Performer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performer.swift; sourceTree = "<group>"; };
+		0709B05119CCADD700BF648A /* PerformerBracket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerBracket.swift; sourceTree = "<group>"; };
+		0709B05319CCAE7400BF648A /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		0709B05519CCAE9700BF648A /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		0709B05719CCAEC700BF648A /* SystemBreakGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemBreakGraphic.swift; sourceTree = "<group>"; };
+		070C33E219EDC0FD0061046B /* Dyad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dyad.swift; sourceTree = "<group>"; };
+		0728E44A19CC937D00C8FCE7 /* TBLigature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLigature.swift; sourceTree = "<group>"; };
+		0728E44D19CC974900C8FCE7 /* TBLOrnament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLOrnament.swift; sourceTree = "<group>"; };
+		0728E44F19CC977900C8FCE7 /* TBLLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLLine.swift; sourceTree = "<group>"; };
+		0728E45119CC97BB00C8FCE7 /* CreateTBLigature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTBLigature.swift; sourceTree = "<group>"; };
+		0728E45219CC97BB00C8FCE7 /* CreateTBLOrnament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTBLOrnament.swift; sourceTree = "<group>"; };
+		0728E45619CC98E900C8FCE7 /* TBLEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLEnd.swift; sourceTree = "<group>"; };
+		0728E45819CC98E900C8FCE7 /* TBLStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLStart.swift; sourceTree = "<group>"; };
+		0728E45C19CC991800C8FCE7 /* TBLReintroduce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLReintroduce.swift; sourceTree = "<group>"; };
+		0728E45E19CC998700C8FCE7 /* TBLComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLComponent.swift; sourceTree = "<group>"; };
+		0728E46319CC9A7B00C8FCE7 /* TBLOArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLOArrow.swift; sourceTree = "<group>"; };
+		0728E46419CC9A7B00C8FCE7 /* TBLOCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLOCircle.swift; sourceTree = "<group>"; };
+		0728E46519CC9A7B00C8FCE7 /* TBLOLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLOLine.swift; sourceTree = "<group>"; };
+		0728E46919CC9E5F00C8FCE7 /* FDKSTFull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKSTFull.swift; sourceTree = "<group>"; };
+		0728E46B19CCA14400C8FCE7 /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		0730C3DB1A089CA400D8ACE4 /* MGCompoundStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGCompoundStratum.swift; sourceTree = "<group>"; };
+		0730C3DD1A089D4C00D8ACE4 /* TBCompoundStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCompoundStratum.swift; sourceTree = "<group>"; };
+		0730C3DF1A08B29C00D8ACE4 /* BeamsLayerCompoundStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamsLayerCompoundStratum.swift; sourceTree = "<group>"; };
+		0736F3A419E0DA06005DC9B0 /* BGContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGContainer.swift; sourceTree = "<group>"; };
+		0736F3A619E0DA3A005DC9B0 /* BGLeaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGLeaf.swift; sourceTree = "<group>"; };
+		073CE1D31A4372C0005EE2AC /* AugmentationDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AugmentationDot.swift; sourceTree = "<group>"; };
+		073CE1D51A4372FF005EE2AC /* CreateArticulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateArticulation.swift; sourceTree = "<group>"; };
+		073F18C719E7AD0D004857DE /* MetronomeSpanNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode.swift; sourceTree = "<group>"; };
+		0745B37819CCD517000081D7 /* DynamicMarking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicMarking.swift; sourceTree = "<group>"; };
+		0745B37B19CCD584000081D7 /* DMCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter.swift; sourceTree = "<group>"; };
+		0745B37D19CCD5DF000081D7 /* DMCharacter_f.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_f.swift; sourceTree = "<group>"; };
+		0745B37F19CCD627000081D7 /* DMCharacter_p.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_p.swift; sourceTree = "<group>"; };
+		0745B38119CCD636000081D7 /* DMCharacter_m.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_m.swift; sourceTree = "<group>"; };
+		0745B38319CCD643000081D7 /* DMCharacter_exclamation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_exclamation.swift; sourceTree = "<group>"; };
+		0745B38519CCD652000081D7 /* DMCharacter_o.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_o.swift; sourceTree = "<group>"; };
+		0745B38719CCD666000081D7 /* CreateDMCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDMCharacter.swift; sourceTree = "<group>"; };
+		0745B38B19CCF0A9000081D7 /* DMCharacter_parenLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_parenLeft.swift; sourceTree = "<group>"; };
+		0745B38D19CCF0C4000081D7 /* DMCharacter_parenRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCharacter_parenRight.swift; sourceTree = "<group>"; };
+		0745B38F19CCF54E000081D7 /* DMStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMStratum.swift; sourceTree = "<group>"; };
+		0747D4FE1A0744A00011D4DD /* BGVoiceSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGVoiceSegment.swift; sourceTree = "<group>"; };
+		074D30B41A415A0C008A8781 /* PitchSpeller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpeller.swift; sourceTree = "<group>"; };
+		0753C03019F60F64006B15B0 /* Stem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stem.swift; sourceTree = "<group>"; };
+		07554E891A5F711000CE94DF /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		07554E8A1A5F711000CE94DF /* Tokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		07554E8B1A5F711000CE94DF /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		07554E8C1A5F711000CE94DF /* Interpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		07554E8D1A5F711000CE94DF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		07554E8E1A5F711000CE94DF /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		07554E8F1A5F711000CE94DF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0755848119CCA2F40003F364 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		075FE4391A1ED175009EB8E0 /* SelectRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRect.swift; sourceTree = "<group>"; };
+		075FE43B1A1ED554009EB8E0 /* Highlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
+		0762DC091A5F74AB00679EAD /* denm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = denm.swift; sourceTree = "<group>"; };
+		0766B26119D13BF600A6A166 /* StringSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSubscript.swift; sourceTree = "<group>"; };
+		076A98441A4B5A8F0058AA6F /* MetronomeGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGrid.swift; sourceTree = "<group>"; };
+		076A98471A4B600E0058AA6F /* MetronomeGridLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGridLine.swift; sourceTree = "<group>"; };
+		076A98491A4CAC540058AA6F /* MetronomeGridRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGridRect.swift; sourceTree = "<group>"; };
+		076CA45C1A420FCD00992B9B /* MGProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGProgressBar.swift; sourceTree = "<group>"; };
+		07712EA41A61117900AE014F /* drier_run.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drier_run.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		077534681A43BCCC009BADFB /* ArticulationStaccato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationStaccato.swift; sourceTree = "<group>"; };
+		0775346A1A43BCF5009BADFB /* ArticulationAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationAttack.swift; sourceTree = "<group>"; };
+		0775346C1A43BD20009BADFB /* ArticulationTenuto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationTenuto.swift; sourceTree = "<group>"; };
+		0775346E1A43BD5E009BADFB /* ArticulationStaccatissimo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationStaccatissimo.swift; sourceTree = "<group>"; };
+		077534701A43C510009BADFB /* ArticulationAttackTenuto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationAttackTenuto.swift; sourceTree = "<group>"; };
+		077534721A43C537009BADFB /* ArticulationAttackStaccato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationAttackStaccato.swift; sourceTree = "<group>"; };
+		077534741A43C568009BADFB /* ArticulationTenutoStaccato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticulationTenutoStaccato.swift; sourceTree = "<group>"; };
+		077534761A43D6D0009BADFB /* Tremolo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tremolo.swift; sourceTree = "<group>"; };
+		077985B519D0F80B00330FA4 /* DMIHairpinLinearCresc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpinLinearCresc.swift; sourceTree = "<group>"; };
+		077985B619D0F80B00330FA4 /* DMIHairpinLinearDecresc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpinLinearDecresc.swift; sourceTree = "<group>"; };
+		077F1F9D1A3F8BED00246C61 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		0781D96B1A23FF190036FAE4 /* StemLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StemLine.swift; sourceTree = "<group>"; };
+		0781D96D1A2401890036FAE4 /* StemLineRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StemLineRest.swift; sourceTree = "<group>"; };
+		0783D38D19CCA9E50070CE7D /* ClefsLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefsLayer.swift; sourceTree = "<group>"; };
+		0783D39319CCAB0F0070CE7D /* StaffInfoLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffInfoLayer.swift; sourceTree = "<group>"; };
+		0783D39519CCAB3B0070CE7D /* GraphInfoLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphInfoLayer.swift; sourceTree = "<group>"; };
+		0783D39719CCAB650070CE7D /* PathPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathPoints.swift; sourceTree = "<group>"; };
+		0783D39919CCAB940070CE7D /* StaffEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffEvent.swift; sourceTree = "<group>"; };
+		0783D39B19CCABC10070CE7D /* StaffLinesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffLinesLayer.swift; sourceTree = "<group>"; };
+		0783D39D19CCABF00070CE7D /* GraphLinesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphLinesLayer.swift; sourceTree = "<group>"; };
+		0783D3A019CCAD140070CE7D /* Instrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
+		0785329C1A198D7E004D0F0F /* MetronomeSpanNode_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_8.swift; sourceTree = "<group>"; };
+		0785329E1A198DCF004D0F0F /* MetronomeSpanNode_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_7.swift; sourceTree = "<group>"; };
+		078532A01A198DEF004D0F0F /* MetronomeSpanNode_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_6.swift; sourceTree = "<group>"; };
+		078532A21A198E03004D0F0F /* MetronomeSpanNode_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_5.swift; sourceTree = "<group>"; };
+		078532A41A198E3D004D0F0F /* MetronomeSpanNode_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_4.swift; sourceTree = "<group>"; };
+		078532A61A198E5C004D0F0F /* MetronomeSpanNode_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_3.swift; sourceTree = "<group>"; };
+		078532A81A198E94004D0F0F /* MetronomeSpanNode_compound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanNode_compound.swift; sourceTree = "<group>"; };
+		078532AA1A198EC3004D0F0F /* CreateMetronomeSpanNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMetronomeSpanNode.swift; sourceTree = "<group>"; };
+		0788CE541A424BB300DF5665 /* TBLReintroduceTruncated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLReintroduceTruncated.swift; sourceTree = "<group>"; };
+		078EDCD51A2432D6003AF81A /* CreateStem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStem.swift; sourceTree = "<group>"; };
+		07A666E919CD28EA0045C8F2 /* DMKerningTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMKerningTable.swift; sourceTree = "<group>"; };
+		07A666EC19CD49460045C8F2 /* DMInterpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMInterpolation.swift; sourceTree = "<group>"; };
+		07A666EE19CD49A10045C8F2 /* CreateDMInterpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDMInterpolation.swift; sourceTree = "<group>"; };
+		07A666F019CD59080045C8F2 /* DMIStatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIStatic.swift; sourceTree = "<group>"; };
+		07A666F219CD59330045C8F2 /* DMISwell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMISwell.swift; sourceTree = "<group>"; };
+		07A666F419CD59660045C8F2 /* DMIHairpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpin.swift; sourceTree = "<group>"; };
+		07A666F719CD60DA0045C8F2 /* DurationalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationalExtension.swift; sourceTree = "<group>"; };
+		07A666F919CD623D0045C8F2 /* DELayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DELayer.swift; sourceTree = "<group>"; };
+		07A666FB19CD64BF0045C8F2 /* Articulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articulation.swift; sourceTree = "<group>"; };
+		07AD292C19D9DE2800E37FBC /* SpanComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpanComponent.swift; sourceTree = "<group>"; };
+		07AD292E19D9DE9600E37FBC /* InstrumentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentInfo.swift; sourceTree = "<group>"; };
+		07AE7B651A0B651E003EAADE /* Beam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beam.swift; sourceTree = "<group>"; };
+		07B9D01B19E843B800FD5FD9 /* StaffClef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffClef.swift; sourceTree = "<group>"; };
+		07B9D01E19E8518400FD5FD9 /* CreateStaffClef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStaffClef.swift; sourceTree = "<group>"; };
+		07B9D02019E8560700FD5FD9 /* ClefEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefEmpty.swift; sourceTree = "<group>"; };
+		07BE0EE51A59DDDD005D511C /* CALayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
+		07BED75C1A6379EB00708EA0 /* GetSpanTreeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSpanTreeRange.swift; sourceTree = "<group>"; };
+		07BED75E1A63B90000708EA0 /* ViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
+		07BED7601A63B98100708EA0 /* ViewContainerFlowVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerFlowVertical.swift; sourceTree = "<group>"; };
+		07BED7621A63B9E500708EA0 /* ViewContainerFlowHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerFlowHorizontal.swift; sourceTree = "<group>"; };
+		07BED7641A63BAB700708EA0 /* ViewContainerFlowOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerFlowOrder.swift; sourceTree = "<group>"; };
+		07BED7661A63C4C600708EA0 /* ViewNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNode.swift; sourceTree = "<group>"; };
+		07CCD68B1A1AB5C0006503C8 /* MetronomePrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomePrototype.swift; sourceTree = "<group>"; };
+		07D026051A23B088009FA945 /* TimeSignatureSupplemental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignatureSupplemental.swift; sourceTree = "<group>"; };
+		07D026081A23B456009FA945 /* StemRest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StemRest.swift; sourceTree = "<group>"; };
+		07D338DC1A11E7E800E88498 /* SpanComponentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpanComponentManager.swift; sourceTree = "<group>"; };
+		07D7081419D5CE4400454503 /* GraphEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphEvent.swift; sourceTree = "<group>"; };
+		07D73A9319D4BD37002FD489 /* TBStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBStratum.swift; sourceTree = "<group>"; };
+		07D73A9519D4D71F002FD489 /* BeamsLayerStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamsLayerStratum.swift; sourceTree = "<group>"; };
+		07DFC40F19D0FFA3001CBF78 /* DMISwellConvex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMISwellConvex.swift; sourceTree = "<group>"; };
+		07DFC41319D1004F001CBF78 /* DMISwellConcave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMISwellConcave.swift; sourceTree = "<group>"; };
+		07DFC41519D12011001CBF78 /* DMIHairpinLinear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpinLinear.swift; sourceTree = "<group>"; };
+		07DFC41719D12059001CBF78 /* DMIHairpinExponential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpinExponential.swift; sourceTree = "<group>"; };
+		07DFC41919D1216D001CBF78 /* DMIHairpinExponentialCresc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpinExponentialCresc.swift; sourceTree = "<group>"; };
+		07DFC41B19D121A5001CBF78 /* DMIHairpinExponentialDescresc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMIHairpinExponentialDescresc.swift; sourceTree = "<group>"; };
+		07E8578F1A1EA32800BFE9E4 /* Barline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barline.swift; sourceTree = "<group>"; };
+		07E857911A1EA44800BFE9E4 /* BarlineSystemEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarlineSystemEnd.swift; sourceTree = "<group>"; };
+		07E857931A1EA46A00BFE9E4 /* BarlinePieceEnd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarlinePieceEnd.swift; sourceTree = "<group>"; };
+		07E857951A1EB83000BFE9E4 /* CAShapeLayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAShapeLayerExtensions.swift; sourceTree = "<group>"; };
+		07E9721819E87937004171CA /* PitchSpelling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpelling.swift; sourceTree = "<group>"; };
+		07E9721A19E87CDD004171CA /* PitchSpellingsByIntervalPitchClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchSpellingsByIntervalPitchClass.swift; sourceTree = "<group>"; };
+		07E9721C19E8924B004171CA /* PitchClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchClass.swift; sourceTree = "<group>"; };
+		07E9722019E89294004171CA /* Pitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+		07E98E361A0C04CD00722E42 /* MetronomeSpanTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeSpanTree.swift; sourceTree = "<group>"; };
+		07EB950019CBFF5A00E4F729 /* denm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = denm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EB950419CBFF5A00E4F729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EB950519CBFF5A00E4F729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07EB950719CBFF5A00E4F729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07EB950A19CBFF5A00E4F729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07EB950C19CBFF5B00E4F729 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07EB951519CBFF5B00E4F729 /* denmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = denmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EB951A19CBFF5B00E4F729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EB952519CBFF7700E4F729 /* Beats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beats.swift; sourceTree = "<group>"; };
+		07EB952719CBFF8B00E4F729 /* Subdivision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subdivision.swift; sourceTree = "<group>"; };
+		07EB952919CBFF9D00E4F729 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		07EB953319CC006E00E4F729 /* Stratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stratum.swift; sourceTree = "<group>"; };
+		07EB953519CC007400E4F729 /* StratumContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumContainer.swift; sourceTree = "<group>"; };
+		07EB953719CC008000E4F729 /* StratumObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumObject.swift; sourceTree = "<group>"; };
+		07EB953919CC00B300E4F729 /* arrayFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arrayFunctions.swift; sourceTree = "<group>"; };
+		07EB954319CC01A000E4F729 /* ExternalPads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalPads.swift; sourceTree = "<group>"; };
+		07EB954519CC01C500E4F729 /* GraphicalPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicalPad.swift; sourceTree = "<group>"; };
+		07EB954719CC01D500E4F729 /* PadHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadHorizontal.swift; sourceTree = "<group>"; };
+		07EB954819CC01D500E4F729 /* PadVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PadVertical.swift; sourceTree = "<group>"; };
+		07EB954D19CC025C00E4F729 /* SpanNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpanNode.swift; sourceTree = "<group>"; };
+		07EB954E19CC025C00E4F729 /* SpanTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpanTree.swift; sourceTree = "<group>"; };
+		07EB955619CC02C200E4F729 /* ClefAlto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefAlto.swift; sourceTree = "<group>"; };
+		07EB955719CC02C200E4F729 /* ClefBass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefBass.swift; sourceTree = "<group>"; };
+		07EB955819CC02C200E4F729 /* Clef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clef.swift; sourceTree = "<group>"; };
+		07EB955919CC02C200E4F729 /* CreateClef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateClef.swift; sourceTree = "<group>"; };
+		07EB955A19CC02C200E4F729 /* ClefTenor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefTenor.swift; sourceTree = "<group>"; };
+		07EB955B19CC02C200E4F729 /* ClefTreble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefTreble.swift; sourceTree = "<group>"; };
+		07EB956319CC037800E4F729 /* TextLayerByHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLayerByHeight.swift; sourceTree = "<group>"; };
+		07EB956419CC037800E4F729 /* TimeSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
+		07EB956519CC037800E4F729 /* TimeSignatureStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignatureStratum.swift; sourceTree = "<group>"; };
+		07EB956919CC03AE00E4F729 /* HeightForLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightForLayout.swift; sourceTree = "<group>"; };
+		07EB956C19CC03F900E4F729 /* MeasureNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureNumber.swift; sourceTree = "<group>"; };
+		07EB956D19CC03F900E4F729 /* MeasureNumberStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureNumberStratum.swift; sourceTree = "<group>"; };
+		07EB957119CC042D00E4F729 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		07EB957419CC048A00E4F729 /* Accidental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accidental.swift; sourceTree = "<group>"; };
+		07EB957D19CC048A00E4F729 /* AccidentalComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalComponent.swift; sourceTree = "<group>"; };
+		07EB957E19CC048A00E4F729 /* AccidentalComponentArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalComponentArrow.swift; sourceTree = "<group>"; };
+		07EB957F19CC048A00E4F729 /* AccidentalComponentColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalComponentColumn.swift; sourceTree = "<group>"; };
+		07EB958019CC048A00E4F729 /* AccidentalComponentCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalComponentCurve.swift; sourceTree = "<group>"; };
+		07EB958119CC048A00E4F729 /* AccidentalComponentThickLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalComponentThickLine.swift; sourceTree = "<group>"; };
+		07EB958219CC048A00E4F729 /* AccidentalComponentThinLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalComponentThinLine.swift; sourceTree = "<group>"; };
+		07EB958319CC048A00E4F729 /* AccidentalFlat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalFlat.swift; sourceTree = "<group>"; };
+		07EB958419CC048A00E4F729 /* AccidentalFlatDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalFlatDown.swift; sourceTree = "<group>"; };
+		07EB958519CC048A00E4F729 /* AccidentalFlatUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalFlatUp.swift; sourceTree = "<group>"; };
+		07EB958619CC048A00E4F729 /* AccidentalNatural.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalNatural.swift; sourceTree = "<group>"; };
+		07EB958719CC048A00E4F729 /* AccidentalNaturalDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalNaturalDown.swift; sourceTree = "<group>"; };
+		07EB958819CC048A00E4F729 /* AccidentalNaturalUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalNaturalUp.swift; sourceTree = "<group>"; };
+		07EB958919CC048A00E4F729 /* AccidentalQuarterFlat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalQuarterFlat.swift; sourceTree = "<group>"; };
+		07EB958A19CC048A00E4F729 /* AccidentalQuarterFlatDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalQuarterFlatDown.swift; sourceTree = "<group>"; };
+		07EB958B19CC048A00E4F729 /* AccidentalQuarterFlatUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalQuarterFlatUp.swift; sourceTree = "<group>"; };
+		07EB958C19CC048A00E4F729 /* AccidentalQuarterSharp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalQuarterSharp.swift; sourceTree = "<group>"; };
+		07EB958D19CC048A00E4F729 /* AccidentalQuarterSharpDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalQuarterSharpDown.swift; sourceTree = "<group>"; };
+		07EB958E19CC048A00E4F729 /* AccidentalQuarterSharpUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalQuarterSharpUp.swift; sourceTree = "<group>"; };
+		07EB958F19CC048A00E4F729 /* AccidentalSharp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalSharp.swift; sourceTree = "<group>"; };
+		07EB959019CC048A00E4F729 /* AccidentalSharpDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalSharpDown.swift; sourceTree = "<group>"; };
+		07EB959119CC048A00E4F729 /* AccidentalSharpUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalSharpUp.swift; sourceTree = "<group>"; };
+		07EB959219CC048A00E4F729 /* AccidentalZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalZone.swift; sourceTree = "<group>"; };
+		07EB959319CC048A00E4F729 /* AccidentalZoneArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalZoneArrow.swift; sourceTree = "<group>"; };
+		07EB959419CC048A00E4F729 /* AccidentalZoneBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalZoneBody.swift; sourceTree = "<group>"; };
+		07EB959519CC048A00E4F729 /* AccidentalZoneColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentalZoneColumn.swift; sourceTree = "<group>"; };
+		07EB959619CC048A00E4F729 /* CreateAccidental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccidental.swift; sourceTree = "<group>"; };
+		07EB95BE19CC053A00E4F729 /* MetronomeGraphic_2_16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_16.swift; sourceTree = "<group>"; };
+		07EB95BF19CC053A00E4F729 /* MetronomeGraphic_2_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_32.swift; sourceTree = "<group>"; };
+		07EB95C019CC053A00E4F729 /* MetronomeGraphic_2_64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_64.swift; sourceTree = "<group>"; };
+		07EB95C119CC053A00E4F729 /* MetronomeGraphic_2_128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_128.swift; sourceTree = "<group>"; };
+		07EB95C219CC053A00E4F729 /* MetronomeGraphic_2_256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_256.swift; sourceTree = "<group>"; };
+		07EB95C319CC053A00E4F729 /* MetronomeGraphic_2_512.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_512.swift; sourceTree = "<group>"; };
+		07EB95C419CC053A00E4F729 /* MetronomeGraphic_2_1024.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_2_1024.swift; sourceTree = "<group>"; };
+		07EB95C519CC053A00E4F729 /* MetronomeGraphic_3_16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_16.swift; sourceTree = "<group>"; };
+		07EB95C619CC053A00E4F729 /* MetronomeGraphic_3_32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_32.swift; sourceTree = "<group>"; };
+		07EB95C719CC053A00E4F729 /* MetronomeGraphic_3_64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_64.swift; sourceTree = "<group>"; };
+		07EB95C819CC053A00E4F729 /* MetronomeGraphic_3_128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_128.swift; sourceTree = "<group>"; };
+		07EB95C919CC053A00E4F729 /* MetronomeGraphic_3_256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_256.swift; sourceTree = "<group>"; };
+		07EB95CA19CC053A00E4F729 /* MetronomeGraphic_3_512.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_512.swift; sourceTree = "<group>"; };
+		07EB95CB19CC053A00E4F729 /* MetronomeGraphic_3_1024.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic_3_1024.swift; sourceTree = "<group>"; };
+		07EB95CC19CC053A00E4F729 /* MetronomeGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeGraphic.swift; sourceTree = "<group>"; };
+		07EB95CD19CC053A00E4F729 /* MGStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGStratum.swift; sourceTree = "<group>"; };
+		07EB95DE19CC054B00E4F729 /* CreateMetronomeGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMetronomeGraphic.swift; sourceTree = "<group>"; };
+		07EB95E119CC05E300E4F729 /* addTestLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addTestLines.swift; sourceTree = "<group>"; };
+		07EB95E319CC061800E4F729 /* CreateTestLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTestLine.swift; sourceTree = "<group>"; };
+		07EB95E419CC061800E4F729 /* TestLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLine.swift; sourceTree = "<group>"; };
+		07EB95E519CC061800E4F729 /* TestLineArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineArrow.swift; sourceTree = "<group>"; };
+		07EB95E619CC061800E4F729 /* TestLineComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineComponent.swift; sourceTree = "<group>"; };
+		07EB95E719CC061800E4F729 /* TestLineEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineEdge.swift; sourceTree = "<group>"; };
+		07EB95E819CC061800E4F729 /* TestLineHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineHeight.swift; sourceTree = "<group>"; };
+		07EB95E919CC061800E4F729 /* TestLineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineLabel.swift; sourceTree = "<group>"; };
+		07EB95EA19CC061800E4F729 /* TestLineLabelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineLabelInfo.swift; sourceTree = "<group>"; };
+		07EB95EB19CC061800E4F729 /* TestLinePrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLinePrimary.swift; sourceTree = "<group>"; };
+		07EB95EC19CC061800E4F729 /* TestLineWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLineWidth.swift; sourceTree = "<group>"; };
+		07EB95F819CC068600E4F729 /* FDFluteAlto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDFluteAlto.swift; sourceTree = "<group>"; };
+		07EB95F919CC068600E4F729 /* FDSaxophoneAlto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDSaxophoneAlto.swift; sourceTree = "<group>"; };
+		07EB95FA19CC068600E4F729 /* FDSaxophoneBaritone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDSaxophoneBaritone.swift; sourceTree = "<group>"; };
+		07EB95FB19CC068600E4F729 /* FDClarinetBass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDClarinetBass.swift; sourceTree = "<group>"; };
+		07EB95FC19CC068600E4F729 /* FDFluteBass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDFluteBass.swift; sourceTree = "<group>"; };
+		07EB95FD19CC068600E4F729 /* FDClarinetBflat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDClarinetBflat.swift; sourceTree = "<group>"; };
+		07EB95FE19CC068600E4F729 /* FDFluteC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDFluteC.swift; sourceTree = "<group>"; };
+		07EB95FF19CC068600E4F729 /* FDClarinet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDClarinet.swift; sourceTree = "<group>"; };
+		07EB960019CC068600E4F729 /* FDKClarinet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKClarinet.swift; sourceTree = "<group>"; };
+		07EB960119CC068600E4F729 /* FDClarinetContrabass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDClarinetContrabass.swift; sourceTree = "<group>"; };
+		07EB960219CC068600E4F729 /* FingeringDiagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingeringDiagram.swift; sourceTree = "<group>"; };
+		07EB960319CC068600E4F729 /* FDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKey.swift; sourceTree = "<group>"; };
+		07EB960419CC068600E4F729 /* FDKState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKState.swift; sourceTree = "<group>"; };
+		07EB960519CC068600E4F729 /* FDKSActive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKSActive.swift; sourceTree = "<group>"; };
+		07EB960619CC068600E4F729 /* FDKSIdle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKSIdle.swift; sourceTree = "<group>"; };
+		07EB960719CC068600E4F729 /* FDKSTrill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKSTrill.swift; sourceTree = "<group>"; };
+		07EB960819CC068600E4F729 /* FDKSTHalf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKSTHalf.swift; sourceTree = "<group>"; };
+		07EB960919CC068600E4F729 /* FDFlute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDFlute.swift; sourceTree = "<group>"; };
+		07EB960A19CC068600E4F729 /* FDKFlute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKFlute.swift; sourceTree = "<group>"; };
+		07EB960B19CC068600E4F729 /* FDFlutePiccolo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDFlutePiccolo.swift; sourceTree = "<group>"; };
+		07EB960C19CC068600E4F729 /* FDSaxophone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDSaxophone.swift; sourceTree = "<group>"; };
+		07EB960D19CC068600E4F729 /* FDKSaxophone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDKSaxophone.swift; sourceTree = "<group>"; };
+		07EB960E19CC068600E4F729 /* FDSaxophoneSoprano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDSaxophoneSoprano.swift; sourceTree = "<group>"; };
+		07EB960F19CC068600E4F729 /* FDSaxophoneTenor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDSaxophoneTenor.swift; sourceTree = "<group>"; };
+		07EB962C19CC079500E4F729 /* CreateFingeringDiagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFingeringDiagram.swift; sourceTree = "<group>"; };
+		07EB963019CC083E00E4F729 /* randomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomColor.swift; sourceTree = "<group>"; };
+		07EB963119CC083E00E4F729 /* randomMidi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomMidi.swift; sourceTree = "<group>"; };
+		07EB963419CC085900E4F729 /* CreateNotehead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNotehead.swift; sourceTree = "<group>"; };
+		07EB963519CC085900E4F729 /* HarmonicNotehead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonicNotehead.swift; sourceTree = "<group>"; };
+		07EB963619CC085900E4F729 /* Notehead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notehead.swift; sourceTree = "<group>"; };
+		07EB963719CC085900E4F729 /* OrdNotehead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdNotehead.swift; sourceTree = "<group>"; };
+		07EB963D19CC088800E4F729 /* StaffSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffSpace.swift; sourceTree = "<group>"; };
+		07EB964119CC0A0300E4F729 /* BeamGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamGroup.swift; sourceTree = "<group>"; };
+		07EB964419CC0A0300E4F729 /* BGStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGStratum.swift; sourceTree = "<group>"; };
+		07EB964519CC0A0300E4F729 /* BGVoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGVoice.swift; sourceTree = "<group>"; };
+		07EB964619CC0A0300E4F729 /* BeamJunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunction.swift; sourceTree = "<group>"; };
+		07EB964719CC0A0300E4F729 /* BeamJunctionExtendedLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunctionExtendedLast.swift; sourceTree = "<group>"; };
+		07EB964819CC0A0300E4F729 /* BeamJunctionExtendedSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunctionExtendedSingle.swift; sourceTree = "<group>"; };
+		07EB964919CC0A0300E4F729 /* BeamJunctionOrdFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunctionOrdFirst.swift; sourceTree = "<group>"; };
+		07EB964A19CC0A0300E4F729 /* BeamJunctionOrdLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunctionOrdLast.swift; sourceTree = "<group>"; };
+		07EB964B19CC0A0300E4F729 /* BeamJunctionOrdMiddle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunctionOrdMiddle.swift; sourceTree = "<group>"; };
+		07EB964C19CC0A0300E4F729 /* BeamJunctionOrdSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamJunctionOrdSingle.swift; sourceTree = "<group>"; };
+		07EB964D19CC0A0300E4F729 /* BeamPathPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamPathPoints.swift; sourceTree = "<group>"; };
+		07EB965C19CC0A2100E4F729 /* CreateBeamJunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBeamJunction.swift; sourceTree = "<group>"; };
+		07EB965F19CC0A4300E4F729 /* BeamsLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeamsLayer.swift; sourceTree = "<group>"; };
+		07EB966119CC0A8200E4F729 /* StemPathPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StemPathPoints.swift; sourceTree = "<group>"; };
+		07EB966219CC0A8200E4F729 /* StemsLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StemsLayer.swift; sourceTree = "<group>"; };
+		07EB966719CC0AA400E4F729 /* SubdivisionGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubdivisionGraphic.swift; sourceTree = "<group>"; };
+		07EB966D19CC0ACC00E4F729 /* ColorByDepth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorByDepth.swift; sourceTree = "<group>"; };
+		07EB967119CC0B9600E4F729 /* getColorByDepth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getColorByDepth.swift; sourceTree = "<group>"; };
+		07EB967319CC0F6900E4F729 /* TupletBracket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupletBracket.swift; sourceTree = "<group>"; };
+		07EB967519CC0FD800E4F729 /* TBLigaturesLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBLigaturesLayer.swift; sourceTree = "<group>"; };
+		07EBA0CD19E2495800587FE9 /* MGGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGGroup.swift; sourceTree = "<group>"; };
+		07EBA0CF19E24C3200587FE9 /* MGLigature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGLigature.swift; sourceTree = "<group>"; };
+		07ECF6D51A63526000C9BCA1 /* PerformerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerView.swift; sourceTree = "<group>"; };
+		07ECF6D81A63575C00C9BCA1 /* GetMeasureRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMeasureRange.swift; sourceTree = "<group>"; };
+		07ECF6DA1A63592C00C9BCA1 /* GetSystemRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSystemRange.swift; sourceTree = "<group>"; };
+		07F68CCE1A33AECF003C0155 /* MGSubgroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGSubgroup.swift; sourceTree = "<group>"; };
+		07FF8C961A1956BE007BA3A1 /* Syncopation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syncopation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07EB94FD19CBFF5A00E4F729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EB951219CBFF5B00E4F729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0709B04E19CCAD6F00BF648A /* Layout Organization */ = {
+			isa = PBXGroup;
+			children = (
+				07EB954B19CC020300E4F729 /* Stratum */,
+				07ECF6D71A63527C00C9BCA1 /* PerformerView */,
+				0709B05919CCAED200BF648A /* Page */,
+				0709B05A19CCAED900BF648A /* System */,
+				0709B05B19CCAEE800BF648A /* Performer */,
+				0709B05C19CCAEF000BF648A /* Instrument */,
+				07EB957319CC044000E4F729 /* Measure */,
+				07BED75E1A63B90000708EA0 /* ViewContainer.swift */,
+				07BED7661A63C4C600708EA0 /* ViewNode.swift */,
+				07BED7601A63B98100708EA0 /* ViewContainerFlowVertical.swift */,
+				07BED7621A63B9E500708EA0 /* ViewContainerFlowHorizontal.swift */,
+				07BED7641A63BAB700708EA0 /* ViewContainerFlowOrder.swift */,
+			);
+			name = "Layout Organization";
+			sourceTree = "<group>";
+		};
+		0709B05919CCAED200BF648A /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				0709B05519CCAE9700BF648A /* Page.swift */,
+				07ECF6DA1A63592C00C9BCA1 /* GetSystemRange.swift */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
+		0709B05A19CCAED900BF648A /* System */ = {
+			isa = PBXGroup;
+			children = (
+				0709B05319CCAE7400BF648A /* System.swift */,
+				07ECF6D81A63575C00C9BCA1 /* GetMeasureRange.swift */,
+				07BED75C1A6379EB00708EA0 /* GetSpanTreeRange.swift */,
+				0709B05719CCAEC700BF648A /* SystemBreakGraphic.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		0709B05B19CCAEE800BF648A /* Performer */ = {
+			isa = PBXGroup;
+			children = (
+				0709B04F19CCAD8300BF648A /* Performer.swift */,
+				0709B05119CCADD700BF648A /* PerformerBracket.swift */,
+			);
+			name = Performer;
+			sourceTree = "<group>";
+		};
+		0709B05C19CCAEF000BF648A /* Instrument */ = {
+			isa = PBXGroup;
+			children = (
+				0783D3A019CCAD140070CE7D /* Instrument.swift */,
+			);
+			name = Instrument;
+			sourceTree = "<group>";
+		};
+		0709B05D19CCB03000BF648A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				077F1F9D1A3F8BED00246C61 /* Timer.swift */,
+				07EB956319CC037800E4F729 /* TextLayerByHeight.swift */,
+				0766B26119D13BF600A6A166 /* StringSubscript.swift */,
+				07EB953919CC00B300E4F729 /* arrayFunctions.swift */,
+				07E857951A1EB83000BFE9E4 /* CAShapeLayerExtensions.swift */,
+				07BE0EE51A59DDDD005D511C /* CALayerExtensions.swift */,
+				07EB963019CC083E00E4F729 /* randomColor.swift */,
+				07EB963119CC083E00E4F729 /* randomMidi.swift */,
+				07EB967119CC0B9600E4F729 /* getColorByDepth.swift */,
+				07EB95F719CC062000E4F729 /* TestLines */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		0709B05E19CCB19900BF648A /* Sublayers */ = {
+			isa = PBXGroup;
+			children = (
+				0783D39319CCAB0F0070CE7D /* StaffInfoLayer.swift */,
+				0783D39B19CCABC10070CE7D /* StaffLinesLayer.swift */,
+			);
+			name = Sublayers;
+			sourceTree = "<group>";
+		};
+		0709B05F19CCB33200BF648A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				07EB956919CC03AE00E4F729 /* HeightForLayout.swift */,
+				07EB963D19CC088800E4F729 /* StaffSpace.swift */,
+				07EB966D19CC0ACC00E4F729 /* ColorByDepth.swift */,
+				075FE43B1A1ED554009EB8E0 /* Highlight.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		0728E44C19CC972300C8FCE7 /* TupletBrackets */ = {
+			isa = PBXGroup;
+			children = (
+				07EB967319CC0F6900E4F729 /* TupletBracket.swift */,
+				07D73A9319D4BD37002FD489 /* TBStratum.swift */,
+				0730C3DD1A089D4C00D8ACE4 /* TBCompoundStratum.swift */,
+				07EB966719CC0AA400E4F729 /* SubdivisionGraphic.swift */,
+				0728E46019CC99EB00C8FCE7 /* TBLigatures */,
+			);
+			name = TupletBrackets;
+			sourceTree = "<group>";
+		};
+		0728E45519CC989A00C8FCE7 /* Sublayers */ = {
+			isa = PBXGroup;
+			children = (
+				07EB967519CC0FD800E4F729 /* TBLigaturesLayer.swift */,
+				07EB966219CC0A8200E4F729 /* StemsLayer.swift */,
+				07EB965F19CC0A4300E4F729 /* BeamsLayer.swift */,
+				07D73A9519D4D71F002FD489 /* BeamsLayerStratum.swift */,
+				0730C3DF1A08B29C00D8ACE4 /* BeamsLayerCompoundStratum.swift */,
+				07A666F919CD623D0045C8F2 /* DELayer.swift */,
+				07A666F719CD60DA0045C8F2 /* DurationalExtension.swift */,
+				07EB964D19CC0A0300E4F729 /* BeamPathPoints.swift */,
+				07EB966119CC0A8200E4F729 /* StemPathPoints.swift */,
+			);
+			name = Sublayers;
+			sourceTree = "<group>";
+		};
+		0728E46019CC99EB00C8FCE7 /* TBLigatures */ = {
+			isa = PBXGroup;
+			children = (
+				0728E45119CC97BB00C8FCE7 /* CreateTBLigature.swift */,
+				0728E44A19CC937D00C8FCE7 /* TBLigature.swift */,
+				0728E45819CC98E900C8FCE7 /* TBLStart.swift */,
+				0728E45C19CC991800C8FCE7 /* TBLReintroduce.swift */,
+				0788CE541A424BB300DF5665 /* TBLReintroduceTruncated.swift */,
+				0728E45619CC98E900C8FCE7 /* TBLEnd.swift */,
+				0728E46119CC9A0500C8FCE7 /* TBLComponents */,
+			);
+			name = TBLigatures;
+			sourceTree = "<group>";
+		};
+		0728E46119CC9A0500C8FCE7 /* TBLComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0728E45E19CC998700C8FCE7 /* TBLComponent.swift */,
+				0728E44F19CC977900C8FCE7 /* TBLLine.swift */,
+				0728E46219CC9A4C00C8FCE7 /* TBLOrnaments */,
+			);
+			name = TBLComponents;
+			sourceTree = "<group>";
+		};
+		0728E46219CC9A4C00C8FCE7 /* TBLOrnaments */ = {
+			isa = PBXGroup;
+			children = (
+				0728E45219CC97BB00C8FCE7 /* CreateTBLOrnament.swift */,
+				0728E44D19CC974900C8FCE7 /* TBLOrnament.swift */,
+				0728E46319CC9A7B00C8FCE7 /* TBLOArrow.swift */,
+				0728E46419CC9A7B00C8FCE7 /* TBLOCircle.swift */,
+				0728E46519CC9A7B00C8FCE7 /* TBLOLine.swift */,
+			);
+			name = TBLOrnaments;
+			sourceTree = "<group>";
+		};
+		0728E46D19CCA16F00C8FCE7 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				0755848119CCA2F40003F364 /* Graph.swift */,
+				07D7081419D5CE4400454503 /* GraphEvent.swift */,
+				077534761A43D6D0009BADFB /* Tremolo.swift */,
+				070826921A5C6B8900E208C5 /* Slur.swift */,
+				073CE1D71A437536005EE2AC /* Articulations */,
+				0728E46E19CCA17400C8FCE7 /* Staff */,
+				07EB956219CC02D100E4F729 /* Clefs */,
+				0783D39F19CCAC670070CE7D /* Sublayers */,
+			);
+			name = Graphs;
+			sourceTree = "<group>";
+		};
+		0728E46E19CCA17400C8FCE7 /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				0728E46B19CCA14400C8FCE7 /* Staff.swift */,
+				0783D39919CCAB940070CE7D /* StaffEvent.swift */,
+				07E9721F19E89282004171CA /* Pitch */,
+				07B9D01D19E8506D00FD5FD9 /* StaffClefs */,
+				07EB963C19CC085E00E4F729 /* Noteheads */,
+				07EB95BC19CC04D300E4F729 /* Accidentals */,
+				0709B05E19CCB19900BF648A /* Sublayers */,
+			);
+			name = Staff;
+			sourceTree = "<group>";
+		};
+		073CE1D71A437536005EE2AC /* Articulations */ = {
+			isa = PBXGroup;
+			children = (
+				073CE1D51A4372FF005EE2AC /* CreateArticulation.swift */,
+				07A666FB19CD64BF0045C8F2 /* Articulation.swift */,
+				077534681A43BCCC009BADFB /* ArticulationStaccato.swift */,
+				0775346A1A43BCF5009BADFB /* ArticulationAttack.swift */,
+				0775346C1A43BD20009BADFB /* ArticulationTenuto.swift */,
+				077534701A43C510009BADFB /* ArticulationAttackTenuto.swift */,
+				077534721A43C537009BADFB /* ArticulationAttackStaccato.swift */,
+				077534741A43C568009BADFB /* ArticulationTenutoStaccato.swift */,
+				0775346E1A43BD5E009BADFB /* ArticulationStaccatissimo.swift */,
+			);
+			name = Articulations;
+			sourceTree = "<group>";
+		};
+		0745B37A19CCD536000081D7 /* DynamicMarkings */ = {
+			isa = PBXGroup;
+			children = (
+				0745B37819CCD517000081D7 /* DynamicMarking.swift */,
+				0745B38F19CCF54E000081D7 /* DMStratum.swift */,
+				07A666F619CD5A900045C8F2 /* DMInterpolation */,
+				07A666EB19CD48990045C8F2 /* DMCharacter */,
+			);
+			name = DynamicMarkings;
+			sourceTree = "<group>";
+		};
+		075FE43D1A1ED89A009EB8E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				075FE4391A1ED175009EB8E0 /* SelectRect.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		076A98421A4B59F60058AA6F /* Metronome */ = {
+			isa = PBXGroup;
+			children = (
+				07EB95E019CC059100E4F729 /* MetronomeGraphics */,
+				07C960CF1A312C5000D819C3 /* MetronomeSpanTree */,
+				076A98461A4B5B150058AA6F /* MetronomeGrid */,
+			);
+			name = Metronome;
+			sourceTree = "<group>";
+		};
+		076A98461A4B5B150058AA6F /* MetronomeGrid */ = {
+			isa = PBXGroup;
+			children = (
+				076A98441A4B5A8F0058AA6F /* MetronomeGrid.swift */,
+				076A98491A4CAC540058AA6F /* MetronomeGridRect.swift */,
+				076A98471A4B600E0058AA6F /* MetronomeGridLine.swift */,
+			);
+			name = MetronomeGrid;
+			sourceTree = "<group>";
+		};
+		07763DC51A48EB2200BC973C /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				07554E891A5F711000CE94DF /* Scanner.swift */,
+				07554E8A1A5F711000CE94DF /* Tokenizer.swift */,
+				07554E8B1A5F711000CE94DF /* Parser.swift */,
+				07554E8C1A5F711000CE94DF /* Interpreter.swift */,
+				07554E8D1A5F711000CE94DF /* Item.swift */,
+				07554E8E1A5F711000CE94DF /* Token.swift */,
+				07554E8F1A5F711000CE94DF /* Action.swift */,
+				0762DC091A5F74AB00679EAD /* denm.swift */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		0783D39F19CCAC670070CE7D /* Sublayers */ = {
+			isa = PBXGroup;
+			children = (
+				0783D38D19CCA9E50070CE7D /* ClefsLayer.swift */,
+				0783D39519CCAB3B0070CE7D /* GraphInfoLayer.swift */,
+				0783D39D19CCABF00070CE7D /* GraphLinesLayer.swift */,
+				0783D39719CCAB650070CE7D /* PathPoints.swift */,
+			);
+			name = Sublayers;
+			sourceTree = "<group>";
+		};
+		07A666EB19CD48990045C8F2 /* DMCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				0745B37B19CCD584000081D7 /* DMCharacter.swift */,
+				0745B38719CCD666000081D7 /* CreateDMCharacter.swift */,
+				0745B37D19CCD5DF000081D7 /* DMCharacter_f.swift */,
+				0745B37F19CCD627000081D7 /* DMCharacter_p.swift */,
+				0745B38519CCD652000081D7 /* DMCharacter_o.swift */,
+				0745B38119CCD636000081D7 /* DMCharacter_m.swift */,
+				0745B38319CCD643000081D7 /* DMCharacter_exclamation.swift */,
+				0745B38B19CCF0A9000081D7 /* DMCharacter_parenLeft.swift */,
+				0745B38D19CCF0C4000081D7 /* DMCharacter_parenRight.swift */,
+				07A666E919CD28EA0045C8F2 /* DMKerningTable.swift */,
+			);
+			name = DMCharacter;
+			sourceTree = "<group>";
+		};
+		07A666F619CD5A900045C8F2 /* DMInterpolation */ = {
+			isa = PBXGroup;
+			children = (
+				07A666EC19CD49460045C8F2 /* DMInterpolation.swift */,
+				07A666EE19CD49A10045C8F2 /* CreateDMInterpolation.swift */,
+				07A666F419CD59660045C8F2 /* DMIHairpin.swift */,
+				07DFC41519D12011001CBF78 /* DMIHairpinLinear.swift */,
+				077985B519D0F80B00330FA4 /* DMIHairpinLinearCresc.swift */,
+				077985B619D0F80B00330FA4 /* DMIHairpinLinearDecresc.swift */,
+				07DFC41919D1216D001CBF78 /* DMIHairpinExponentialCresc.swift */,
+				07DFC41B19D121A5001CBF78 /* DMIHairpinExponentialDescresc.swift */,
+				07DFC41719D12059001CBF78 /* DMIHairpinExponential.swift */,
+				07A666F019CD59080045C8F2 /* DMIStatic.swift */,
+				07A666F219CD59330045C8F2 /* DMISwell.swift */,
+				07DFC40F19D0FFA3001CBF78 /* DMISwellConvex.swift */,
+				07DFC41319D1004F001CBF78 /* DMISwellConcave.swift */,
+			);
+			name = DMInterpolation;
+			sourceTree = "<group>";
+		};
+		07AD293019D9DEA300E37FBC /* SpanComponent */ = {
+			isa = PBXGroup;
+			children = (
+				07AD292C19D9DE2800E37FBC /* SpanComponent.swift */,
+				07D338DC1A11E7E800E88498 /* SpanComponentManager.swift */,
+			);
+			name = SpanComponent;
+			sourceTree = "<group>";
+		};
+		07AD293119D9DEAE00E37FBC /* InstrumentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				07AD292E19D9DE9600E37FBC /* InstrumentInfo.swift */,
+			);
+			name = InstrumentInfo;
+			sourceTree = "<group>";
+		};
+		07B9D01D19E8506D00FD5FD9 /* StaffClefs */ = {
+			isa = PBXGroup;
+			children = (
+				07B9D01B19E843B800FD5FD9 /* StaffClef.swift */,
+				07B9D02019E8560700FD5FD9 /* ClefEmpty.swift */,
+				07B9D01E19E8518400FD5FD9 /* CreateStaffClef.swift */,
+				07EB955B19CC02C200E4F729 /* ClefTreble.swift */,
+				07EB955619CC02C200E4F729 /* ClefAlto.swift */,
+				07EB955A19CC02C200E4F729 /* ClefTenor.swift */,
+				07EB955719CC02C200E4F729 /* ClefBass.swift */,
+			);
+			name = StaffClefs;
+			sourceTree = "<group>";
+		};
+		07C960CF1A312C5000D819C3 /* MetronomeSpanTree */ = {
+			isa = PBXGroup;
+			children = (
+				07E98E361A0C04CD00722E42 /* MetronomeSpanTree.swift */,
+				07FF8C961A1956BE007BA3A1 /* Syncopation.swift */,
+				07CCD68B1A1AB5C0006503C8 /* MetronomePrototype.swift */,
+				07C960D01A312C6400D819C3 /* MetronomeSpanNode */,
+			);
+			name = MetronomeSpanTree;
+			sourceTree = "<group>";
+		};
+		07C960D01A312C6400D819C3 /* MetronomeSpanNode */ = {
+			isa = PBXGroup;
+			children = (
+				073F18C719E7AD0D004857DE /* MetronomeSpanNode.swift */,
+				078532AA1A198EC3004D0F0F /* CreateMetronomeSpanNode.swift */,
+				078532A61A198E5C004D0F0F /* MetronomeSpanNode_3.swift */,
+				078532A41A198E3D004D0F0F /* MetronomeSpanNode_4.swift */,
+				078532A21A198E03004D0F0F /* MetronomeSpanNode_5.swift */,
+				078532A01A198DEF004D0F0F /* MetronomeSpanNode_6.swift */,
+				0785329E1A198DCF004D0F0F /* MetronomeSpanNode_7.swift */,
+				0785329C1A198D7E004D0F0F /* MetronomeSpanNode_8.swift */,
+				078532A81A198E94004D0F0F /* MetronomeSpanNode_compound.swift */,
+			);
+			name = MetronomeSpanNode;
+			sourceTree = "<group>";
+		};
+		07D026071A23B449009FA945 /* Stem */ = {
+			isa = PBXGroup;
+			children = (
+				0753C03019F60F64006B15B0 /* Stem.swift */,
+				078EDCD51A2432D6003AF81A /* CreateStem.swift */,
+				0781D96B1A23FF190036FAE4 /* StemLine.swift */,
+				0781D96D1A2401890036FAE4 /* StemLineRest.swift */,
+				07D026081A23B456009FA945 /* StemRest.swift */,
+			);
+			name = Stem;
+			sourceTree = "<group>";
+		};
+		07E9721E19E8926F004171CA /* PitchSpelling */ = {
+			isa = PBXGroup;
+			children = (
+				07E9721819E87937004171CA /* PitchSpelling.swift */,
+				074D30B41A415A0C008A8781 /* PitchSpeller.swift */,
+				07E9721A19E87CDD004171CA /* PitchSpellingsByIntervalPitchClass.swift */,
+			);
+			name = PitchSpelling;
+			sourceTree = "<group>";
+		};
+		07E9721F19E89282004171CA /* Pitch */ = {
+			isa = PBXGroup;
+			children = (
+				07E9722019E89294004171CA /* Pitch.swift */,
+				07E9721C19E8924B004171CA /* PitchClass.swift */,
+				070C33E219EDC0FD0061046B /* Dyad.swift */,
+				07E9721E19E8926F004171CA /* PitchSpelling */,
+			);
+			name = Pitch;
+			sourceTree = "<group>";
+		};
+		07EB94F719CBFF5A00E4F729 = {
+			isa = PBXGroup;
+			children = (
+				07EB950219CBFF5A00E4F729 /* denm */,
+				07EB951819CBFF5B00E4F729 /* denmTests */,
+				07EB950119CBFF5A00E4F729 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07EB950119CBFF5A00E4F729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07EB950019CBFF5A00E4F729 /* denm.app */,
+				07EB951519CBFF5B00E4F729 /* denmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07EB950219CBFF5A00E4F729 /* denm */ = {
+			isa = PBXGroup;
+			children = (
+				07EB955119CC026A00E4F729 /* Span */,
+				0709B04E19CCAD6F00BF648A /* Layout Organization */,
+				07EB965B19CC0A0900E4F729 /* BeamGroups */,
+				0728E46D19CCA16F00C8FCE7 /* Graphs */,
+				07EB962819CC068E00E4F729 /* FingeringDiagrams */,
+				0745B37A19CCD536000081D7 /* DynamicMarkings */,
+				075FE43D1A1ED89A009EB8E0 /* UI */,
+				0709B05D19CCB03000BF648A /* Utility */,
+				0709B05F19CCB33200BF648A /* Protocols */,
+				07763DC51A48EB2200BC973C /* Parser */,
+				07EB950519CBFF5A00E4F729 /* AppDelegate.swift */,
+				07EB950719CBFF5A00E4F729 /* ViewController.swift */,
+				07EB950919CBFF5A00E4F729 /* Main.storyboard */,
+				07EB950C19CBFF5B00E4F729 /* Images.xcassets */,
+				07EB950319CBFF5A00E4F729 /* Supporting Files */,
+				07AD293119D9DEAE00E37FBC /* InstrumentInfo */,
+			);
+			path = denm;
+			sourceTree = "<group>";
+		};
+		07EB950319CBFF5A00E4F729 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07712EA41A61117900AE014F /* drier_run.txt */,
+				07EB950419CBFF5A00E4F729 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07EB951819CBFF5B00E4F729 /* denmTests */ = {
+			isa = PBXGroup;
+			children = (
+				07EB951919CBFF5B00E4F729 /* Supporting Files */,
+			);
+			path = denmTests;
+			sourceTree = "<group>";
+		};
+		07EB951919CBFF5B00E4F729 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07EB951A19CBFF5B00E4F729 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07EB952C19CBFFC300E4F729 /* Duration */ = {
+			isa = PBXGroup;
+			children = (
+				07EB952519CBFF7700E4F729 /* Beats.swift */,
+				07EB952719CBFF8B00E4F729 /* Subdivision.swift */,
+				07EB952919CBFF9D00E4F729 /* Duration.swift */,
+			);
+			name = Duration;
+			sourceTree = "<group>";
+		};
+		07EB954B19CC020300E4F729 /* Stratum */ = {
+			isa = PBXGroup;
+			children = (
+				07EB953319CC006E00E4F729 /* Stratum.swift */,
+				07EB953519CC007400E4F729 /* StratumContainer.swift */,
+				07EB953719CC008000E4F729 /* StratumObject.swift */,
+				07EB954C19CC020F00E4F729 /* Pads */,
+			);
+			name = Stratum;
+			sourceTree = "<group>";
+		};
+		07EB954C19CC020F00E4F729 /* Pads */ = {
+			isa = PBXGroup;
+			children = (
+				07EB954319CC01A000E4F729 /* ExternalPads.swift */,
+				07EB954519CC01C500E4F729 /* GraphicalPad.swift */,
+				07EB954719CC01D500E4F729 /* PadHorizontal.swift */,
+				07EB954819CC01D500E4F729 /* PadVertical.swift */,
+			);
+			name = Pads;
+			sourceTree = "<group>";
+		};
+		07EB955119CC026A00E4F729 /* Span */ = {
+			isa = PBXGroup;
+			children = (
+				07EB954D19CC025C00E4F729 /* SpanNode.swift */,
+				07EB954E19CC025C00E4F729 /* SpanTree.swift */,
+				07AD293019D9DEA300E37FBC /* SpanComponent */,
+				076A98421A4B59F60058AA6F /* Metronome */,
+				07EB952C19CBFFC300E4F729 /* Duration */,
+			);
+			name = Span;
+			sourceTree = "<group>";
+		};
+		07EB956219CC02D100E4F729 /* Clefs */ = {
+			isa = PBXGroup;
+			children = (
+				07EB955919CC02C200E4F729 /* CreateClef.swift */,
+				07EB955819CC02C200E4F729 /* Clef.swift */,
+			);
+			name = Clefs;
+			sourceTree = "<group>";
+		};
+		07EB956B19CC03E500E4F729 /* TimeSignature */ = {
+			isa = PBXGroup;
+			children = (
+				07EB956419CC037800E4F729 /* TimeSignature.swift */,
+				07D026051A23B088009FA945 /* TimeSignatureSupplemental.swift */,
+				07EB956519CC037800E4F729 /* TimeSignatureStratum.swift */,
+			);
+			name = TimeSignature;
+			sourceTree = "<group>";
+		};
+		07EB957019CC041000E4F729 /* MeasureNumber */ = {
+			isa = PBXGroup;
+			children = (
+				07EB956C19CC03F900E4F729 /* MeasureNumber.swift */,
+				07EB956D19CC03F900E4F729 /* MeasureNumberStratum.swift */,
+			);
+			name = MeasureNumber;
+			sourceTree = "<group>";
+		};
+		07EB957319CC044000E4F729 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				07EB957119CC042D00E4F729 /* Measure.swift */,
+				07E8578F1A1EA32800BFE9E4 /* Barline.swift */,
+				07E857911A1EA44800BFE9E4 /* BarlineSystemEnd.swift */,
+				07E857931A1EA46A00BFE9E4 /* BarlinePieceEnd.swift */,
+				07EB957019CC041000E4F729 /* MeasureNumber */,
+				07EB956B19CC03E500E4F729 /* TimeSignature */,
+			);
+			name = Measure;
+			sourceTree = "<group>";
+		};
+		07EB95BA19CC049400E4F729 /* AccidentalCollision */ = {
+			isa = PBXGroup;
+			children = (
+				07EB95BD19CC04E900E4F729 /* AccidentalZone */,
+			);
+			name = AccidentalCollision;
+			sourceTree = "<group>";
+		};
+		07EB95BB19CC04AC00E4F729 /* AccidentalComponent */ = {
+			isa = PBXGroup;
+			children = (
+				07EB957D19CC048A00E4F729 /* AccidentalComponent.swift */,
+				07EB957E19CC048A00E4F729 /* AccidentalComponentArrow.swift */,
+				07EB957F19CC048A00E4F729 /* AccidentalComponentColumn.swift */,
+				07EB958019CC048A00E4F729 /* AccidentalComponentCurve.swift */,
+				07EB958119CC048A00E4F729 /* AccidentalComponentThickLine.swift */,
+				07EB958219CC048A00E4F729 /* AccidentalComponentThinLine.swift */,
+			);
+			name = AccidentalComponent;
+			sourceTree = "<group>";
+		};
+		07EB95BC19CC04D300E4F729 /* Accidentals */ = {
+			isa = PBXGroup;
+			children = (
+				07EB959619CC048A00E4F729 /* CreateAccidental.swift */,
+				07EB957419CC048A00E4F729 /* Accidental.swift */,
+				07EB958319CC048A00E4F729 /* AccidentalFlat.swift */,
+				07EB958419CC048A00E4F729 /* AccidentalFlatDown.swift */,
+				07EB958519CC048A00E4F729 /* AccidentalFlatUp.swift */,
+				07EB958619CC048A00E4F729 /* AccidentalNatural.swift */,
+				07EB958719CC048A00E4F729 /* AccidentalNaturalDown.swift */,
+				07EB958819CC048A00E4F729 /* AccidentalNaturalUp.swift */,
+				07EB958919CC048A00E4F729 /* AccidentalQuarterFlat.swift */,
+				07EB958A19CC048A00E4F729 /* AccidentalQuarterFlatDown.swift */,
+				07EB958B19CC048A00E4F729 /* AccidentalQuarterFlatUp.swift */,
+				07EB958C19CC048A00E4F729 /* AccidentalQuarterSharp.swift */,
+				07EB958D19CC048A00E4F729 /* AccidentalQuarterSharpDown.swift */,
+				07EB958E19CC048A00E4F729 /* AccidentalQuarterSharpUp.swift */,
+				07EB958F19CC048A00E4F729 /* AccidentalSharp.swift */,
+				07EB959019CC048A00E4F729 /* AccidentalSharpDown.swift */,
+				07EB959119CC048A00E4F729 /* AccidentalSharpUp.swift */,
+				07EB95BB19CC04AC00E4F729 /* AccidentalComponent */,
+				07EB95BA19CC049400E4F729 /* AccidentalCollision */,
+			);
+			name = Accidentals;
+			sourceTree = "<group>";
+		};
+		07EB95BD19CC04E900E4F729 /* AccidentalZone */ = {
+			isa = PBXGroup;
+			children = (
+				07EB959219CC048A00E4F729 /* AccidentalZone.swift */,
+				07EB959319CC048A00E4F729 /* AccidentalZoneArrow.swift */,
+				07EB959419CC048A00E4F729 /* AccidentalZoneBody.swift */,
+				07EB959519CC048A00E4F729 /* AccidentalZoneColumn.swift */,
+			);
+			name = AccidentalZone;
+			sourceTree = "<group>";
+		};
+		07EB95E019CC059100E4F729 /* MetronomeGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				07EB95DE19CC054B00E4F729 /* CreateMetronomeGraphic.swift */,
+				0730C3DB1A089CA400D8ACE4 /* MGCompoundStratum.swift */,
+				07EB95CD19CC053A00E4F729 /* MGStratum.swift */,
+				07EBA0CD19E2495800587FE9 /* MGGroup.swift */,
+				07F68CCE1A33AECF003C0155 /* MGSubgroup.swift */,
+				07EBA0CF19E24C3200587FE9 /* MGLigature.swift */,
+				076CA45C1A420FCD00992B9B /* MGProgressBar.swift */,
+				07EB95CC19CC053A00E4F729 /* MetronomeGraphic.swift */,
+				07EB95BE19CC053A00E4F729 /* MetronomeGraphic_2_16.swift */,
+				07EB95C519CC053A00E4F729 /* MetronomeGraphic_3_16.swift */,
+				07EB95BF19CC053A00E4F729 /* MetronomeGraphic_2_32.swift */,
+				07EB95C619CC053A00E4F729 /* MetronomeGraphic_3_32.swift */,
+				07EB95C019CC053A00E4F729 /* MetronomeGraphic_2_64.swift */,
+				07EB95C719CC053A00E4F729 /* MetronomeGraphic_3_64.swift */,
+				07EB95C119CC053A00E4F729 /* MetronomeGraphic_2_128.swift */,
+				07EB95C819CC053A00E4F729 /* MetronomeGraphic_3_128.swift */,
+				07EB95C219CC053A00E4F729 /* MetronomeGraphic_2_256.swift */,
+				07EB95C919CC053A00E4F729 /* MetronomeGraphic_3_256.swift */,
+				07EB95C319CC053A00E4F729 /* MetronomeGraphic_2_512.swift */,
+				07EB95CA19CC053A00E4F729 /* MetronomeGraphic_3_512.swift */,
+				07EB95C419CC053A00E4F729 /* MetronomeGraphic_2_1024.swift */,
+				07EB95CB19CC053A00E4F729 /* MetronomeGraphic_3_1024.swift */,
+			);
+			name = MetronomeGraphics;
+			sourceTree = "<group>";
+		};
+		07EB95F719CC062000E4F729 /* TestLines */ = {
+			isa = PBXGroup;
+			children = (
+				07EB95E119CC05E300E4F729 /* addTestLines.swift */,
+				07EB95E319CC061800E4F729 /* CreateTestLine.swift */,
+				07EB95E419CC061800E4F729 /* TestLine.swift */,
+				07EB95E519CC061800E4F729 /* TestLineArrow.swift */,
+				07EB95E619CC061800E4F729 /* TestLineComponent.swift */,
+				07EB95E719CC061800E4F729 /* TestLineEdge.swift */,
+				07EB95E819CC061800E4F729 /* TestLineHeight.swift */,
+				07EB95E919CC061800E4F729 /* TestLineLabel.swift */,
+				07EB95EA19CC061800E4F729 /* TestLineLabelInfo.swift */,
+				07EB95EB19CC061800E4F729 /* TestLinePrimary.swift */,
+				07EB95EC19CC061800E4F729 /* TestLineWidth.swift */,
+			);
+			name = TestLines;
+			sourceTree = "<group>";
+		};
+		07EB962819CC068E00E4F729 /* FingeringDiagrams */ = {
+			isa = PBXGroup;
+			children = (
+				07EB962C19CC079500E4F729 /* CreateFingeringDiagram.swift */,
+				07EB960219CC068600E4F729 /* FingeringDiagram.swift */,
+				07EB962A19CC06F800E4F729 /* Flute */,
+				07EB962919CC06C500E4F729 /* Saxophone */,
+				07EB962B19CC070C00E4F729 /* Clarinet */,
+				07EB962E19CC07BA00E4F729 /* FingeringDiagramKeys */,
+			);
+			name = FingeringDiagrams;
+			sourceTree = "<group>";
+		};
+		07EB962919CC06C500E4F729 /* Saxophone */ = {
+			isa = PBXGroup;
+			children = (
+				07EB960C19CC068600E4F729 /* FDSaxophone.swift */,
+				07EB95F919CC068600E4F729 /* FDSaxophoneAlto.swift */,
+				07EB95FA19CC068600E4F729 /* FDSaxophoneBaritone.swift */,
+				07EB960E19CC068600E4F729 /* FDSaxophoneSoprano.swift */,
+				07EB960F19CC068600E4F729 /* FDSaxophoneTenor.swift */,
+			);
+			name = Saxophone;
+			sourceTree = "<group>";
+		};
+		07EB962A19CC06F800E4F729 /* Flute */ = {
+			isa = PBXGroup;
+			children = (
+				07EB960919CC068600E4F729 /* FDFlute.swift */,
+				07EB95F819CC068600E4F729 /* FDFluteAlto.swift */,
+				07EB95FC19CC068600E4F729 /* FDFluteBass.swift */,
+				07EB95FE19CC068600E4F729 /* FDFluteC.swift */,
+				07EB960B19CC068600E4F729 /* FDFlutePiccolo.swift */,
+			);
+			name = Flute;
+			sourceTree = "<group>";
+		};
+		07EB962B19CC070C00E4F729 /* Clarinet */ = {
+			isa = PBXGroup;
+			children = (
+				07EB95FF19CC068600E4F729 /* FDClarinet.swift */,
+				07EB95FB19CC068600E4F729 /* FDClarinetBass.swift */,
+				07EB95FD19CC068600E4F729 /* FDClarinetBflat.swift */,
+				07EB960119CC068600E4F729 /* FDClarinetContrabass.swift */,
+			);
+			name = Clarinet;
+			sourceTree = "<group>";
+		};
+		07EB962E19CC07BA00E4F729 /* FingeringDiagramKeys */ = {
+			isa = PBXGroup;
+			children = (
+				07EB960319CC068600E4F729 /* FDKey.swift */,
+				07EB960019CC068600E4F729 /* FDKClarinet.swift */,
+				07EB960A19CC068600E4F729 /* FDKFlute.swift */,
+				07EB960D19CC068600E4F729 /* FDKSaxophone.swift */,
+				07EB962F19CC07C600E4F729 /* KeyStates */,
+			);
+			name = FingeringDiagramKeys;
+			sourceTree = "<group>";
+		};
+		07EB962F19CC07C600E4F729 /* KeyStates */ = {
+			isa = PBXGroup;
+			children = (
+				07EB960419CC068600E4F729 /* FDKState.swift */,
+				07EB960519CC068600E4F729 /* FDKSActive.swift */,
+				07EB960619CC068600E4F729 /* FDKSIdle.swift */,
+				07EB960719CC068600E4F729 /* FDKSTrill.swift */,
+				0728E46919CC9E5F00C8FCE7 /* FDKSTFull.swift */,
+				07EB960819CC068600E4F729 /* FDKSTHalf.swift */,
+			);
+			name = KeyStates;
+			sourceTree = "<group>";
+		};
+		07EB963C19CC085E00E4F729 /* Noteheads */ = {
+			isa = PBXGroup;
+			children = (
+				07EB963619CC085900E4F729 /* Notehead.swift */,
+				07EB963419CC085900E4F729 /* CreateNotehead.swift */,
+				07EB963519CC085900E4F729 /* HarmonicNotehead.swift */,
+				07EB963719CC085900E4F729 /* OrdNotehead.swift */,
+			);
+			name = Noteheads;
+			sourceTree = "<group>";
+		};
+		07EB965B19CC0A0900E4F729 /* BeamGroups */ = {
+			isa = PBXGroup;
+			children = (
+				07EB964519CC0A0300E4F729 /* BGVoice.swift */,
+				0747D4FE1A0744A00011D4DD /* BGVoiceSegment.swift */,
+				07EB964419CC0A0300E4F729 /* BGStratum.swift */,
+				07EB964119CC0A0300E4F729 /* BeamGroup.swift */,
+				0736F3A419E0DA06005DC9B0 /* BGContainer.swift */,
+				0736F3A619E0DA3A005DC9B0 /* BGLeaf.swift */,
+				07AE7B651A0B651E003EAADE /* Beam.swift */,
+				073CE1D31A4372C0005EE2AC /* AugmentationDot.swift */,
+				07D026071A23B449009FA945 /* Stem */,
+				0728E45519CC989A00C8FCE7 /* Sublayers */,
+				0728E44C19CC972300C8FCE7 /* TupletBrackets */,
+				07EB965E19CC0A2C00E4F729 /* BeamJunctions */,
+			);
+			name = BeamGroups;
+			sourceTree = "<group>";
+		};
+		07EB965E19CC0A2C00E4F729 /* BeamJunctions */ = {
+			isa = PBXGroup;
+			children = (
+				07EB964619CC0A0300E4F729 /* BeamJunction.swift */,
+				07EB965C19CC0A2100E4F729 /* CreateBeamJunction.swift */,
+				07EB964719CC0A0300E4F729 /* BeamJunctionExtendedLast.swift */,
+				07EB964819CC0A0300E4F729 /* BeamJunctionExtendedSingle.swift */,
+				07EB964919CC0A0300E4F729 /* BeamJunctionOrdFirst.swift */,
+				07EB964A19CC0A0300E4F729 /* BeamJunctionOrdLast.swift */,
+				07EB964B19CC0A0300E4F729 /* BeamJunctionOrdMiddle.swift */,
+				07EB964C19CC0A0300E4F729 /* BeamJunctionOrdSingle.swift */,
+			);
+			name = BeamJunctions;
+			sourceTree = "<group>";
+		};
+		07ECF6D71A63527C00C9BCA1 /* PerformerView */ = {
+			isa = PBXGroup;
+			children = (
+				07ECF6D51A63526000C9BCA1 /* PerformerView.swift */,
+			);
+			name = PerformerView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07EB94FF19CBFF5A00E4F729 /* denm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EB951F19CBFF5B00E4F729 /* Build configuration list for PBXNativeTarget "denm" */;
+			buildPhases = (
+				07EB94FC19CBFF5A00E4F729 /* Sources */,
+				07EB94FD19CBFF5A00E4F729 /* Frameworks */,
+				07EB94FE19CBFF5A00E4F729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = denm;
+			productName = denm;
+			productReference = 07EB950019CBFF5A00E4F729 /* denm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07EB951419CBFF5B00E4F729 /* denmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EB952219CBFF5B00E4F729 /* Build configuration list for PBXNativeTarget "denmTests" */;
+			buildPhases = (
+				07EB951119CBFF5B00E4F729 /* Sources */,
+				07EB951219CBFF5B00E4F729 /* Frameworks */,
+				07EB951319CBFF5B00E4F729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07EB951719CBFF5B00E4F729 /* PBXTargetDependency */,
+			);
+			name = denmTests;
+			productName = denmTests;
+			productReference = 07EB951519CBFF5B00E4F729 /* denmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07EB94F819CBFF5A00E4F729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "James Bean";
+				TargetAttributes = {
+					07EB94FF19CBFF5A00E4F729 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					07EB951419CBFF5B00E4F729 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 07EB94FF19CBFF5A00E4F729;
+					};
+				};
+			};
+			buildConfigurationList = 07EB94FB19CBFF5A00E4F729 /* Build configuration list for PBXProject "denm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07EB94F719CBFF5A00E4F729;
+			productRefGroup = 07EB950119CBFF5A00E4F729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07EB94FF19CBFF5A00E4F729 /* denm */,
+				07EB951419CBFF5B00E4F729 /* denmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07EB94FE19CBFF5A00E4F729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07712EA51A61117900AE014F /* drier_run.txt in Resources */,
+				07EB950B19CBFF5A00E4F729 /* Main.storyboard in Resources */,
+				07EB950D19CBFF5B00E4F729 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EB951319CBFF5B00E4F729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07EB94FC19CBFF5A00E4F729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078532A91A198E94004D0F0F /* MetronomeSpanNode_compound.swift in Sources */,
+				076A98481A4B600E0058AA6F /* MetronomeGridLine.swift in Sources */,
+				07EB95B419CC048A00E4F729 /* AccidentalSharpUp.swift in Sources */,
+				07EB954419CC01A000E4F729 /* ExternalPads.swift in Sources */,
+				0745B38619CCD652000081D7 /* DMCharacter_o.swift in Sources */,
+				07EB95D319CC053A00E4F729 /* MetronomeGraphic_2_512.swift in Sources */,
+				0728E45319CC97BB00C8FCE7 /* CreateTBLigature.swift in Sources */,
+				077985B719D0F80B00330FA4 /* DMIHairpinLinearCresc.swift in Sources */,
+				07554E901A5F711000CE94DF /* Scanner.swift in Sources */,
+				0755848219CCA2F40003F364 /* Graph.swift in Sources */,
+				07EB95A419CC048A00E4F729 /* AccidentalComponentThickLine.swift in Sources */,
+				07EB957219CC042D00E4F729 /* Measure.swift in Sources */,
+				07EB961C19CC068600E4F729 /* FDKState.swift in Sources */,
+				07EB966E19CC0ACC00E4F729 /* ColorByDepth.swift in Sources */,
+				07EB965319CC0A0300E4F729 /* BeamJunction.swift in Sources */,
+				07EB961819CC068600E4F729 /* FDKClarinet.swift in Sources */,
+				07EB954A19CC01D500E4F729 /* PadVertical.swift in Sources */,
+				075FE43C1A1ED554009EB8E0 /* Highlight.swift in Sources */,
+				0745B38819CCD666000081D7 /* CreateDMCharacter.swift in Sources */,
+				073CE1D61A4372FF005EE2AC /* CreateArticulation.swift in Sources */,
+				07EB955E19CC02C200E4F729 /* Clef.swift in Sources */,
+				07EB962D19CC079500E4F729 /* CreateFingeringDiagram.swift in Sources */,
+				07AD292D19D9DE2800E37FBC /* SpanComponent.swift in Sources */,
+				07EB95EF19CC061800E4F729 /* TestLineArrow.swift in Sources */,
+				07EB95D219CC053A00E4F729 /* MetronomeGraphic_2_256.swift in Sources */,
+				07EB95AB19CC048A00E4F729 /* AccidentalNaturalUp.swift in Sources */,
+				07D026091A23B456009FA945 /* StemRest.swift in Sources */,
+				07EB963219CC083E00E4F729 /* randomColor.swift in Sources */,
+				07EB965219CC0A0300E4F729 /* BGVoice.swift in Sources */,
+				07EB95B719CC048A00E4F729 /* AccidentalZoneBody.swift in Sources */,
+				07EB95AE19CC048A00E4F729 /* AccidentalQuarterFlatUp.swift in Sources */,
+				0745B37E19CCD5DF000081D7 /* DMCharacter_f.swift in Sources */,
+				07E98E371A0C04CD00722E42 /* MetronomeSpanTree.swift in Sources */,
+				07EB952A19CBFF9D00E4F729 /* Duration.swift in Sources */,
+				07EB950819CBFF5A00E4F729 /* ViewController.swift in Sources */,
+				0783D39419CCAB0F0070CE7D /* StaffInfoLayer.swift in Sources */,
+				07EB965419CC0A0300E4F729 /* BeamJunctionExtendedLast.swift in Sources */,
+				07EB95CE19CC053A00E4F729 /* MetronomeGraphic_2_16.swift in Sources */,
+				07EB962419CC068600E4F729 /* FDSaxophone.swift in Sources */,
+				07EB961319CC068600E4F729 /* FDClarinetBass.swift in Sources */,
+				07EB95A719CC048A00E4F729 /* AccidentalFlatDown.swift in Sources */,
+				07EB95F419CC061800E4F729 /* TestLineLabelInfo.swift in Sources */,
+				0781D96E1A2401890036FAE4 /* StemLineRest.swift in Sources */,
+				07EB961119CC068600E4F729 /* FDSaxophoneAlto.swift in Sources */,
+				070C33E319EDC0FD0061046B /* Dyad.swift in Sources */,
+				07EB956F19CC03F900E4F729 /* MeasureNumberStratum.swift in Sources */,
+				0783D39619CCAB3B0070CE7D /* GraphInfoLayer.swift in Sources */,
+				07EB95D619CC053A00E4F729 /* MetronomeGraphic_3_32.swift in Sources */,
+				07DFC41A19D1216D001CBF78 /* DMIHairpinExponentialCresc.swift in Sources */,
+				07EB95A119CC048A00E4F729 /* AccidentalComponentArrow.swift in Sources */,
+				0775346B1A43BCF5009BADFB /* ArticulationAttack.swift in Sources */,
+				078532A71A198E5C004D0F0F /* MetronomeSpanNode_3.swift in Sources */,
+				07D338DD1A11E7E800E88498 /* SpanComponentManager.swift in Sources */,
+				07EB966419CC0A8200E4F729 /* StemsLayer.swift in Sources */,
+				07A666ED19CD49460045C8F2 /* DMInterpolation.swift in Sources */,
+				0781D96C1A23FF190036FAE4 /* StemLine.swift in Sources */,
+				0728E45919CC98E900C8FCE7 /* TBLEnd.swift in Sources */,
+				07EB95A319CC048A00E4F729 /* AccidentalComponentCurve.swift in Sources */,
+				07EB95DC19CC053A00E4F729 /* MetronomeGraphic.swift in Sources */,
+				07EB95AA19CC048A00E4F729 /* AccidentalNaturalDown.swift in Sources */,
+				07E857941A1EA46A00BFE9E4 /* BarlinePieceEnd.swift in Sources */,
+				07EB963E19CC088800E4F729 /* StaffSpace.swift in Sources */,
+				07554E951A5F711000CE94DF /* Token.swift in Sources */,
+				07EB961519CC068600E4F729 /* FDClarinetBflat.swift in Sources */,
+				07EB95DA19CC053A00E4F729 /* MetronomeGraphic_3_512.swift in Sources */,
+				07E9721D19E8924B004171CA /* PitchClass.swift in Sources */,
+				0728E45F19CC998700C8FCE7 /* TBLComponent.swift in Sources */,
+				0709B05219CCADD700BF648A /* PerformerBracket.swift in Sources */,
+				07EB962219CC068600E4F729 /* FDKFlute.swift in Sources */,
+				0775346F1A43BD5E009BADFB /* ArticulationStaccatissimo.swift in Sources */,
+				07EB95A919CC048A00E4F729 /* AccidentalNatural.swift in Sources */,
+				07EB955F19CC02C200E4F729 /* CreateClef.swift in Sources */,
+				073CE1D41A4372C0005EE2AC /* AugmentationDot.swift in Sources */,
+				07EB950619CBFF5A00E4F729 /* AppDelegate.swift in Sources */,
+				07EB956819CC037800E4F729 /* TimeSignatureStratum.swift in Sources */,
+				0747D4FF1A0744A00011D4DD /* BGVoiceSegment.swift in Sources */,
+				07EB956E19CC03F900E4F729 /* MeasureNumber.swift in Sources */,
+				07ECF6DB1A63592C00C9BCA1 /* GetSystemRange.swift in Sources */,
+				07EB95AD19CC048A00E4F729 /* AccidentalQuarterFlatDown.swift in Sources */,
+				07EB961B19CC068600E4F729 /* FDKey.swift in Sources */,
+				07EB961D19CC068600E4F729 /* FDKSActive.swift in Sources */,
+				07EB95DB19CC053A00E4F729 /* MetronomeGraphic_3_1024.swift in Sources */,
+				0783D38E19CCA9E50070CE7D /* ClefsLayer.swift in Sources */,
+				078EDCD61A2432D6003AF81A /* CreateStem.swift in Sources */,
+				078532A11A198DEF004D0F0F /* MetronomeSpanNode_6.swift in Sources */,
+				07EB95B319CC048A00E4F729 /* AccidentalSharpDown.swift in Sources */,
+				07EB956019CC02C200E4F729 /* ClefTenor.swift in Sources */,
+				07E857961A1EB83000BFE9E4 /* CAShapeLayerExtensions.swift in Sources */,
+				07A666FC19CD64BF0045C8F2 /* Articulation.swift in Sources */,
+				07EB95A019CC048A00E4F729 /* AccidentalComponent.swift in Sources */,
+				07EB956119CC02C200E4F729 /* ClefTreble.swift in Sources */,
+				07E9721919E87937004171CA /* PitchSpelling.swift in Sources */,
+				075FE43A1A1ED175009EB8E0 /* SelectRect.swift in Sources */,
+				07EB956A19CC03AE00E4F729 /* HeightForLayout.swift in Sources */,
+				07EB95D119CC053A00E4F729 /* MetronomeGraphic_2_128.swift in Sources */,
+				07EB966819CC0AA400E4F729 /* SubdivisionGraphic.swift in Sources */,
+				0783D39E19CCABF00070CE7D /* GraphLinesLayer.swift in Sources */,
+				07EB954619CC01C500E4F729 /* GraphicalPad.swift in Sources */,
+				07554E931A5F711000CE94DF /* Interpreter.swift in Sources */,
+				0745B39019CCF54E000081D7 /* DMStratum.swift in Sources */,
+				07EB952619CBFF7700E4F729 /* Beats.swift in Sources */,
+				0728E44E19CC974900C8FCE7 /* TBLOrnament.swift in Sources */,
+				07EB963319CC083E00E4F729 /* randomMidi.swift in Sources */,
+				076A98451A4B5A8F0058AA6F /* MetronomeGrid.swift in Sources */,
+				07BED7651A63BAB700708EA0 /* ViewContainerFlowOrder.swift in Sources */,
+				07AE7B661A0B651E003EAADE /* Beam.swift in Sources */,
+				07EB965919CC0A0300E4F729 /* BeamJunctionOrdSingle.swift in Sources */,
+				07EBA0D019E24C3200587FE9 /* MGLigature.swift in Sources */,
+				07EB961E19CC068600E4F729 /* FDKSIdle.swift in Sources */,
+				0728E46619CC9A7B00C8FCE7 /* TBLOArrow.swift in Sources */,
+				07EB964E19CC0A0300E4F729 /* BeamGroup.swift in Sources */,
+				07EB95D919CC053A00E4F729 /* MetronomeGraphic_3_256.swift in Sources */,
+				07EB961619CC068600E4F729 /* FDFluteC.swift in Sources */,
+				07EB953419CC006E00E4F729 /* Stratum.swift in Sources */,
+				07CCD68C1A1AB5C0006503C8 /* MetronomePrototype.swift in Sources */,
+				07A666F319CD59330045C8F2 /* DMISwell.swift in Sources */,
+				0709B05619CCAE9700BF648A /* Page.swift in Sources */,
+				078532A31A198E03004D0F0F /* MetronomeSpanNode_5.swift in Sources */,
+				07DFC41619D12011001CBF78 /* DMIHairpinLinear.swift in Sources */,
+				07EB95B219CC048A00E4F729 /* AccidentalSharp.swift in Sources */,
+				07EB95AF19CC048A00E4F729 /* AccidentalQuarterSharp.swift in Sources */,
+				0730C3E01A08B29C00D8ACE4 /* BeamsLayerCompoundStratum.swift in Sources */,
+				07EB95B919CC048A00E4F729 /* CreateAccidental.swift in Sources */,
+				078532AB1A198EC3004D0F0F /* CreateMetronomeSpanNode.swift in Sources */,
+				07EB95D819CC053A00E4F729 /* MetronomeGraphic_3_128.swift in Sources */,
+				077534771A43D6D0009BADFB /* Tremolo.swift in Sources */,
+				07EB961919CC068600E4F729 /* FDClarinetContrabass.swift in Sources */,
+				07EB955D19CC02C200E4F729 /* ClefBass.swift in Sources */,
+				07EB95D519CC053A00E4F729 /* MetronomeGraphic_3_16.swift in Sources */,
+				07EB95D419CC053A00E4F729 /* MetronomeGraphic_2_1024.swift in Sources */,
+				07EBA0CE19E2495800587FE9 /* MGGroup.swift in Sources */,
+				07EB95D019CC053A00E4F729 /* MetronomeGraphic_2_64.swift in Sources */,
+				07EB966319CC0A8200E4F729 /* StemPathPoints.swift in Sources */,
+				07ECF6D61A63526000C9BCA1 /* PerformerView.swift in Sources */,
+				07EB955019CC025C00E4F729 /* SpanTree.swift in Sources */,
+				0736F3A719E0DA3A005DC9B0 /* BGLeaf.swift in Sources */,
+				07D73A9419D4BD37002FD489 /* TBStratum.swift in Sources */,
+				07EB95B819CC048A00E4F729 /* AccidentalZoneColumn.swift in Sources */,
+				077985B819D0F80B00330FA4 /* DMIHairpinLinearDecresc.swift in Sources */,
+				07ECF6D91A63575C00C9BCA1 /* GetMeasureRange.swift in Sources */,
+				0788CE551A424BB300DF5665 /* TBLReintroduceTruncated.swift in Sources */,
+				0730C3DC1A089CA400D8ACE4 /* MGCompoundStratum.swift in Sources */,
+				07EB961A19CC068600E4F729 /* FingeringDiagram.swift in Sources */,
+				0766B26219D13BF600A6A166 /* StringSubscript.swift in Sources */,
+				07EB961F19CC068600E4F729 /* FDKSTrill.swift in Sources */,
+				07A666F519CD59660045C8F2 /* DMIHairpin.swift in Sources */,
+				0728E45B19CC98E900C8FCE7 /* TBLStart.swift in Sources */,
+				07F68CCF1A33AECF003C0155 /* MGSubgroup.swift in Sources */,
+				07EB965519CC0A0300E4F729 /* BeamJunctionExtendedSingle.swift in Sources */,
+				0745B38419CCD643000081D7 /* DMCharacter_exclamation.swift in Sources */,
+				0783D3A119CCAD140070CE7D /* Instrument.swift in Sources */,
+				07EB956619CC037800E4F729 /* TextLayerByHeight.swift in Sources */,
+				07EB953619CC007400E4F729 /* StratumContainer.swift in Sources */,
+				07EB95F519CC061800E4F729 /* TestLinePrimary.swift in Sources */,
+				0728E44B19CC937D00C8FCE7 /* TBLigature.swift in Sources */,
+				07B9D01F19E8518400FD5FD9 /* CreateStaffClef.swift in Sources */,
+				077534751A43C568009BADFB /* ArticulationTenutoStaccato.swift in Sources */,
+				07DFC41419D1004F001CBF78 /* DMISwellConcave.swift in Sources */,
+				07EB965D19CC0A2100E4F729 /* CreateBeamJunction.swift in Sources */,
+				07EB966019CC0A4300E4F729 /* BeamsLayer.swift in Sources */,
+				077534711A43C510009BADFB /* ArticulationAttackTenuto.swift in Sources */,
+				07EB95B519CC048A00E4F729 /* AccidentalZone.swift in Sources */,
+				07EB95B119CC048A00E4F729 /* AccidentalQuarterSharpUp.swift in Sources */,
+				0745B38E19CCF0C4000081D7 /* DMCharacter_parenRight.swift in Sources */,
+				0728E46819CC9A7B00C8FCE7 /* TBLOLine.swift in Sources */,
+				0745B37919CCD517000081D7 /* DynamicMarking.swift in Sources */,
+				07EB95F619CC061800E4F729 /* TestLineWidth.swift in Sources */,
+				07EB953819CC008000E4F729 /* StratumObject.swift in Sources */,
+				07A666FA19CD623D0045C8F2 /* DELayer.swift in Sources */,
+				0745B38C19CCF0A9000081D7 /* DMCharacter_parenLeft.swift in Sources */,
+				07EB963919CC085900E4F729 /* HarmonicNotehead.swift in Sources */,
+				07EB95F319CC061800E4F729 /* TestLineLabel.swift in Sources */,
+				07EB95F019CC061800E4F729 /* TestLineComponent.swift in Sources */,
+				0730C3DE1A089D4C00D8ACE4 /* TBCompoundStratum.swift in Sources */,
+				07D7081519D5CE4400454503 /* GraphEvent.swift in Sources */,
+				0728E46C19CCA14400C8FCE7 /* Staff.swift in Sources */,
+				078532A51A198E3D004D0F0F /* MetronomeSpanNode_4.swift in Sources */,
+				07DFC41019D0FFA3001CBF78 /* DMISwellConvex.swift in Sources */,
+				0785329F1A198DCF004D0F0F /* MetronomeSpanNode_7.swift in Sources */,
+				070826931A5C6B8900E208C5 /* Slur.swift in Sources */,
+				0709B05419CCAE7400BF648A /* System.swift in Sources */,
+				0745B38019CCD627000081D7 /* DMCharacter_p.swift in Sources */,
+				07D026061A23B088009FA945 /* TimeSignatureSupplemental.swift in Sources */,
+				07EB965819CC0A0300E4F729 /* BeamJunctionOrdMiddle.swift in Sources */,
+				07EB962119CC068600E4F729 /* FDFlute.swift in Sources */,
+				0709B05819CCAEC700BF648A /* SystemBreakGraphic.swift in Sources */,
+				07EB962519CC068600E4F729 /* FDKSaxophone.swift in Sources */,
+				07AD292F19D9DE9600E37FBC /* InstrumentInfo.swift in Sources */,
+				07EB95DF19CC054B00E4F729 /* CreateMetronomeGraphic.swift in Sources */,
+				07EB95CF19CC053A00E4F729 /* MetronomeGraphic_2_32.swift in Sources */,
+				07EB95ED19CC061800E4F729 /* CreateTestLine.swift in Sources */,
+				0728E45019CC977900C8FCE7 /* TBLLine.swift in Sources */,
+				07EB95E219CC05E300E4F729 /* addTestLines.swift in Sources */,
+				0785329D1A198D7E004D0F0F /* MetronomeSpanNode_8.swift in Sources */,
+				07554E921A5F711000CE94DF /* Parser.swift in Sources */,
+				07EB965619CC0A0300E4F729 /* BeamJunctionOrdFirst.swift in Sources */,
+				07EB961719CC068600E4F729 /* FDClarinet.swift in Sources */,
+				07DFC41819D12059001CBF78 /* DMIHairpinExponential.swift in Sources */,
+				0745B37C19CCD584000081D7 /* DMCharacter.swift in Sources */,
+				0783D39C19CCABC10070CE7D /* StaffLinesLayer.swift in Sources */,
+				07EB95EE19CC061800E4F729 /* TestLine.swift in Sources */,
+				07BED75D1A6379EB00708EA0 /* GetSpanTreeRange.swift in Sources */,
+				07EB95DD19CC053A00E4F729 /* MGStratum.swift in Sources */,
+				07A666EF19CD49A10045C8F2 /* CreateDMInterpolation.swift in Sources */,
+				07554E911A5F711000CE94DF /* Tokenizer.swift in Sources */,
+				07EB967219CC0B9600E4F729 /* getColorByDepth.swift in Sources */,
+				07EB95F219CC061800E4F729 /* TestLineHeight.swift in Sources */,
+				0728E45D19CC991800C8FCE7 /* TBLReintroduce.swift in Sources */,
+				07EB962719CC068600E4F729 /* FDSaxophoneTenor.swift in Sources */,
+				077F1F9E1A3F8BED00246C61 /* Timer.swift in Sources */,
+				07A666EA19CD28EA0045C8F2 /* DMKerningTable.swift in Sources */,
+				07EB961419CC068600E4F729 /* FDFluteBass.swift in Sources */,
+				076A984A1A4CAC540058AA6F /* MetronomeGridRect.swift in Sources */,
+				07B9D01C19E843B800FD5FD9 /* StaffClef.swift in Sources */,
+				07EB95D719CC053A00E4F729 /* MetronomeGraphic_3_64.swift in Sources */,
+				0728E46A19CC9E5F00C8FCE7 /* FDKSTFull.swift in Sources */,
+				07EB954919CC01D500E4F729 /* PadHorizontal.swift in Sources */,
+				07EB95B019CC048A00E4F729 /* AccidentalQuarterSharpDown.swift in Sources */,
+				0728E46719CC9A7B00C8FCE7 /* TBLOCircle.swift in Sources */,
+				0762DC0A1A5F74AB00679EAD /* denm.swift in Sources */,
+				07A666F119CD59080045C8F2 /* DMIStatic.swift in Sources */,
+				0753C03119F60F64006B15B0 /* Stem.swift in Sources */,
+				0783D39819CCAB650070CE7D /* PathPoints.swift in Sources */,
+				07EB965119CC0A0300E4F729 /* BGStratum.swift in Sources */,
+				07FF8C971A1956BE007BA3A1 /* Syncopation.swift in Sources */,
+				07EB95A819CC048A00E4F729 /* AccidentalFlatUp.swift in Sources */,
+				07EB963A19CC085900E4F729 /* Notehead.swift in Sources */,
+				07BED7631A63B9E500708EA0 /* ViewContainerFlowHorizontal.swift in Sources */,
+				074D30B51A415A0C008A8781 /* PitchSpeller.swift in Sources */,
+				07EB95AC19CC048A00E4F729 /* AccidentalQuarterFlat.swift in Sources */,
+				07554E941A5F711000CE94DF /* Item.swift in Sources */,
+				07EB963B19CC085900E4F729 /* OrdNotehead.swift in Sources */,
+				0783D39A19CCAB940070CE7D /* StaffEvent.swift in Sources */,
+				0709B05019CCAD8300BF648A /* Performer.swift in Sources */,
+				07EB95A519CC048A00E4F729 /* AccidentalComponentThinLine.swift in Sources */,
+				07EB961019CC068600E4F729 /* FDFluteAlto.swift in Sources */,
+				07E857921A1EA44800BFE9E4 /* BarlineSystemEnd.swift in Sources */,
+				07EB967619CC0FD800E4F729 /* TBLigaturesLayer.swift in Sources */,
+				07EB954F19CC025C00E4F729 /* SpanNode.swift in Sources */,
+				07D73A9619D4D71F002FD489 /* BeamsLayerStratum.swift in Sources */,
+				07EB95B619CC048A00E4F729 /* AccidentalZoneArrow.swift in Sources */,
+				0775346D1A43BD20009BADFB /* ArticulationTenuto.swift in Sources */,
+				07EB952819CBFF8B00E4F729 /* Subdivision.swift in Sources */,
+				07BED75F1A63B90000708EA0 /* ViewContainer.swift in Sources */,
+				07E9721B19E87CDD004171CA /* PitchSpellingsByIntervalPitchClass.swift in Sources */,
+				07B9D02119E8560700FD5FD9 /* ClefEmpty.swift in Sources */,
+				07EB956719CC037800E4F729 /* TimeSignature.swift in Sources */,
+				07EB95A619CC048A00E4F729 /* AccidentalFlat.swift in Sources */,
+				07EB961219CC068600E4F729 /* FDSaxophoneBaritone.swift in Sources */,
+				07EB967419CC0F6900E4F729 /* TupletBracket.swift in Sources */,
+				077534691A43BCCC009BADFB /* ArticulationStaccato.swift in Sources */,
+				073F18C819E7AD0D004857DE /* MetronomeSpanNode.swift in Sources */,
+				07EB965A19CC0A0300E4F729 /* BeamPathPoints.swift in Sources */,
+				07DFC41C19D121A5001CBF78 /* DMIHairpinExponentialDescresc.swift in Sources */,
+				076CA45D1A420FCD00992B9B /* MGProgressBar.swift in Sources */,
+				07EB963819CC085900E4F729 /* CreateNotehead.swift in Sources */,
+				07A666F819CD60DA0045C8F2 /* DurationalExtension.swift in Sources */,
+				07EB95F119CC061800E4F729 /* TestLineEdge.swift in Sources */,
+				0728E45419CC97BB00C8FCE7 /* CreateTBLOrnament.swift in Sources */,
+				07EB962019CC068600E4F729 /* FDKSTHalf.swift in Sources */,
+				07EB95A219CC048A00E4F729 /* AccidentalComponentColumn.swift in Sources */,
+				07E857901A1EA32800BFE9E4 /* Barline.swift in Sources */,
+				07BED7671A63C4C600708EA0 /* ViewNode.swift in Sources */,
+				0745B38219CCD636000081D7 /* DMCharacter_m.swift in Sources */,
+				0736F3A519E0DA06005DC9B0 /* BGContainer.swift in Sources */,
+				07EB962619CC068600E4F729 /* FDSaxophoneSoprano.swift in Sources */,
+				07EB959719CC048A00E4F729 /* Accidental.swift in Sources */,
+				07EB953A19CC00B300E4F729 /* arrayFunctions.swift in Sources */,
+				07EB965719CC0A0300E4F729 /* BeamJunctionOrdLast.swift in Sources */,
+				07BE0EE61A59DDDD005D511C /* CALayerExtensions.swift in Sources */,
+				077534731A43C537009BADFB /* ArticulationAttackStaccato.swift in Sources */,
+				07E9722119E89294004171CA /* Pitch.swift in Sources */,
+				07554E961A5F711000CE94DF /* Action.swift in Sources */,
+				07EB962319CC068600E4F729 /* FDFlutePiccolo.swift in Sources */,
+				07EB955C19CC02C200E4F729 /* ClefAlto.swift in Sources */,
+				07BED7611A63B98100708EA0 /* ViewContainerFlowVertical.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EB951119CBFF5B00E4F729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07476C1E1A5782C100777E35 /* SpanComponent.swift in Sources */,
+				07476C1B1A5782A900777E35 /* Beats.swift in Sources */,
+				07476C251A5782E500777E35 /* randomMidi.swift in Sources */,
+				07476C1D1A5782A900777E35 /* Duration.swift in Sources */,
+				07476C1C1A5782A900777E35 /* Subdivision.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07EB951719CBFF5B00E4F729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07EB94FF19CBFF5A00E4F729 /* denm */;
+			targetProxy = 07EB951619CBFF5B00E4F729 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07EB950919CBFF5A00E4F729 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07EB950A19CBFF5A00E4F729 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07EB951D19CBFF5B00E4F729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07EB951E19CBFF5B00E4F729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07EB952019CBFF5B00E4F729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = denm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07EB952119CBFF5B00E4F729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = denm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07EB952319CBFF5B00E4F729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = denmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/denm.app/denm";
+			};
+			name = Debug;
+		};
+		07EB952419CBFF5B00E4F729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = denmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/denm.app/denm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07EB94FB19CBFF5A00E4F729 /* Build configuration list for PBXProject "denm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EB951D19CBFF5B00E4F729 /* Debug */,
+				07EB951E19CBFF5B00E4F729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07EB951F19CBFF5B00E4F729 /* Build configuration list for PBXNativeTarget "denm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EB952019CBFF5B00E4F729 /* Debug */,
+				07EB952119CBFF5B00E4F729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07EB952219CBFF5B00E4F729 /* Build configuration list for PBXNativeTarget "denmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EB952319CBFF5B00E4F729 /* Debug */,
+				07EB952419CBFF5B00E4F729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07EB94F819CBFF5A00E4F729 /* Project object */;
+}

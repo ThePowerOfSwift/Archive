@@ -1,0 +1,6 @@
+/**
+AccidentalCollisionBodyArrow
+*/
+class AccidentalCollisionBodyArrow: AccidentalCollision {
+    
+}

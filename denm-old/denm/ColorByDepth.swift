@@ -1,0 +1,3 @@
+protocol ColorByDepth {
+    func colorByDepth()
+}

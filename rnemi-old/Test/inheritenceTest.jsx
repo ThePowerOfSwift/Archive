@@ -1,0 +1,1 @@
+﻿function Representation() {};Representation.prototype.draw = function() {    $.writeln("I am drawing");};function Key() {    Representation.call(this);};Key.prototype = new Representation();function CircleKey() {    Key.call(this);};CircleKey.prototype = new Key();var rh1 = new CircleKey();rh1.draw();

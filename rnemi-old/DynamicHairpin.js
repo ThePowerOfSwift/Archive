@@ -1,0 +1,3 @@
+function DynamicHairpin(type, slope) {
+    
+}

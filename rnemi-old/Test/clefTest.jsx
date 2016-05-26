@@ -1,0 +1,1 @@
+﻿#include "../testDoc.js"#include "../Clef.js"#include "../Staff.js"var staff = new Staff();staff.linePoints(400);//var clef = new Clef(testDoc, 50, 410, 390, 5, "tenor", 0);
