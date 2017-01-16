@@ -1,0 +1,19 @@
+module: GraphStructures
+author: James Bean
+author_url: http://github.io/dn-m/GraphStructures
+github_url: https://github.com/dn-m/GraphStructures
+min_acl: public
+readme: /README.md
+swift_version: 2.2
+
+custom_categories:
+  - name: Abstract Graph
+    children:
+    - Graph
+    - Node
+    - Edge
+
+  - name: Tree
+    children: 
+    - Tree
+    - TreeNode
