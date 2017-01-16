@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode7.3
+xcode_project: DirectionTools.xcodeproj
+xcode_scheme: DirectionToolsMac
+xcode_sdk: macosx10.11
+
+before_script:
+  - carthage bootstrap
