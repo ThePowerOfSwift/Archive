@@ -1,0 +1,32 @@
+# Frameworks
+- [FunctionalListProcessing](https://github.com/dn-m/FunctionalListProcessing)
+- [Arithmetic](https://github.com/dn-m/Arithmetic)
+  - Dependencies:
+    - [FunctionalListProcessing](https://github.com/dn-m/FunctionalListProcessing)
+- [Array](...)
+  - NYI
+  - Dependencies:
+    - [FunctionalListProcessing](https://github.com/dn-m/FunctionalListProcessing)
+  - API
+    - `subscript (safe index: Int) -> Element?`
+    - `var second: Element?`
+    - `var penultimate: Element?`
+    - `func containsObject(object: AnyObject) -> Bool`
+    - `func indexOfObject(object: AnyObject) -> Int?`
+    - `var unique: [Element]`
+    - `func extractDuplicates: ([Element],[Element])`
+    - `func replace(element, withNewElement)`
+    - ... all of those
+    - `func remove(element)`
+    - ... all of those
+    - `== (tuple1, tuple2)` -- should happen on tuple level?
+    - perhaps make a wrapper API for `Set` and its `intersection`, etc operations
+- [Deep Dictionary](...)
+  - NYI
+- [SequenceType](...)
+  - NYI
+  - [power-of-two generator](http://iosdeveloperzone.com/2014/10/13/swift-standard-library-generators-sequences-and-collections/)
+  - closest power-of-two, target
+  - random for all Arithmetic Type ?
+- [String](...)
+  - NYI
