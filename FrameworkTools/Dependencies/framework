@@ -1,0 +1,110 @@
+#!/usr/bin/swift -F /Library/Frameworks
+
+import Foundation
+import OptionKit
+import SwiftShell
+import DictionaryTools
+import ScriptingTools
+import FrameworkTools
+
+let newFrameworkOption = Option(
+	trigger: .Mixed("n", "new"),
+	numberOfParameters: 1,
+	helpDescription: "Create a new cross-platform framework with name"
+)
+
+let updateFrameworksOption = Option(trigger: .Mixed("u", "update-frameworks"))
+let noTravisOption = Option(trigger: .Long("no-travis"))
+let noCarthageOption = Option(trigger: .Long("no-carthage"))
+let noGitOption = Option(trigger: .Long("no-git"))
+
+let options = [
+    newFrameworkOption,
+    noTravisOption,
+    noCarthageOption,
+    noGitOption,
+    updateFrameworksOption
+]
+
+// TODO: wrap up option parsing
+let parser = OptionParser(definitions: options)
+let arguments = Array(Process.arguments[1..<Process.arguments.count])
+
+var projectName: String? {
+    return files
+        .filter { $0.hasSuffix("xcodeproj") }
+        .first? // throw error if none or multiple
+        .componentsSeparatedByString(".")
+        .first // script xcodeproj suffix
+}
+
+// Cartfile
+
+
+func updateFrameworks() {
+    guard let projectName = projectName else { return }
+    guard files.contains("Cartfile") else { return }
+    guard "Carthage/Build".isDirectory else { return }
+    
+    run("carthage", "boostrap")
+    
+    var frameworksByPlatform: [Path: [Path]] {
+        
+        changeDirectory(to: "Carthage/Build")
+        
+        var result: [Path: [Path]] = [:]
+        
+        // use map
+        for platform in directories where ["iOS","Mac"].contains(platform) {
+            
+            changeDirectory(to: platform)
+            
+            // TODO: make .isFramework / .hasFramework
+            files.filter({ $0.hasSuffix("framework") }).forEach {
+                result.safelyAppend($0, toArrayWithKey: platform)
+            }
+            
+            changeDirectoryToParent()
+        }
+        
+        // to carthage
+        changeDirectoryToParent()
+        
+        // to project
+        changeDirectoryToParent()
+        return result
+    }
+    
+    // deal with nil
+    let iOS_params = [projectName] + frameworksByPlatform["iOS"]!
+    run(rubyFileAt: integrateFrameworksPath,
+        function: "integrate_ios_frameworks",
+        parameters: iOS_params
+    )
+    
+    // deal wih nil
+    let OSX_params = [projectName] + frameworksByPlatform["Mac"]!
+    run(rubyFileAt: integrateFrameworksPath,
+        function: "integrate_osx_frameworks",
+        parameters: OSX_params
+    )
+}
+
+do {
+	let (options, _) = try parser.parse(arguments)
+	
+    if options[updateFrameworksOption] != nil { print("Update frameworks!") }
+    
+    if let newFrameworkName = options[newFrameworkOption]?.first {
+        let framework = Framework(
+            name: newFrameworkName,
+            git: options[noGitOption] == nil,
+            carthage: options[noCarthageOption] == nil,
+            travis: options[noTravisOption] == nil
+        )
+    }
+    
+    if options[updateFrameworksOption] != nil {
+        updateFrameworks()
+    }
+}
