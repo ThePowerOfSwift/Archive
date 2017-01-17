@@ -1,0 +1,8 @@
+github "dn-m/Collections" "1.6.2"
+github "dn-m/Color" "0.2"
+github "dn-m/ArithmeticTools" "0.5.7"
+github "dn-m/PathTools" "0.3"
+github "dn-m/Pitch" "0.7"
+github "dn-m/PitchSpellingTools" "0.3"
+github "dn-m/GraphicsTools" "0.2.2"
+github "dn-m/Plot" "0.1.7"
